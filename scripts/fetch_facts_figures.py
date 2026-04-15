@@ -19,7 +19,7 @@ Wilshire / Buffett note:
 """
 
 from __future__ import annotations
-import json, os, re, sys, urllib.error, urllib.parse, urllib.request
+import gzip, json, os, re, sys, urllib.error, urllib.parse, urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -56,7 +56,14 @@ BROWSER_HEADERS = {
 def http_get(url: str, timeout: int = 20) -> bytes:
     req = urllib.request.Request(url, headers=BROWSER_HEADERS)
     with urllib.request.urlopen(req, timeout=timeout) as r:
-        return r.read()
+        raw = r.read()
+        enc = (r.headers.get("Content-Encoding") or "").lower()
+        if enc == "gzip" or raw[:2] == b"\x1f\x8b":
+            try:
+                raw = gzip.decompress(raw)
+            except Exception:
+                pass
+        return raw
 
 
 def fred(series_id: str, observation_start: str | None = None) -> list[dict]:
@@ -599,8 +606,13 @@ def main() -> int:
             "close": nasdaq_raw[i]["value"],
             "ma50":  ma50_vals[i],
             "ma200": ma200_vals[i],
+            "spreadPct": round(((ma50_vals[i] / ma200_vals[i]) - 1) * 100, 2) if (ma50_vals[i] is not None and ma200_vals[i] not in (None, 0)) else None,
         }
         for i in range(len(nasdaq_raw))
+    ]
+    rsi_chart = [
+        {"date": nasdaq_raw[i]["date"], "value": rsi_vals[i]}
+        for i in range(len(nasdaq_raw)) if rsi_vals[i] is not None
     ]
 
     # ── 6. Classify ───────────────────────────────────────────────────────────
