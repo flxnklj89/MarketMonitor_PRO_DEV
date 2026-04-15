@@ -1,0 +1,11 @@
+{
+  "name": "Marktrisiko-Kompass PRO",
+  "short_name": "MK PRO",
+  "description": "Verständliche Markt- und Risikosignale für Privatanleger – klar, regelbasiert und ohne Terminal-Overload.",
+  "lang": "de",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0f1722",
+  "theme_color": "#0f1722"
+}

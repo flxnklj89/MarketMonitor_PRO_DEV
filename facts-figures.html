@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Facts & Figures · Marktrisiko-Kompass PRO</title>
+  <meta name="description" content="Automatisch aktualisierte Markt-, Bewertungs-, Makro- und Risiko-Fakten als Ergänzung zum Marktrisiko-Kompass PRO." />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,400;9..144,500&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    :root{--bg:#0f1722;--bg2:#121c29;--panel:rgba(255,255,255,.04);--panel2:rgba(255,255,255,.03);--border:rgba(255,255,255,.08);--text:#edf3fb;--text2:#c5d4e4;--text3:#8fa7c0;--muted:#7391ac;--shadow:0 20px 60px rgba(0,0,0,.22);--radius:22px;--green:#53d39f;--amber:#f6ba62;--red:#ff7a7a;--blue:#8fc4ff;--green-bg:rgba(83,211,159,.14);--amber-bg:rgba(246,186,98,.14);--red-bg:rgba(255,122,122,.14);--blue-bg:rgba(143,196,255,.14);--font:'Inter',system-ui,sans-serif;--serif:'Fraunces',Georgia,serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:var(--font);background:radial-gradient(circle at top, rgba(79,123,179,.18), transparent 36%),linear-gradient(180deg,#0d1520,#121c29 30%,#111926 100%);color:var(--text)}a{color:inherit;text-decoration:none}
+    .topbar{position:sticky;top:0;z-index:100;background:rgba(14,22,32,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}.topbar-inner{max-width:1280px;margin:0 auto;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;gap:16px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none}.brand-mark{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;background:rgba(255,255,255,.06);border:1px solid var(--border);font-size:20px}.brand-over{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--text3)}.brand-name{font-size:18px;font-weight:700}.nav{display:flex;gap:10px;flex-wrap:wrap}.nav a{padding:10px 14px;border:1px solid var(--border);border-radius:999px;background:rgba(255,255,255,.04);font-size:13px;color:var(--text2)}.nav a:hover,.nav a.active{background:var(--blue-bg);border-color:rgba(143,196,255,.28);color:var(--text)}
+    .shell{max-width:1280px;margin:0 auto;padding:0 20px 60px}.card{background:linear-gradient(180deg, rgba(255,255,255,.045), rgba(255,255,255,.025));border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow)}
+    .hero{padding:30px 0 22px}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:18px}.hero-main{padding:30px}.hero-side{padding:22px;display:grid;gap:14px}.kicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--text3);margin-bottom:12px}.hero-title{margin:0;font-family:var(--serif);font-size:clamp(36px,5vw,60px);line-height:1.02;letter-spacing:-.04em;max-width:12ch}.hero-sub{margin:18px 0 0;color:var(--text2);font-size:16px;line-height:1.8;max-width:70ch}.hero-meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}.chip{display:inline-flex;align-items:center;gap:8px;padding:10px 12px;border-radius:999px;border:1px solid var(--border);background:rgba(255,255,255,.04);font-size:12px;color:var(--text2)}.dot{width:8px;height:8px;border-radius:50%;background:var(--green)}
+    .status-card{padding:18px;border-radius:18px;border:1px solid var(--border);background:rgba(255,255,255,.03)}.status-label{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--text3);margin-bottom:8px}.status-headline{font-size:26px;line-height:1.18;font-weight:800}.status-copy{margin-top:10px;color:var(--text2);line-height:1.7;font-size:14px}.status-foot{margin-top:12px;color:var(--text3);font-size:12px;line-height:1.6}
+    .section{margin-top:18px;padding:26px}.section-title{margin:0;font-family:var(--serif);font-size:clamp(28px,4vw,42px);line-height:1.08;letter-spacing:-.03em}.section-sub{margin:10px 0 0;color:var(--text2);font-size:15px;line-height:1.8;max-width:92ch}
+    .grid{display:grid;gap:16px}.kpi-grid{grid-template-columns:repeat(4,minmax(0,1fr));margin-top:18px}.kpi-card{padding:18px;border-radius:18px;background:var(--panel2);border:1px solid rgba(255,255,255,.06)}.kpi-label{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--text3)}.kpi-value{margin-top:8px;font-size:30px;font-weight:800;line-height:1}.kpi-note{margin-top:8px;color:var(--text2);font-size:13px;line-height:1.6}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px}.three-col{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:18px}.box{padding:20px;border-radius:18px;background:var(--panel2);border:1px solid rgba(255,255,255,.06)}.box h3{margin:0 0 10px;font-size:18px}.box p{margin:0;color:var(--text2);font-size:14px;line-height:1.75}.box p + p{margin-top:10px}.list{margin:12px 0 0;padding-left:18px;color:var(--text2)}.list li{margin:0 0 8px;line-height:1.7}
+    .mini-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:18px}.mini{padding:18px;border-radius:18px;background:var(--panel2);border:1px solid rgba(255,255,255,.06)}.mini-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:8px}.mini h3{margin:0;font-size:16px}.mini p{margin:0;color:var(--text2);font-size:14px;line-height:1.72}.box-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:10px}
+    .table-wrap{margin-top:18px;overflow:auto;border-radius:18px;border:1px solid rgba(255,255,255,.06);background:var(--panel2)}table{width:100%;border-collapse:collapse;min-width:860px}th,td{padding:15px 16px;border-bottom:1px solid rgba(255,255,255,.06);text-align:left}th{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--text3);font-weight:700}td{font-size:14px;color:var(--text2);line-height:1.65}
+    .tag{display:inline-block;padding:7px 10px;border-radius:999px;border:1px solid var(--border);background:rgba(255,255,255,.04);font-size:11px;color:var(--text2);margin:4px 8px 0 0}.tone-l{color:var(--green)}.tone-m{color:var(--amber)}.tone-h{color:var(--red)}
+    .mini-value{font-size:32px;font-weight:800;line-height:1.05;margin:6px 0 8px}.mini-unit{font-size:14px;font-weight:400;color:var(--text3)}.mini-sparkline{display:block;width:100%;height:44px;margin-top:10px;opacity:.8}
+    .kpi-num{font-size:36px;font-weight:800;line-height:1;margin:8px 0 4px}.kpi-unit{font-size:14px;font-weight:400;color:var(--text3)}.kpi-value-sub{font-size:14px;font-weight:600;margin:0 0 6px;line-height:1.3}
+    .chart-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:18px}.chart-card{padding:18px;border-radius:18px;background:var(--panel2);border:1px solid rgba(255,255,255,.06)}.chart-card h3{margin:0 0 8px;font-size:17px}.chart-note{color:var(--text3);font-size:12px;line-height:1.6}.chart-wrap{height:220px;margin-top:12px}.axis-note{margin-top:8px;color:var(--text3);font-size:11px;line-height:1.55}.info-wrap{position:relative;display:inline-flex;align-items:center}.info-btn{width:18px;height:18px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.05);color:var(--text2);display:grid;place-items:center;cursor:pointer;padding:0;font-size:10px}.info-pop{display:none;position:absolute;left:0;top:24px;width:min(320px,calc(100vw - 40px));padding:12px 14px;border-radius:14px;border:1px solid var(--border);background:rgba(13,20,30,.98);box-shadow:0 18px 60px rgba(0,0,0,.3);font-size:12px;color:var(--text2);line-height:1.7;z-index:30}.info-wrap.open .info-pop,.info-wrap:hover .info-pop{display:block}
+    .footer{margin-top:18px;padding:20px 22px}.footer p{margin:0;color:var(--text3);font-size:13px;line-height:1.7}.footer p + p{margin-top:10px}
+    #ticker-wrap{position:sticky;top:71px;z-index:90;background:rgba(18,28,41,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);display:flex;align-items:center;min-height:40px;overflow:hidden}
+    .ticker-badge{flex-shrink:0;padding:0 16px;color:var(--text3);font-size:10px;letter-spacing:.18em;text-transform:uppercase;border-right:1px solid var(--border);min-height:40px;display:flex;align-items:center;background:rgba(255,255,255,.03)}
+    .ticker-viewport{flex:1;overflow:hidden;position:relative}.ticker-viewport:before,.ticker-viewport:after{content:'';position:absolute;top:0;bottom:0;width:34px;z-index:2;pointer-events:none}.ticker-viewport:before{left:0;background:linear-gradient(to right, rgba(18,28,41,1), transparent)}.ticker-viewport:after{right:0;background:linear-gradient(to left, rgba(18,28,41,1), transparent)}
+    .ticker-track{display:flex;align-items:center;white-space:nowrap;width:max-content;animation:ticker-scroll 36s linear infinite}.ticker-track:hover{animation-play-state:paused}@keyframes ticker-scroll{0%{transform:translateX(0)}100%{transform:translateX(-25%)}}
+    .ticker-item{display:inline-flex;align-items:center;gap:8px;padding:0 18px;font-size:12px;min-height:40px}.tk-icon{font-size:15px}.tk-label{color:var(--text2)}.tk-val{font-weight:600}.tk-unit{color:var(--muted,#7391ac);font-size:10px}.tk-up{color:var(--green)}.tk-dn{color:var(--red)}.tk-neu{color:var(--text3)}.tk-stale{color:var(--text3);padding:0 18px;min-height:40px;display:flex;align-items:center}
+    @media (max-width:1120px){.hero-grid,.kpi-grid,.two-col,.three-col,.mini-grid,.chart-grid{grid-template-columns:1fr}.hero-title{max-width:none}}
+    @media (max-width:760px){.shell,.topbar-inner{padding-left:16px;padding-right:16px}.hero-main,.hero-side,.section{padding:18px}.kpi-value{font-size:24px}}
+  </style>
+</head>
+<body>
+  <header class="topbar"><div class="topbar-inner"><a class="brand" href="./index.html"><div class="brand-mark">🧭</div><div><div class="brand-over">PRO · Zusatzmodul</div><div class="brand-name">Marktrisiko-Kompass</div></div></a><nav class="nav">
+        <a href="./index.html">Dashboard</a>
+        <a class="active" href="./facts-figures.html">Facts &amp; Figures</a>
+        <a href="./invest-check.html">Invest-Check</a>
+        <a href="./documentation.html">Hilfe &amp; Doku</a>
+      </nav></div></header>
+
+  <div id="ticker-wrap"><div class="ticker-badge">Live-Marktband</div><div class="ticker-viewport"><div class="ticker-track" id="ticker-track"><span class="tk-stale">Lade Ticker…</span></div></div></div>
+
+  <main class="shell">
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="card hero-main">
+          <div class="kicker">Marktstatus · Technik · Bewertung · Makro · Geopolitik</div>
+          <h1 class="hero-title">Facts & Figures</h1>
+          <p class="hero-sub">Diese Seite bündelt die wiederkehrenden Analysebausteine in einer automatisiert aktualisierten Übersicht: Marktstatus, technische Trigger, Bewertungsniveau, Makro-Umfeld, Sentiment, geopolitische Risiken sowie Wahrscheinlichkeiten für Bottom-, Crash- und Timing-Einordnung. Sie ist bewusst allgemein gehalten und enthält keine persönlichen Depotdaten.</p>
+          <div class="hero-meta"><div class="chip"><span class="dot"></span><span id="ff-fresh">Lade Datenstand…</span></div><div class="chip">Update-Rhythmus: <span id="ff-cadence">alle 4 Stunden</span></div><div class="chip">Quelle: <span id="ff-source">facts_figures.json</span></div></div>
+        </div>
+        <div class="card hero-side">
+          <div class="status-card"><div class="status-label">Aktueller Marktstatus</div><div class="status-headline" id="hero-phase">Lade…</div><div class="status-copy" id="hero-summary">Die Facts-&-Figures-Seite lädt die aktuelle Marktlesart.</div><div class="status-foot" id="hero-foot">Stand: —</div></div>
+          <div class="status-card"><div class="status-label">Wofür die Seite gedacht ist</div><div class="status-copy">Für einen objektiven, aktualisierten Blick auf das Marktumfeld. Nicht als persönliches Rebalancing-Tool, sondern als Lage-Board für Bewertung, Risiko, Timing und allgemeine Umsetzungslogik.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card section"><h2 class="section-title">1. Marktstatus auf einen Blick</h2><p class="section-sub">Die erste Ebene komprimiert die Lage in vier Kernelemente: Marktphase, VIX-Lesart, Marktbreite und aktueller Gesamtmodus.</p><div class="grid kpi-grid" id="market-overview-grid"></div></section>
+
+    <section class="card section"><h2 class="section-title">2. Technische Trigger (Growth)</h2><p class="section-sub">Diese Bausteine schauen auf Trendbruch, Überverkauft-Situation und Drawdown. Sie sollen zeigen, ob die Marktbewegung eher nervös, gebrochen oder stabilisierbar wirkt.</p><div class="grid mini-grid" id="technical-grid"></div><div class="chart-grid"><div class="chart-card"><h3>QQQ: Schlusskurs, 50T & 200T</h3><div class="chart-note">Schlusskurs plus gleitende Durchschnitte. X-Achse = Zeit, Y-Achse = Indexstand.</div><div class="chart-wrap"><canvas id="chart-qqq"></canvas></div><div class="axis-note">Lesart: Blau = Schlusskurs, Grün = 50T, Gelb = 200T.</div></div><div class="chart-card"><h3>RSI (14) Verlauf</h3><div class="chart-note">X-Achse = Zeit, Y-Achse = RSI-Skala von 0 bis 100. Schwellen bei 70 und 30 markieren typische Extremzonen.</div><div class="chart-wrap"><canvas id="chart-rsi"></canvas></div><div class="axis-note">Über 70 = Überkaufszone, unter 30 = Überverkaufszone.</div></div><div class="chart-card"><h3>VIX & Brent</h3><div class="chart-note">Stress- und Energieschock-Ebene der letzten Monate.</div><div class="chart-wrap"><canvas id="chart-stress"></canvas></div></div></div></section>
+
+    <section class="card section"><h2 class="section-title">3. Bewertung & Langfrist-Signal</h2><p class="section-sub">Bewertung beantwortet nicht das kurzfristige Timing allein, aber sie verändert die Fehlertoleranz des Marktes gegenüber externen Schocks.</p><div class="grid three-col" id="valuation-grid"></div></section>
+
+    <section class="card section"><h2 class="section-title">4. Makro-Umfeld <span style="font-size:0.36em;font-family:var(--font);font-weight:700;color:var(--text3);letter-spacing:.15em;text-transform:uppercase;vertical-align:middle;margin-left:10px;padding:4px 10px;border:1px solid var(--border);border-radius:999px;background:rgba(255,255,255,.04)">USA</span></h2><p class="section-sub">Zinsumfeld, Wachstum und Rezessionsindikatoren sind die Brücke zwischen Marktbewegung und Makrorealität. Alle drei Indikatoren beziehen sich auf die <strong>USA</strong> – kein globaler Schnitt.</p><div class="grid three-col" id="macro-grid"></div></section>
+
+    <section class="card section"><h2 class="section-title">5. Sentiment & Risiken</h2><p class="section-sub">Die Risikoebene kombiniert aktuelle Nachrichtenlage, Marktstimmung und die wichtigsten auffälligen Risiken in einem kompakten Board.</p><div class="grid two-col"><div class="box"><div class="box-head"><h3>Marktstimmung</h3><span class="info-wrap"><button class="info-btn" type="button">i</button><span class="info-pop">Verdichtet die aktuelle Nachrichtenlage in eine einfache Lesart: eher Hoffnung, eher Nervosität oder klarer Risk-off. Sie ist hilfreich als Kontext, aber nie allein entscheidend.</span></span></div><p id="sentiment-copy">—</p><div id="sentiment-tags" style="margin-top:12px"></div></div><div class="box"><div class="box-head"><h3>Auffällige Risiken</h3><span class="info-wrap"><button class="info-btn" type="button">i</button><span class="info-pop">Hier stehen die aktuell wichtigsten Risikofelder, die Marktphase, Timing und Fehlertoleranz beeinflussen können. Sie sind als Frühwarn- und Kontextboard gedacht.</span></span></div><ul class="list" id="risk-list"></ul></div></div></section>
+
+    <section class="card section"><h2 class="section-title">6. Globale Kriegsereignisse & Geopolitik</h2><p class="section-sub">Diese Sektion fokussiert auf Konfliktfelder mit potenzieller Marktwirkung: Transportkorridore, Energie, physische Versorgung und LNG-/Gas-Risiken.</p><div class="table-wrap"><table><thead><tr><th>Konfliktfeld</th><th>Status</th><th>Marktwirkung</th></tr></thead><tbody id="geo-table"></tbody></table></div></section>
+
+    <section class="card section"><h2 class="section-title">7–9. Bottom-, Crash- und Timing-Wahrscheinlichkeit</h2><p class="section-sub">Diese Scores sind modellhafte Einordnungen. Sie sollen keine Gewissheit vortäuschen, sondern eine konsistente Lesart für Stabilisierung, Eskalation und Umsetzungsqualität geben.</p><div class="grid three-col" id="probability-grid"></div></section>
+
+    <section class="card section"><h2 class="section-title">10. Weitere mögliche Trigger</h2><p class="section-sub">Diese Trigger helfen zu entscheiden, wann ein erneuter Blick auf die Lage besonders sinnvoll ist.</p><div class="grid two-col"><div class="box"><h3>Trigger für ein konstruktiveres Bild</h3><ul class="list" id="positive-triggers"></ul></div><div class="box"><h3>Wann das nächste Update besonders wichtig ist</h3><ul class="list" id="refresh-triggers"></ul></div></div></section>
+
+    <section class="card section"><h2 class="section-title">11. Time in Market vs. Market Timing</h2><p class="section-sub">Die Seite trennt langfristige Grundlogik von aktueller Marktlesart.</p><div class="grid two-col"><div class="box"><h3>Time in Market</h3><p id="tim-market">—</p></div><div class="box"><h3>Market Timing</h3><p id="tim-timing">—</p><p id="tim-summary" style="margin-top:10px"></p></div></div></section>
+
+    <footer class="card footer"><p>Diese Seite ist als allgemeines Marktboard gedacht. Sie übernimmt bewusst keine persönlichen Portfolioinhalte, keine privaten Entscheidungsdetails und keine depotnahen Spezialpunkte.</p><p>Die Einordnung bleibt regelbasiert, aktualisierbar und als allgemeiner Marktkompass formuliert.</p></footer>
+  </main>
+  <script>
+
+    function renderTicker(data){
+      const track=document.getElementById('ticker-track'); if(!track) return;
+      const items=(data?.ticker&&Array.isArray(data.ticker)&&data.ticker.length?data.ticker:[]);
+      const fallback = items.length ? items : [];
+      if(!fallback.length){ track.innerHTML='<span class="tk-stale">Keine Tickerdaten verfügbar</span>'; return; }
+      const html=fallback.map(x=>{
+        const chg = typeof x.chgPct==='number' ? x.chgPct : null;
+        const cls = chg==null ? 'tk-neu' : chg>0 ? 'tk-up' : chg<0 ? 'tk-dn' : 'tk-neu';
+        const sign = chg!=null && chg>0 ? '+' : '';
+        const val = x.val ?? x.latest ?? '—';
+        const unit = x.unit || '';
+        return `<span class="ticker-item"><span class="tk-icon">${x.icon||'•'}</span><span class="tk-label">${x.label||x.name||'—'}</span><span class="tk-val">${val}</span>${unit?`<span class="tk-unit">${unit}</span>`:''}${chg!=null?`<span class="${cls}">${sign}${chg.toFixed(2)}%</span>`:''}</span>`;
+      }).join('');
+      track.innerHTML = html + html + html + html;
+    }
+    async function loadTicker(){
+      // Bevorzuge ticker.json (alle 15 min), Fallback auf latest.json (alle 4h)
+      for(const url of ['./data/ticker.json','./data/latest.json']){
+        try{
+          const data=await fetch(url+'?t='+Date.now(),{cache:'no-store'}).then(r=>r.json());
+          if(data?.ticker?.length){ renderTicker(data); return; }
+        }catch(e){}
+      }
+      const track=document.getElementById('ticker-track');
+      if(track) track.innerHTML='<span class="tk-stale">Ticker derzeit nicht verfügbar</span>';
+    }
+
+    const charts = {};
+    const fmtNum=(v,d=1)=> v==null || Number.isNaN(Number(v)) ? '—' : Number(v).toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+    const fmtPct=(v,d=1)=> v==null || Number.isNaN(Number(v)) ? '—' : fmtNum(v,d)+' %';
+    const fmtDateTime=s=>!s?'—':new Date(s).toLocaleString('de-DE',{day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit'});
+    const infoMap = {
+      'Marktphase':'<strong>Was wird eingeschätzt?</strong><br>Die Marktphase ist eine verdichtete Einordnung des aktuellen Umfelds, basierend auf Stress, Makro, Technik und Sentiment zusammen.<br><br><strong>Warum ist das relevant?</strong><br>Sie ist der Einstiegspunkt, bevor Einzelsignale gelesen werden. Wer zuerst die Phase kennt, kann Einzeldaten besser einordnen.<br><br><strong>Wann wird es kritisch?</strong><br>Wenn aus einer ruhigen Phase schrittweise eine angespannte wird – erkennbar daran, dass mehrere Einzelsignale gleichzeitig in dieselbe Richtung kippen.<br><br><strong>Signalrolle:</strong><br>Zusammenfassendes Urteil. Kein Frühindikator, sondern eine Verdichtung bereits vorhandener Signale.',
+      'VIX':'<strong>Was wird gemessen?</strong><br>Die implizite 30-Tage-Volatilität des S&P 500, abgeleitet aus Options-Preisen. Er wird oft als „Angst-Index" bezeichnet.<br><br><strong>Warum ist das relevant?</strong><br>Der VIX steigt schnell, wenn Marktteilnehmer sich gegen Kursrückgänge absichern. Er macht Nervosität sehr zeitnah sichtbar – oft früher als Kursrückgänge selbst.<br><br><strong>Wann wird es kritisch?</strong><br>Werte über 20 signalisieren erhöhte Unsicherheit. Über 30 gelten als klares Stressniveau. Entscheidend ist aber nicht ein einzelner Spike, sondern ob erhöhte Werte anhalten.<br><br><strong>Signalrolle:</strong><br>Frühwarnsignal. Schnell reagierend, aber anfällig für kurzfristiges Rauschen. Sollte immer mit Makrosignalen zusammen gelesen werden.',
+      'Marktbreite':'<strong>Was wird gemessen?</strong><br>Wie viele Einzeltitel an einer Marktbewegung teilnehmen – zum Beispiel der Prozentsatz der Aktien über ihrem 200-Tage-Durchschnitt.<br><br><strong>Warum ist das relevant?</strong><br>Ein Index kann steigen, auch wenn nur wenige große Titel die Bewegung tragen. Breite Teilnahme macht Trends stabiler und glaubwürdiger. Schmale Breite ist ein Warnsignal.<br><br><strong>Wann wird es kritisch?</strong><br>Wenn ein Kursanstieg von immer weniger Titeln getragen wird. Das ist oft ein frühes Zeichen, dass ein Trend an Substanz verliert, auch wenn der Index noch hält.<br><br><strong>Signalrolle:</strong><br>Bestätigungssignal. Hilft zu prüfen, ob eine Trendbewegung real breit oder nur oberflächlich ist.',
+      'Gesamtmodus':'<strong>Was wird eingeschätzt?</strong><br>Das übergeordnete Bild aus Marktstatus, Stressindikatoren, Makrolage und Timing zusammen – verdichtet in eine Kurzlesart.<br><br><strong>Warum ist das relevant?</strong><br>Während einzelne Signale Rauschen erzeugen können, soll der Gesamtmodus zeigen, ob die Kombination aller Faktoren eher beruhigend oder warnend wirkt.<br><br><strong>Wann wird es kritisch?</strong><br>Wenn mehrere Signalquellen gleichzeitig auf Stress hindeuten und der Gesamtmodus von „Normal" auf „Vorsicht" oder „Defensiv" wechselt.<br><br><strong>Signalrolle:</strong><br>Kontextsignal. Keine Trade-Empfehlung, sondern ein Zusammenfassungs-Urteil für den Verhaltensrahmen.',
+      '50T vs. 200T':'<strong>Was wird gemessen?</strong><br>Der 50-Tage-Durchschnitt zeigt den mittelfristigen Trend, der 200-Tage-Durchschnitt den langfristigen. Liegt der Kurs über beiden, spricht man von einem intakten Aufwärtstrend.<br><br><strong>Warum ist das relevant?</strong><br>Diese Kreuzung (sog. Golden Cross / Death Cross) ist eine der bekanntesten Trendstruktur-Indikatoren. Sie zeigt, ob die Marktdynamik eher stützend oder bremsend wirkt.<br><br><strong>Wann wird es kritisch?</strong><br>Wenn der 50T unter den 200T fällt (Death Cross) oder der Kurs dauerhaft unter beiden Durchschnitten liegt. Das spricht für strukturelle Schwäche, nicht nur kurzfristige Schwankung.<br><br><strong>Signalrolle:</strong><br>Bestätigungssignal. Reagiert träger als VIX oder RSI, ist dafür stabiler und weniger rauschempfindlich.',
+      'RSI (14)':'<strong>Was wird gemessen?</strong><br>Der Relative Strength Index misst die Stärke und Geschwindigkeit von Kursbewegungen auf einer Skala von 0 bis 100. Über 70 gilt als überkauft, unter 30 als überverkauft.<br><br><strong>Warum ist das relevant?</strong><br>Extreme RSI-Werte können auf kurzfristige Erschöpfungsphasen hindeuten – nach oben wie nach unten. Sehr tiefe Werte (unter 25) können Panikphasen signalisieren, die historisch oft Einstiegsfenster waren.<br><br><strong>Wann wird es kritisch?</strong><br>Ein RSI unter 30 allein reicht nicht. Entscheidend ist, ob er mit weiteren Stresssignalen zusammenläuft und ob die Bewegung mehrere Tage anhält statt nur ein Tages-Spike zu sein.<br><br><strong>Signalrolle:</strong><br>Frühwarnsignal. Kurzfristig nützlich, aber sehr rauschempfindlich. Sollte nie allein als Handlungssignal gelesen werden.',
+      'Drawdown vom Hoch':'<strong>Was wird gemessen?</strong><br>Der prozentuale Rückgang vom letzten Allzeithoch oder lokalen Hoch. Zeigt, wie viel Wert vom Höchstkurs verloren gegangen ist.<br><br><strong>Warum ist das relevant?</strong><br>Er macht strukturellen Druck sichtbar. Ein kurzer 5-%-Einbruch ist normales Rauschen. Ein anhaltender 20-%-Drawdown ist eine andere Qualität.<br><br><strong>Wann wird es kritisch?</strong><br>Bei Rückgängen über 10 % steigt das Risiko struktureller Brüche. Drawdowns über 20 % gelten als Bärenmarkt-Niveau und gehen oft mit erhöhter Rezessionswahrscheinlichkeit einher.<br><br><strong>Signalrolle:</strong><br>Bestätigungssignal. Bestätigt, was Trend und VIX bereits angezeigt haben – seltener selbst Frühwarnung.',
+      'Shiller CAPE':'<strong>Was wird gemessen?</strong><br>Das Kurs-Gewinn-Verhältnis des S&P 500, berechnet auf Basis der inflationsbereinigten Durchschnittsgewinne der letzten 10 Jahre (daher auch: CAPE = Cyclically Adjusted Price-to-Earnings).<br><br><strong>Warum ist das relevant?</strong><br>Kurzzeitige Gewinnschwankungen werden geglättet. Das CAPE zeigt, ob Aktien langfristig eher günstig oder teuer bewertet sind. Historisch war ein hohes CAPE oft mit niedrigeren Folge-Renditen verbunden.<br><br><strong>Wann wird es kritisch?</strong><br>Ein CAPE deutlich über 30 deutet auf ambitionierte Bewertungen hin, die externe Schocks weniger gut abfedern können. Es sagt aber nichts über den Zeitpunkt einer Korrektur – hohe Bewertungen können jahrelang hoch bleiben.<br><br><strong>Signalrolle:</strong><br>Langfristiger Kontext-Indikator. Hilft bei der Einordnung von Fehlertoleranz und Risikoniveau, ist aber kein Timing-Signal.',
+      'Buffett-Indikator':'<strong>Was wird gemessen?</strong><br>Das Verhältnis der gesamten US-Aktienmarktkapitalisierung zum nominalen BIP der USA. Warren Buffett bezeichnete es als einen seiner bevorzugten Indikatoren für die gesamthafte Marktbewertung.<br><br><strong>Warum ist das relevant?</strong><br>Er setzt das eingepreiste Unternehmensvermögen in Relation zur realen Wirtschaftsleistung. Bei sehr hohen Werten (über 150–180 %) ist der Markt im historischen Vergleich stark überbewertet.<br><br><strong>Wann wird es kritisch?</strong><br>Werte deutlich über dem langfristigen Mittelwert (ca. 85–100 %) deuten auf ein ambitioniertes Bewertungsumfeld hin. Das erhöht die Verwundbarkeit bei schlechten Nachrichten, sagt aber nicht, wann eine Korrektur kommt.<br><br><strong>Signalrolle:</strong><br>Langfristiges Bewertungssignal. Kein Timing-Instrument, aber ein nützliches Barometer für strukturelle Überbe- oder Unterbewertung.',
+      'Gewinnwachstum':'<strong>Was wird gemessen?</strong><br>Das geschätzte oder realisierte Gewinnwachstum der S&P-500-Unternehmen im Jahresvergleich.<br><br><strong>Warum ist das relevant?</strong><br>Bewertungen wie das KGV hängen davon ab, ob die Gewinne tatsächlich mitwachsen. Kräftiges Gewinnwachstum kann eine hohe Bewertung rechtfertigen. Stagnation oder Rückgänge machen Bewertungen schnell fragil.<br><br><strong>Wann wird es kritisch?</strong><br>Wenn Gewinnerwartungen fallen und Marktbewertungen weiterhin hoch bleiben. Das erhöht den Korrekturspielraum deutlich.<br><br><strong>Signalrolle:</strong><br>Fundamentales Bestätigungssignal. Wichtig für die Einordnung, ob Bewertungen von echter Ertragsstärke getragen werden oder nur von Liquidität.',
+      'Zinsumfeld':'<strong>Was wird gemessen?</strong><br>Das aktuelle Zinsniveau – typischerweise der US-Leitzins (Fed Funds Rate) oder die 10-Jahres-Rendite – und seine Wirkung auf das Marktumfeld.<br><br><strong>Warum ist das relevant?</strong><br>Zinsen beeinflussen Finanzierungskosten, Unternehmensbewertungen und Kapitalallokation. Höhere Zinsen verteuern Kredite, drücken auf Bewertungsmultiplikatoren und erhöhen den Druck auf zinssensitive Marktsegmente.<br><br><strong>Wann wird es kritisch?</strong><br>Wenn Zinsen hoch bleiben, obwohl Wachstum nachlässt – das klassische Rezessionsumfeld. Oder wenn Zinsen plötzlich stark steigen, was Bewertungsschocks erzeugen kann.<br><br><strong>Signalrolle:</strong><br>Bestätigungssignal. Zinsen kommen selten als erste Warnung, verstärken aber den Druck auf andere Signale deutlich.',
+      'Wachstum':'<strong>Was wird gemessen?</strong><br>Konjunkturdaten wie BIP-Wachstum, ISM-Indizes oder Einkaufsmanager-Umfragen, die zeigen, wie robust oder fragil die realwirtschaftliche Lage ist.<br><br><strong>Warum ist das relevant?</strong><br>Unternehmensgewinne, Konsumnachfrage und Kreditqualität hängen vom Wirtschaftswachstum ab. Nachlassendes Wachstum erhöht die Wahrscheinlichkeit von Gewinnrevisionen und erhöhten Kreditausfällen.<br><br><strong>Wann wird es kritisch?</strong><br>Wenn Wachstumsabschwächung mit gleichzeitig hohem Zinsniveau und erhöhtem Marktstress zusammentrifft. Die Kombination erzeugt mehr Druck als jeder Faktor allein.<br><br><strong>Signalrolle:</strong><br>Bestätigungssignal. Wachstum ist eher träger Indikator, der Entwicklungen bestätigt als ankündigt.',
+      'Rezessionsindikatoren':'<strong>Was wird gemessen?</strong><br>Modellbasierte Rezessionswahrscheinlichkeit (z. B. FRED RECPROUSM156N) kombiniert mit schnelleren Proxys wie der Sahm Rule, die Arbeitsmarktveränderungen misst.<br><br><strong>Warum ist das relevant?</strong><br>Rezessionen gehen typischerweise mit tieferen und länger anhaltenden Marktverlusten einher als normale Korrekturen. Eine steigende Rezessionswahrscheinlichkeit erhöht das strukturelle Risiko erheblich.<br><br><strong>Wann wird es kritisch?</strong><br>Wenn die Monatswahrscheinlichkeit über 20–30 % steigt und gleichzeitig die Sahm Rule anzieht. Beide zusammen sprechen für echten Konjunkturstress, nicht nur vorübergehende Schwäche.<br><br><strong>Signalrolle:</strong><br>Frühwarnsignal (Sahm Rule) plus Bestätigungssignal (Monatswahrscheinlichkeit). Die Kombination ist belastbarer als jede der Reihen allein.',
+      'Marktstimmung':'<strong>Was wird gemessen?</strong><br>Eine verdichtete Einordnung der aktuellen Stimmungslage am Markt – basierend auf Nachrichten, Verbrauchervertrauen und kurzfristig sichtbaren Risikowahrnehmungen.<br><br><strong>Warum ist das relevant?</strong><br>Stimmung beeinflusst kurzfristige Nachfrage, Risikobereitschaft und Reaktionen auf Nachrichten. Sehr pessimistische Stimmung kann paradoxerweise Einstiegsfenster signalisieren.<br><br><strong>Wann wird es kritisch?</strong><br>Wenn schlechte Stimmung mit harten Schwächesignalen wie Rezessionsindikatoren und steigendem Stress zusammenläuft.<br><br><strong>Signalrolle:</strong><br>Begleitsignal. Hilfreich für Kontext, aber allein leicht überinterpretierbar.',
+      'Auffällige Risiken':'<strong>Was steht hier?</strong><br>Aktuell relevante Risikofelder, die die Marktphase, Fehlertoleranz und Timing beeinflussen können – zusammengefasst aus Nachrichtenlage und Signal-Analyse.<br><br><strong>Warum ist das relevant?</strong><br>Nicht alle Risiken schlagen sofort auf Kurse durch. Aber bekannte, nicht eingepreiste Risiken erhöhen die Fragilität des Umfelds.<br><br><strong>Signalrolle:</strong><br>Kontextboard. Gibt keine Handlungsempfehlung, aber einen Überblick über das aktuelle Risikofeld.',
+      'Market Bottom Probability':'<strong>Was wird gemessen?</strong><br>Eine modellbasierte Einschätzung, wie wahrscheinlich es ist, dass der Markt nahe einem lokalen Tiefpunkt steht.<br><br><strong>Warum ist das relevant?</strong><br>Sie hilft zu unterscheiden, ob ein Rückgang eher eine Kaufgelegenheit oder der Beginn eines längeren Abschwungs ist.<br><br><strong>Wann ist sie erhöht?</strong><br>Bei sehr hohem VIX, deutlichem Drawdown, niedrigem RSI und gleichzeitig soliden Makrodaten – klassische Kombination aus Überreaktion und intaktem Fundament.<br><br><strong>Wichtig:</strong><br>Kein perfekter Timing-Indikator. Kombiniert mehrere Signale zu einer Wahrscheinlichkeit, keine Gewissheit.',
+      'Crash Probability':'<strong>Was wird gemessen?</strong><br>Eine modellbasierte Einschätzung, wie hoch das Risiko eines starken, beschleunigten Marktrückgangs (über 20–30 %) in naher Zukunft ist.<br><br><strong>Warum ist das relevant?</strong><br>Normale Korrekturen und echte Crashs unterscheiden sich in Tiefe, Geschwindigkeit und Erholungsdauer. Wer das Crash-Risiko grob einschätzen kann, kann emotionale Fehlreaktionen besser vermeiden.<br><br><strong>Wann ist sie erhöht?</strong><br>Bei gleichzeitig hohem Stressscore, steigenden Rezessionsindikatoren und fragiler Marktbreite – also wenn mehrere Belastungsachsen gleichzeitig aktiviert sind.<br><br><strong>Wichtig:</strong><br>Crashes sind per Definition selten und schwer vorherzusagen. Diese Zahl ist ein Risikobild, keine Gewissheit.',
+      'Timing-Qualität':'<strong>Was wird gemessen?</strong><br>Eine Einschätzung, ob das aktuelle Umfeld für neue Investitionsentscheidungen eher „zu früh", „optimal" oder „zu spät" wirkt.<br><br><strong>Warum ist das relevant?</strong><br>Wer zu früh einsteigt (vor Stabilisierung), riskiert weitere Verluste. Wer zu spät einsteigt (nach der Erholung), zahlt höhere Preise. Diese Einschätzung hilft, den aktuellen Standort im Zyklus grob einzuordnen.<br><br><strong>Wann ist sie besonders relevant?</strong><br>Nach größeren Kursrückgängen, wenn die Frage „jetzt einsteigen oder noch warten?" besonders drängend wird.<br><br><strong>Wichtig:</strong><br>Kein Garant für perfektes Timing. Eher eine strukturierte Denkgrundlage als ein mechanischer Trigger.'
+    };
+    function infoBtn(label){
+      const txt = infoMap[label] || 'Zusätzliche Einordnung für diesen Baustein.';
+      return `<span class="info-wrap"><button class="info-btn" type="button">i</button><span class="info-pop">${txt}</span></span>`;
+    }
+    function drawLine(canvasId, labels, datasets, cfg={}){
+      const el=document.getElementById(canvasId); if(!el||!window.Chart) return; const ctx=el.getContext('2d'); if(charts[canvasId]) charts[canvasId].destroy();
+      const baseOptions={responsive:true,maintainAspectRatio:false,animation:false,interaction:{mode:'nearest',intersect:false},plugins:{legend:{labels:{color:'#c5d4e4'}},tooltip:{displayColors:true,backgroundColor:'rgba(12,18,28,.96)',borderColor:'rgba(255,255,255,.14)',borderWidth:1,titleColor:'#edf3fb',bodyColor:'#d5e1ec',padding:10}},scales:{x:{ticks:{color:'#8fa7c0',maxTicksLimit:6,maxRotation:0},grid:{display:false},title:{display:!!cfg.xTitle,text:cfg.xTitle,color:'#8fa7c0'}},y:{ticks:{color:'#8fa7c0'},grid:{color:'rgba(255,255,255,.08)'},title:{display:!!cfg.yTitle,text:cfg.yTitle,color:'#8fa7c0'}}}};
+      if(cfg.yMin!=null) baseOptions.scales.y.min=cfg.yMin;
+      if(cfg.yMax!=null) baseOptions.scales.y.max=cfg.yMax;
+      if(cfg.yTickStep!=null) baseOptions.scales.y.ticks.stepSize=cfg.yTickStep;
+      if(cfg.extraScales) Object.assign(baseOptions.scales, cfg.extraScales);
+      if(cfg.plugins) Object.assign(baseOptions.plugins, cfg.plugins);
+      charts[canvasId]=new Chart(ctx,{type:'line',data:{labels,datasets},options:baseOptions});
+    }
+    async function loadFacts(){
+      const fallback = await fetch('./data/facts_figures.json', {cache:'no-store'}).then(r=>r.json()).catch(()=>null);
+      if(!fallback) return;
+      document.getElementById('ff-fresh').textContent = fmtDateTime(fallback.generatedAt);
+      document.getElementById('hero-foot').textContent = 'Stand: ' + fmtDateTime(fallback.generatedAt);
+      document.getElementById('hero-phase').textContent = fallback.marketStatus?.phase?.title || '—';
+      document.getElementById('hero-summary').textContent = fallback.marketStatus?.phase?.status || '—';
+      document.getElementById('ff-source').textContent = (fallback.meta?.sourceSummary || []).join(' · ');
+      function renderOverviewKpi(x){
+        const toneClass = x.tone==='h'?'tone-h':x.tone==='m'?'tone-m':x.tone==='l'?'tone-l':'';
+        const numHtml = x.numValue != null
+          ? `<div class="kpi-num ${toneClass}">${typeof x.numValue==='number'?x.numValue.toLocaleString('de-DE',{minimumFractionDigits:1,maximumFractionDigits:1}):x.numValue}${x.unit?`<span class="kpi-unit"> ${x.unit}</span>`:''}</div>`
+          : '';
+        return `<div class="kpi-card"><div class="box-head"><div class="kpi-label">${x.label}</div>${infoBtn(x.label)}</div>${numHtml}<div class="${x.numValue!=null?'kpi-value-sub':'kpi-value'}">${x.value||'—'}</div><div class="kpi-note">${x.note||'—'}</div></div>`;
+      }
+      document.getElementById('market-overview-grid').innerHTML = [
+        {label:'Marktphase', value:fallback.marketStatus?.phase?.title, numValue:fallback.marketStatus?.phase?.value, unit:fallback.marketStatus?.phase?.unit||'', tone:fallback.marketStatus?.phase?.tone, note:fallback.marketStatus?.phase?.status},
+        {label:'VIX', value:fallback.marketStatus?.vix?.title, numValue:fallback.marketStatus?.vix?.value, unit:'', tone:fallback.marketStatus?.vix?.tone, note:fallback.marketStatus?.vix?.status},
+        {label:'Marktbreite', value:fallback.marketStatus?.breadth?.title, numValue:fallback.marketStatus?.breadth?.value, unit:fallback.marketStatus?.breadth?.unit||'%', tone:fallback.marketStatus?.breadth?.tone, note:fallback.marketStatus?.breadth?.status},
+        {label:'Gesamtmodus', value:fallback.overallMode?.title, numValue:fallback.overallMode?.value, unit:fallback.overallMode?.unit||'', tone:fallback.overallMode?.tone, note:fallback.overallMode?.status}
+      ].map(renderOverviewKpi).join('');
+      function renderMiniCard(x){
+        const hasVal = x.value != null && x.value !== '';
+        const toneClass = x.tone === 'h' ? 'tone-h' : x.tone === 'm' ? 'tone-m' : x.tone === 'l' ? 'tone-l' : '';
+        const valHtml = hasVal ? `<div class="mini-value ${toneClass}">${x.value}${x.unit ? '<span class="mini-unit"> '+x.unit+'</span>' : ''}</div>` : '';
+        const histHtml = (x.history && x.history.length > 1) ? `<canvas class="mini-sparkline" data-spark='${JSON.stringify(x.history)}'></canvas>` : '';
+        return `<div class="mini"><div class="mini-head"><h3>${x.label}</h3>${infoBtn(x.label)}</div>${valHtml}<p>${x.status}</p>${histHtml}</div>`;
+      }
+      document.getElementById('technical-grid').innerHTML = (fallback.technicalTriggers||[]).map(renderMiniCard).join('');
+      document.getElementById('valuation-grid').innerHTML = (fallback.valuation||[]).map(renderMiniCard).join('');
+      document.getElementById('macro-grid').innerHTML = (fallback.macro||[]).map(renderMiniCard).join('');
+      // Draw sparklines after render
+      document.querySelectorAll('.mini-sparkline').forEach(canvas=>{
+        try{
+          const data = JSON.parse(canvas.dataset.spark||'[]');
+          if(!data.length || !window.Chart) return;
+          const vals = data.map(p=>typeof p==='object'?(p.value??p.v??null):p).filter(v=>v!=null);
+          if(vals.length<2) return;
+          canvas.height=44;
+          const ctx=canvas.getContext('2d');
+          const mn=Math.min(...vals), mx=Math.max(...vals), rng=mx-mn||1;
+          const w=canvas.offsetWidth||180, h=44, pad=4;
+          canvas.width=w;
+          ctx.clearRect(0,0,w,h);
+          const pts=vals.map((v,i)=>([pad+(i/(vals.length-1))*(w-2*pad), h-pad-(v-mn)/rng*(h-2*pad)]));
+          ctx.beginPath(); ctx.moveTo(pts[0][0],pts[0][1]);
+          pts.slice(1).forEach(p=>ctx.lineTo(p[0],p[1]));
+          ctx.strokeStyle='rgba(143,196,255,.6)'; ctx.lineWidth=1.5; ctx.stroke();
+        }catch(e){}
+      });
+      document.getElementById('sentiment-copy').textContent = fallback.sentiment?.marketMood || '—';
+      document.getElementById('sentiment-tags').innerHTML = (fallback.sentiment?.tags||[]).map(t=>`<span class="tag">${t}</span>`).join('');
+      document.getElementById('risk-list').innerHTML = (fallback.sentiment?.risks||[]).map(r=>`<li>${r}</li>`).join('');
+      document.getElementById('geo-table').innerHTML = (fallback.geopolitics||[]).map(x=>`<tr><td>${x.field}</td><td>${x.status}</td><td>${x.impact}</td></tr>`).join('');
+      document.getElementById('probability-grid').innerHTML = [fallback.marketBottomProbability, fallback.crashProbability, fallback.timingQuality].filter(Boolean).map(x=>`<div class="mini"><div class="mini-head"><h3>${x.title}</h3>${infoBtn(x.title)}</div><div class="mini-value" style="font-size:28px;font-weight:800;margin:6px 0 8px">${x.scoreLabel}</div><p>${x.reason}</p>${x.interpretation?`<p style="margin-top:10px;color:var(--text3);font-size:13px">${x.interpretation}</p>`:''}</div>`).join('');
+      document.getElementById('positive-triggers').innerHTML = (fallback.updateTriggers?.positive||[]).map(x=>`<li>${x}</li>`).join('');
+      document.getElementById('refresh-triggers').innerHTML = (fallback.updateTriggers?.refresh||[]).map(x=>`<li>${x}</li>`).join('');
+      document.getElementById('tim-market').textContent = fallback.timeVsTiming?.timeInMarket || '—';
+      document.getElementById('tim-timing').textContent = fallback.timeVsTiming?.marketTiming || '—';
+      document.getElementById('tim-summary').textContent = fallback.timeVsTiming?.summary || '—';
+      const qqq = fallback.charts?.qqq || []; const rsi = fallback.charts?.rsi || []; const vix = fallback.charts?.vix || []; const brent = fallback.charts?.brent || [];
+      const chartLabel = fallback.charts?.chartLabel || 'QQQ Schlusskurs';
+      const validQqq = qqq.filter(p=>p.close && p.close > 2);  // drop zero/normalized values
+      if(validQqq.length>1){
+        const qqHead = document.querySelector('#technical-grid').closest('.section')?.querySelector('.chart-card h3');
+        if(qqHead) qqHead.textContent = chartLabel + ': 50T vs. 200T';
+        drawLine('chart-qqq', validQqq.map(p=>p.date), [{label:chartLabel,data:validQqq.map(p=>p.close),borderColor:'#8fc4ff',backgroundColor:'#8fc4ff',tension:.25,borderWidth:2,pointRadius:0},{label:'50T',data:validQqq.map(p=>p.ma50??null),borderColor:'#53d39f',backgroundColor:'#53d39f',tension:.2,borderWidth:2,pointRadius:0},{label:'200T',data:validQqq.map(p=>p.ma200??null),borderColor:'#f6ba62',backgroundColor:'#f6ba62',tension:.2,borderWidth:2,pointRadius:0}], {xTitle:'Zeit', yTitle:'Indexstand'});
+      } else {
+        const wrap=document.querySelector('.chart-wrap'); if(wrap&&wrap.id!=='chart-stress') { wrap.innerHTML='<p style="color:var(--text3);font-size:13px;padding:60px 0;text-align:center">Kursdaten werden beim nächsten Update geladen.</p>'; }
+      }
+      if(rsi.length>1){
+        drawLine('chart-rsi', rsi.map(p=>p.date), [
+          {label:'RSI (14)',data:rsi.map(p=>p.value),borderColor:'#53d39f',backgroundColor:'#53d39f',tension:.22,borderWidth:2,pointRadius:0},
+          {label:'Überkaufszone (70)',data:rsi.map(()=>70),borderColor:'rgba(246,186,98,.95)',backgroundColor:'rgba(246,186,98,.95)',borderDash:[6,6],tension:0,borderWidth:1.5,pointRadius:0},
+          {label:'Überverkaufszone (30)',data:rsi.map(()=>30),borderColor:'rgba(255,122,122,.95)',backgroundColor:'rgba(255,122,122,.95)',borderDash:[6,6],tension:0,borderWidth:1.5,pointRadius:0}
+        ], {xTitle:'Zeit', yTitle:'RSI', yMin:0, yMax:100, yTickStep:20, plugins:{annotation:false}});
+      } else {
+        const rsiWrap=document.getElementById('chart-rsi')?.parentElement; if(rsiWrap) rsiWrap.innerHTML='<p style="color:var(--text3);font-size:13px;padding:60px 0;text-align:center">RSI-Verlauf wird beim nächsten Update geladen.</p>';
+      }
+      drawLine('chart-stress', vix.map(p=>p.date), [{label:'VIX',data:vix.map(p=>p.value),borderColor:'#ff7a7a',backgroundColor:'#ff7a7a',tension:.25,borderWidth:2,pointRadius:0,yAxisID:'y'},{label:'Brent',data:brent.map(p=>p.value),borderColor:'#f6ba62',backgroundColor:'#f6ba62',tension:.25,borderWidth:2,pointRadius:0,yAxisID:'y1'}], {xTitle:'Zeit', yTitle:'VIX', extraScales:{y1:{position:'right',ticks:{color:'#8fa7c0'},grid:{display:false},title:{display:true,text:'Brent',color:'#8fa7c0'}}}});
+    }
+    loadTicker();
+    loadFacts();
+  </script>
+</body>
+</html>
