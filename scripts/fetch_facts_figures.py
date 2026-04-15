@@ -19,7 +19,7 @@ Wilshire / Buffett note:
 """
 
 from __future__ import annotations
-import gzip, json, os, re, sys, urllib.error, urllib.parse, urllib.request
+import csv, gzip, io, json, os, re, sys, urllib.error, urllib.parse, urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -174,6 +174,68 @@ def rsi14_series(closes: list[float], period: int = 14) -> list[float | None]:
     return out
 
 
+def stooq_history(symbol: str, years: int = 3) -> list[dict]:
+    url = f"https://stooq.com/q/d/l/?s={symbol}&i=d"
+    try:
+        raw = http_get(url, timeout=18).decode("utf-8", errors="replace")
+        rows = list(csv.DictReader(io.StringIO(raw)))
+        cutoff = (NOW - timedelta(days=365 * years)).date()
+        out = []
+        for row in rows:
+            ds = (row.get("Date") or row.get("date") or "").strip()
+            close_s = (row.get("Close") or row.get("close") or "").strip()
+            if not ds or not close_s:
+                continue
+            try:
+                d = datetime.strptime(ds, "%Y-%m-%d").date()
+                v = float(close_s)
+            except Exception:
+                continue
+            if d < cutoff or v <= 0:
+                continue
+            out.append({"date": ds, "value": round(v, 2)})
+        print(f"  ✓ STOOQ {symbol}: {len(out)} obs")
+        return out
+    except Exception as e:
+        print(f"  ✗ STOOQ {symbol}: {e}", file=sys.stderr)
+        return []
+
+
+def scrape_cape_alt() -> float | None:
+    targets = [
+        ("https://www.currentmarketvaluation.com/models/s&p500-mean-reversion.php", [
+            r'Shiller P/E Ratio[^\d]{0,80}([\d]{1,3}\.[\d]{1,2})',
+            r'10-Year P/E Ratio[^\d]{0,80}([\d]{1,3}\.[\d]{1,2})',
+        ]),
+        ("https://www.currentmarketvaluation.com/models/price-earnings.php", [
+            r'Shiller P/E Ratio[^\d]{0,80}([\d]{1,3}\.[\d]{1,2})',
+            r'Current[^\d]{0,40}([\d]{1,3}\.[\d]{1,2})',
+        ]),
+    ]
+    for url, patterns in targets:
+        try:
+            html = http_get(url, timeout=18).decode("utf-8", errors="replace")
+            for pat in patterns:
+                m = re.search(pat, html, flags=re.I | re.S)
+                if m:
+                    val = float(m.group(1))
+                    if 5 < val < 100:
+                        print(f"  ✓ CAPE alt scrape: {val}")
+                        return val
+        except Exception as e:
+            print(f"  ✗ CAPE alt scrape ({url[-35:]}): {e}", file=sys.stderr)
+    return None
+
+
+def fallback_meta(label: str, reason: str, next_update_hours: int = 4) -> dict:
+    return {
+        "label": label,
+        "reason": reason,
+        "nextUpdate": f"Nächster regulärer Versuch voraussichtlich in rund {next_update_hours} Stunden.",
+        "tooltip": f"Fallback aktiv: {label}. {reason} Für dich bedeutet das: Die Kennzahl bleibt sichtbar, basiert aber in diesem Lauf auf einer Ersatzquelle oder einem Ersatz-Proxy. Nächster regulärer Versuch voraussichtlich in rund {next_update_hours} Stunden.",
+    }
+
+
 # ─── Shiller CAPE scraper ─────────────────────────────────────────────────────
 def scrape_cape() -> float | None:
     """
@@ -260,8 +322,7 @@ def buffett_indicator(
 def cape_classify(v: float | None) -> tuple[str, str, str]:
     if v is None:
         return ("m", "—",
-                "Shiller CAPE temporär nicht verfügbar. Quelle (multpl.com) "
-                "nicht erreichbar – wird beim nächsten Update erneut versucht.")
+                "Shiller CAPE temporär nicht verfügbar. Primärquelle nicht erreichbar – wird beim nächsten Update erneut versucht.")
     if v < 15:
         return ("l", "Historisch günstig",
                 f"Shiller CAPE bei {v:.1f}. Seltene Bewertungsgelegenheit.")
@@ -282,8 +343,7 @@ def cape_classify(v: float | None) -> tuple[str, str, str]:
 def buffett_classify(v: float | None) -> tuple[str, str]:
     if v is None:
         return ("m",
-                "Buffett-Indikator temporär nicht verfügbar. "
-                "Wilshire 5000 oder GDP-Daten konnten nicht abgerufen werden.")
+                "Buffett-Indikator temporär nicht verfügbar. Marktwert- oder GDP-Daten konnten nicht abgerufen werden.")
     if v < 75:
         return ("l", f"Buffett-Indikator bei {v:.0f} %. Historisch günstig – "
                      "Marktkapitalisierung klar unter Wirtschaftsleistung.")
@@ -567,56 +627,66 @@ def main() -> int:
     vix_obs   = hp(fred("VIXCLS",      DAILY_START), 2)
     brent_obs = hp(fred("DCOILBRENTEU", DAILY_START), 2)
 
-    # NASDAQ Composite – reliable FRED proxy for Growth / QQQ trend
-    print("\n[FRED – NASDAQ Composite as Growth proxy]")
-    nasdaq_raw  = hp(fred("NASDAQCOM", DAILY_START), 0)
+    # Growth proxy – prefer Stooq QQQ, fall back to FRED NASDAQ Composite
+    print("\n[Growth proxy]")
+    growth_fallback = None
+    chart_label = "QQQ"
+    chart_sub_label = "QQQ"
+    nasdaq_raw = stooq_history("qqq.us", years=3)
+    if not nasdaq_raw:
+        print("\n[FRED – NASDAQ Composite as Growth fallback]")
+        nasdaq_raw = hp(fred("NASDAQCOM", DAILY_START), 0)
+        chart_label = "NASDAQ Composite"
+        chart_sub_label = "NASDAQ Composite (Fallback)"
+        if nasdaq_raw:
+            growth_fallback = fallback_meta("Fallback: NASDAQ Composite", "QQQ-Kursdaten waren in diesem Lauf nicht zuverlässig erreichbar. Deshalb wird als Ersatz der NASDAQ Composite aus FRED verwendet.")
     nasdaq_vals = [p["value"] for p in nasdaq_raw]
 
-    # Wilshire 5000 – try multiple FRED series IDs
+    # Wilshire 5000 / market cap – try classic Wilshire IDs, then Fed market cap fallback
     print("\n[FRED – Wilshire 5000 for Buffett indicator]")
-    will_raw = hp(
-        fred_first(["WILL5000PRFC", "WILL5000IND", "WILL5000INDFC", "WILL5000PR"], DAILY_START),
-        0,
-    )
+    buffett_fallback = None
+    will_raw = hp(fred_first(["WILL5000PRFC", "WILL5000IND", "WILL5000INDFC", "WILL5000PR"], DAILY_START), 0)
+    if not will_raw:
+        will_raw = hp(fred("BOGZ1LM883164115Q", QUARTERLY_START), 0)
+        if will_raw:
+            buffett_fallback = fallback_meta("Fallback: Fed-Marktwertreihe", "Die üblichen Wilshire-5000-Reihen waren in diesem Lauf nicht verfügbar. Deshalb wird eine offizielle Fed-/FRED-Marktwertreihe für US-Aktien als Ersatz verwendet.")
 
     # ── 3. Shiller CAPE (scrape) ──────────────────────────────────────────────
     print("\n[CAPE scrape]")
     cape_val = scrape_cape()
+    cape_fallback = None
+    if cape_val is None:
+        cape_val = scrape_cape_alt()
+        if cape_val is not None:
+            cape_fallback = fallback_meta("Fallback: Current Market Valuation", "Die Primärquelle multpl.com war in diesem Lauf nicht erreichbar. Deshalb wird eine öffentlich zugängliche Ersatzquelle genutzt.")
 
     # ── 4. Buffett Indicator ──────────────────────────────────────────────────
     print("\n[Buffett]")
     buffett_val, buffett_hist = buffett_indicator(will_raw, gdp_nom)
 
-    # ── 5. Technical indicators from NASDAQ Composite ─────────────────────────
+    # ── 5. Technical indicators from Growth proxy ─────────────────────────────
     ma50_vals  = ma(nasdaq_vals, 50)
     ma200_vals = ma(nasdaq_vals, 200)
     rsi_vals   = rsi14_series(nasdaq_vals, 14)
 
-    idx_close = nasdaq_vals[-1]  if nasdaq_vals  else None
-    ma50_cur  = ma50_vals[-1]    if ma50_vals    else None
-    ma200_cur = ma200_vals[-1]   if ma200_vals   else None
-    idx_ath   = max(nasdaq_vals) if nasdaq_vals  else None
-    dd_val    = (round((idx_close / idx_ath - 1) * 100, 1)
-                 if idx_close and idx_ath else None)
+    idx_close = nasdaq_vals[-1] if nasdaq_vals else None
+    ma50_cur  = ma50_vals[-1] if ma50_vals else None
+    ma200_cur = ma200_vals[-1] if ma200_vals else None
+    idx_ath   = max(nasdaq_vals) if nasdaq_vals else None
+    dd_val    = (round((idx_close / idx_ath - 1) * 100, 1) if idx_close and idx_ath else None)
     rsi_val   = rsi14(nasdaq_vals)
+    spread_cur = round(((ma50_cur / ma200_cur) - 1) * 100, 1) if (ma50_cur not in (None, 0) and ma200_cur not in (None, 0)) else None
 
-    nasdaq_chart = [
-        {
-            "date":  nasdaq_raw[i]["date"],
+    nasdaq_chart = [{
+            "date": nasdaq_raw[i]["date"],
             "close": nasdaq_raw[i]["value"],
-            "ma50":  ma50_vals[i],
+            "ma50": ma50_vals[i],
             "ma200": ma200_vals[i],
-            "spreadPct": round(((ma50_vals[i] / ma200_vals[i]) - 1) * 100, 2) if (ma50_vals[i] is not None and ma200_vals[i] not in (None, 0)) else None,
-        }
-        for i in range(len(nasdaq_raw))
-    ]
-    rsi_chart = [
-        {"date": nasdaq_raw[i]["date"], "value": rsi_vals[i]}
-        for i in range(len(nasdaq_raw)) if rsi_vals[i] is not None
-    ]
+            "spreadPct": round(((ma50_vals[i] / ma200_vals[i]) - 1) * 100, 2) if (ma50_vals[i] not in (None, 0) and ma200_vals[i] not in (None, 0)) else None,
+        } for i in range(len(nasdaq_raw))]
+    rsi_chart = [{"date": nasdaq_raw[i]["date"], "value": rsi_vals[i]} for i in range(len(nasdaq_raw)) if rsi_vals[i] is not None]
 
     # ── 6. Classify ───────────────────────────────────────────────────────────
-    chart_label = "NASDAQ Composite"
 
     cape_tone,  _,         cape_status  = cape_classify(cape_val)
     buff_tone,  buff_status             = buffett_classify(buffett_val)
@@ -626,7 +696,7 @@ def main() -> int:
     rec_tone,   rec_status              = rec_classify(rec_prob, sahm)
     vix_tone,   vix_title,  vix_note    = vix_classify(vix_now)
     ph_tone,    ph_title,   ph_status   = phase_classify(stress)
-    tr_tone,    tr_title,   tr_note     = trend_classify(idx_close, ma50_cur, ma200_cur, chart_label)
+    tr_tone,    tr_title,   tr_note     = trend_classify(idx_close, ma50_cur, ma200_cur, chart_sub_label)
     rsi_tone,   rsi_title,  rsi_note    = rsi_classify(rsi_val)
     dd_tone,    dd_title,   dd_note     = drawdown_classify(dd_val)
 
@@ -655,7 +725,7 @@ def main() -> int:
         "generatedAt": NOW.isoformat(),
         "meta": {
             "schemaVersion": "1.0",
-            "sourceSummary": ["latest.json", "FRED", "Multpl"],
+            "sourceSummary": ["latest.json", "FRED", "Stooq", "Multpl", "Current Market Valuation"],
         },
         "marketStatus": {
             "phase": {
@@ -690,27 +760,30 @@ def main() -> int:
         "technicalTriggers": [
             {
                 "label":   "50T vs. 200T",
-                "value":   round(idx_close, 0) if idx_close else None,
-                "unit":    "",
+                "value":   spread_cur,
+                "unit":    "%",
                 "tone":    tr_tone,
-                "status":  tr_note,
-                "history": [{"value": p["value"]} for p in nasdaq_raw[-90:]],
+                "status":  (f"50T liegt bei {spread_cur:+.1f} % gegenüber dem 200T. Schlusskurs {idx_close:.0f}, 50T {ma50_cur:.0f}, 200T {ma200_cur:.0f}. " + tr_note) if None not in (spread_cur, idx_close, ma50_cur, ma200_cur) else tr_note,
+                "history": [{"value": p.get("spreadPct")} for p in nasdaq_chart[-90:] if p.get("spreadPct") is not None],
+                "fallback": growth_fallback,
             },
             {
                 "label":   "RSI (14)",
                 "value":   rsi_val,
                 "unit":    "",
-                "tone":    rsi_tone,
+                "tone":    ("h" if rsi_val is not None and rsi_val >= 70 else "l" if rsi_val is not None and rsi_val <= 30 else rsi_tone),
                 "status":  rsi_note,
-                "history": [],
+                "history": [{"value": p["value"]} for p in rsi_chart[-90:]],
+                "fallback": growth_fallback,
             },
             {
                 "label":   "Drawdown vom Hoch",
                 "value":   dd_val,
                 "unit":    "%",
-                "tone":    dd_tone,
+                "tone":    ("h" if dd_val is not None and dd_val < 0 else "l"),
                 "status":  dd_note,
                 "history": [],
+                "fallback": growth_fallback,
             },
         ],
         "valuation": [
@@ -721,6 +794,7 @@ def main() -> int:
                 "tone":    cape_tone,
                 "status":  cape_status,
                 "history": [],
+                "fallback": cape_fallback,
             },
             {
                 "label":   "Buffett-Indikator",
@@ -729,6 +803,7 @@ def main() -> int:
                 "tone":    buff_tone,
                 "status":  buff_status,
                 "history": spark(buffett_hist, 60),
+                "fallback": buffett_fallback,
             },
             {
                 "label":   "Gewinnwachstum",
@@ -809,6 +884,7 @@ def main() -> int:
         },
         "charts": {
             "chartLabel": chart_label,
+            "growthFallback": growth_fallback,
             "qqq":   nasdaq_chart[-300:],
             "rsi":   rsi_chart[-300:],
             "vix":   [{"date": p["date"], "value": p["value"]} for p in vix_obs[-300:]],
