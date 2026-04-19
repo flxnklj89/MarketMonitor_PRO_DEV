@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-19T06:19:13.822736+00:00",
+  "fetchedAt": "2026-04-19T10:10:25.776417+00:00",
   "meta": {
     "schemaVersion": "4.0-pro",
     "source": "FRED + Google News RSS",
@@ -20641,9 +20641,9 @@
       ]
     },
     {
-      "title": "How Will Dow Jones Futures, Oil Prices React As Iran, Hormuz News Turns?",
+      "title": "Dow Jones Futures, Oil Prices In Focus As Iran, Hormuz News Turns",
       "source": "Investor's Business Daily",
-      "publishedAt": "2026-04-18T22:53:00+00:00",
+      "publishedAt": "2026-04-19T03:09:00+00:00",
       "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPQ3lrbjRsUGN0cmJSM1lEZ2Z5RDNsUkVnZkg3MXpIYUdhTnk3aXZtWlREblFNMXU0OTYxQThRMDI4WmFlYnJJLW05aGtnZlVqSHFHSmtNSllfUTNQckVVc1lWbkVISkJoMm5NOS1vd2JWdFRSNDBUc0hjczJSRlI5cjYwODJFSlZXOVhDMFA0bTR4Ny1lcUVYaXd4a0lob2g3LVc0VVMzOU9icGRPQ3ByRkNQb1d0Nl90cnd3?oc=5",
       "bucket": "Energie / Inflation",
       "summary": "Die Meldung betrifft Energiepreise oder Lieferwege. Das ist wichtig, weil Energie direkt auf Inflation, Transportkosten und Risikoappetit wirkt.",
@@ -20663,6 +20663,23 @@
       "source": "WSJ",
       "publishedAt": "2026-04-19T03:00:00+00:00",
       "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNbDg1U3FCUjE4TDhFa09hTi1ILVFEWkdVbWdQdGlkclBwQ3JpR1NUX2RwQlM2OGwwdDY3TnhydkdIaFFrZENYbFVHejBTQ0p0NXhyRFJMb2RoWDY1cVBSeVUybkNFN3doeG5UZHVrVzZCNy1pcDRRNy1PeHNGWUdlRnRndHBPSHhvS2ZxOVpRRUstREM0ZGNQWk5n?oc=5",
+      "bucket": "Marktkontext",
+      "summary": "Die Meldung liefert zusätzlichen Kontext dafür, wie Risikoappetit, Wachstumserwartungen oder Inflation kurzfristig verschoben werden können.",
+      "impact": "Eher mittel. Der Effekt hängt davon ab, ob weitere Daten die Meldung bestätigen.",
+      "probability": "Mittel. Einzelmeldungen bewegen Märkte oft erst dann stärker, wenn Folgeinfos nachkommen.",
+      "horizon": "Kurzfristig bis einige Tage.",
+      "priceEffect": "Am ehesten betroffen sind breite Aktienindizes, Anleihen oder Währungen – je nachdem, worauf die Meldung einzahlt.",
+      "assets": [
+        "Aktien",
+        "Anleihen",
+        "Währungen"
+      ]
+    },
+    {
+      "title": "Prudential Financial, Inc. (PRU) Stock Price, News, Quote & History",
+      "source": "Yahoo Finance",
+      "publishedAt": "2026-04-19T07:55:24+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBhMkxGbFdteEhDS1VOay1hS2w1SDMzcTNJNllKeG41YzFCeDRKVlp1Qmk2Y3ZNcnA0VmNUaTlzTkpScFlra2hjcEQ4RFY?oc=5",
       "bucket": "Marktkontext",
       "summary": "Die Meldung liefert zusätzlichen Kontext dafür, wie Risikoappetit, Wachstumserwartungen oder Inflation kurzfristig verschoben werden können.",
       "impact": "Eher mittel. Der Effekt hängt davon ab, ob weitere Daten die Meldung bestätigen.",
@@ -20708,24 +20725,6 @@
         "Rohstoffe",
         "Inflation",
         "Transport"
-      ]
-    },
-    {
-      "title": "Oil prices plummet as Wall Street rallies to new record following Strait of Hormuz reopening",
-      "source": "PBS",
-      "publishedAt": "2026-04-17T14:14:15+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPNThabUE2dTVKcDJHR0ttbHhKdmxUM3Q4STJFMUNyOWRnMlBicFNMU09SUUpwbGZVOFpsSkRsY3hmNExnZUxFcG93X2hPSERsbHpWa3JISXlNd2lFWFdCbXhtSUF3UjNkcW1SNnR6dkdkMmVMUkVqdzJfcVlLN0QwdDduWl9RZUZWYXgxeXlad3NoajdXV2dBa19rV3ZoQUNrS1B6TEg0OVg4Z29KNENiakN5X3lCLXVfLV9iaXoySzYyR3pIcU5DYQ?oc=5",
-      "bucket": "Energie / Inflation",
-      "summary": "Die Meldung betrifft Energiepreise oder Lieferwege. Das ist wichtig, weil Energie direkt auf Inflation, Transportkosten und Risikoappetit wirkt.",
-      "impact": "Hoch, wenn der Preisanstieg anhält oder Lieferwege gestört bleiben.",
-      "probability": "Mittel bis hoch, wenn die Meldung anhaltende Angebotsknappheit beschreibt.",
-      "horizon": "Sofort bis einige Wochen.",
-      "priceEffect": "Vor allem Öl, Energieaktien, Inflationserwartungen, Staatsanleihen und zinssensitive Aktien könnten reagieren.",
-      "assets": [
-        "Öl",
-        "Energieaktien",
-        "Inflation",
-        "Staatsanleihen"
       ]
     }
   ],
@@ -20832,7 +20831,7 @@
       "actionMatrixKey": "caution"
     },
     "statusLine": {
-      "dataAsOf": "2026-04-19T06:19:13.822736+00:00",
+      "dataAsOf": "2026-04-19T10:10:25.776417+00:00",
       "updateCadence": "Gemischt: täglich bis jährlich",
       "systemNote": "Technische Meta-Informationen werden bewusst dezent gehalten."
     }
