@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-09T15:16:00.798937+00:00",
+  "generatedAt": "2026-05-09T17:03:36.264600+00:00",
   "meta": {
     "schemaVersion": "1.0",
     "sourceSummary": [
@@ -619,10 +619,10 @@
     },
     {
       "label": "Rezessionsindikatoren",
-      "value": 0.0,
+      "value": 1.8,
       "unit": "%",
       "tone": "l",
-      "status": "Noch kein bestätigter Crash-Makro-Modus, aber klar fragiler als in ruhigeren Marktphasen. Modell bei 0.0 %.",
+      "status": "Noch kein bestätigter Crash-Makro-Modus, aber klar fragiler als in ruhigeren Marktphasen. Modell bei 1.8 %.",
       "history": []
     }
   ],
@@ -668,7 +668,7 @@
     "title": "Crash Probability",
     "score": 8,
     "scoreLabel": "8 %",
-    "reason": "Stress 40/100, Rezessionsrisiko 0.0 %, VIX 17.1.",
+    "reason": "Stress 40/100, Rezessionsrisiko 1.8 %, VIX 17.1.",
     "interpretation": "Crash-Risiko derzeit begrenzt."
   },
   "timingQuality": {
@@ -6132,7 +6132,7 @@
     {
       "title": "Dow Jones Futures: Market At Highs With Iran, Trump-Xi Summit In Focus; Apple, Nvidia, Boeing In Buy Areas",
       "source": "Investor's Business Daily",
-      "publishedAt": "2026-05-09T12:44:00+00:00",
+      "publishedAt": "2026-05-09T15:09:00+00:00",
       "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNT212QXFVWWtZeF9LclY0NTZGSU9xNHd6XzRLemhWdW1yRS01b0ZqUEJBVFpsUHJqWEo4ckppeW14N3RuT1RzaDZ5aGgxUkhlYVpNOGJMUVBhaUdoSkc2RUZUN0xWSmpmeTQtX1RTSC05T3JEZDBrZUZSM0N0T0psWE1xbzNqa2h3Z0hNeV9TaXU3VFNJeFkwUHg5aGVSU1V0REVjUEkwa2d3OTJoYV9kb3FNaExHaHNL?oc=5",
       "bucket": "Marktkontext",
       "summary": "Die Meldung liefert zusätzlichen Kontext dafür, wie Risikoappetit, Wachstumserwartungen oder Inflation kurzfristig verschoben werden können.",
@@ -6181,23 +6181,6 @@
       ]
     },
     {
-      "title": "What to Look Out for in Economic Data This Week (May 11-15)",
-      "source": "Kiplinger",
-      "publishedAt": "2026-05-08T20:30:30+00:00",
-      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1MeVNwMVVnVmhvRWo4b0N4WkhCRXQxTVRtb2ZmTWhCSmd4eERsN3Nfdllwejg0eG5ueFFCRUdPTzVUaXh4dEFZaWJqN3FFZnlFWTBlZ2ZvVkFFRzVScTR3TXRhZGl6MHp2RUF1clppVDRvR1lveC1FaXNCeXQ?oc=5",
-      "bucket": "Marktkontext",
-      "summary": "Die Meldung liefert zusätzlichen Kontext dafür, wie Risikoappetit, Wachstumserwartungen oder Inflation kurzfristig verschoben werden können.",
-      "impact": "Eher mittel. Der Effekt hängt davon ab, ob weitere Daten die Meldung bestätigen.",
-      "probability": "Mittel. Einzelmeldungen bewegen Märkte oft erst dann stärker, wenn Folgeinfos nachkommen.",
-      "horizon": "Kurzfristig bis einige Tage.",
-      "priceEffect": "Am ehesten betroffen sind breite Aktienindizes, Anleihen oder Währungen – je nachdem, worauf die Meldung einzahlt.",
-      "assets": [
-        "Aktien",
-        "Anleihen",
-        "Währungen"
-      ]
-    },
-    {
       "title": "Wall St Week Ahead: Data, Iran, US-China meeting in focus for scorching US stock market",
       "source": "Reuters",
       "publishedAt": "2026-05-08T10:03:00+00:00",
@@ -6212,6 +6195,23 @@
         "Weltaktien",
         "Währungen",
         "Rohstoffe"
+      ]
+    },
+    {
+      "title": "What to Look Out for in Economic Data This Week (May 11-15)",
+      "source": "Kiplinger",
+      "publishedAt": "2026-05-08T20:30:30+00:00",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1MeVNwMVVnVmhvRWo4b0N4WkhCRXQxTVRtb2ZmTWhCSmd4eERsN3Nfdllwejg0eG5ueFFCRUdPTzVUaXh4dEFZaWJqN3FFZnlFWTBlZ2ZvVkFFRzVScTR3TXRhZGl6MHp2RUF1clppVDRvR1lveC1FaXNCeXQ?oc=5",
+      "bucket": "Marktkontext",
+      "summary": "Die Meldung liefert zusätzlichen Kontext dafür, wie Risikoappetit, Wachstumserwartungen oder Inflation kurzfristig verschoben werden können.",
+      "impact": "Eher mittel. Der Effekt hängt davon ab, ob weitere Daten die Meldung bestätigen.",
+      "probability": "Mittel. Einzelmeldungen bewegen Märkte oft erst dann stärker, wenn Folgeinfos nachkommen.",
+      "horizon": "Kurzfristig bis einige Tage.",
+      "priceEffect": "Am ehesten betroffen sind breite Aktienindizes, Anleihen oder Währungen – je nachdem, worauf die Meldung einzahlt.",
+      "assets": [
+        "Aktien",
+        "Anleihen",
+        "Währungen"
       ]
     }
   ]
