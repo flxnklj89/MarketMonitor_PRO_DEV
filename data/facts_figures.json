@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-15T21:14:23.799942+00:00",
+  "generatedAt": "2026-05-16T03:51:29.469364+00:00",
   "meta": {
     "schemaVersion": "1.0",
     "sourceSummary": [
@@ -43,10 +43,10 @@
   "technicalTriggers": [
     {
       "label": "50T vs. 200T",
-      "value": 2.5,
+      "value": 2.7,
       "unit": "%",
       "tone": "l",
-      "status": "50T liegt bei +2.5 % gegenüber dem 200T. Schlusskurs 26635, 50T 23496, 200T 22932. NASDAQ Composite (Fallback) über 50T (23496) und 200T (22932). Trendstruktur intakt.",
+      "status": "50T liegt bei +2.7 % gegenüber dem 200T. Schlusskurs 26225, 50T 23566, 200T 22957. NASDAQ Composite (Fallback) über 50T (23566) und 200T (22957). Trendstruktur intakt.",
       "history": [],
       "fallback": {
         "label": "Fallback: NASDAQ Composite",
@@ -56,10 +56,10 @@
     },
     {
       "label": "RSI (14)",
-      "value": 79.4,
+      "value": 69.8,
       "unit": "",
-      "tone": "h",
-      "status": "RSI (14) bei 79.4. Kurzfristige Erschöpfung möglich.",
+      "tone": "m",
+      "status": "RSI (14) bei 69.8. Kein Extremniveau in beide Richtungen.",
       "history": [],
       "fallback": {
         "label": "Fallback: NASDAQ Composite",
@@ -69,10 +69,10 @@
     },
     {
       "label": "Drawdown vom Hoch",
-      "value": 0.0,
+      "value": -1.5,
       "unit": "%",
       "tone": "l",
-      "status": "0.0 % vom Hoch. Kaum struktureller Druck.",
+      "status": "-1.5 % vom Hoch. Kaum struktureller Druck.",
       "history": []
     }
   ],
@@ -702,12 +702,6 @@
   "charts": {
     "chartLabel": "NASDAQ Composite",
     "qqq": [
-      {
-        "date": "2025-03-06",
-        "close": 18069.26,
-        "ma50": 19477.3,
-        "ma200": 18392.83
-      },
       {
         "date": "2025-03-07",
         "close": 18196.22,
@@ -2501,13 +2495,15 @@
         "close": 26635.22,
         "ma50": 23496.13,
         "ma200": 22931.75
+      },
+      {
+        "date": "2026-05-15",
+        "close": 26225.14,
+        "ma50": 23565.65,
+        "ma200": 22957.22
       }
     ],
     "rsi": [
-      {
-        "date": "2025-03-06",
-        "value": 31.9
-      },
       {
         "date": "2025-03-07",
         "value": 34.6
@@ -3703,6 +3699,10 @@
       {
         "date": "2026-05-14",
         "value": 79.4
+      },
+      {
+        "date": "2026-05-15",
+        "value": 69.8
       }
     ],
     "vix": [
@@ -6130,27 +6130,9 @@
       ]
     },
     {
-      "title": "Stocks drop from records as worries about oil prices rattle the bond market",
-      "source": "Los Angeles Times",
-      "publishedAt": "2026-05-15T20:21:00+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPV1lHSGtscHAzdEUwUUlSZFZJbkV0OEswQjkyUTEyb3V2SE5yUWVBQnR1X0J3Q1o1WW9NdmNCTlI3UE50RlpOM1Z4WklDZDdFaG5feVliOGVsbUlqMHZ0QXJXZWFORWdlM0Y2aUxleVpxQWNwczN2d3ZFSHdXV1Rmak8xVFpGWkJfM3RaZjNjZXJ0YUtwVmpkU2RJU2wwa05NLWpaV3ByS2J6aWhkZ0k5VnZ2TDhrVDctMzhqTHVlTFVRYmhfZzY3Z3N4eDQwNlhiVm9hWQ?oc=5",
-      "bucket": "Energie / Inflation",
-      "summary": "Die Meldung betrifft Energiepreise oder Lieferwege. Das ist wichtig, weil Energie direkt auf Inflation, Transportkosten und Risikoappetit wirkt.",
-      "impact": "Hoch, wenn der Preisanstieg anhält oder Lieferwege gestört bleiben.",
-      "probability": "Mittel bis hoch, wenn die Meldung anhaltende Angebotsknappheit beschreibt.",
-      "horizon": "Sofort bis einige Wochen.",
-      "priceEffect": "Vor allem Öl, Energieaktien, Inflationserwartungen, Staatsanleihen und zinssensitive Aktien könnten reagieren.",
-      "assets": [
-        "Öl",
-        "Energieaktien",
-        "Inflation",
-        "Staatsanleihen"
-      ]
-    },
-    {
       "title": "Stock markets worldwide drop from records as worries about oil prices rattle the bond market",
       "source": "AP News",
-      "publishedAt": "2026-05-15T17:35:00+00:00",
+      "publishedAt": "2026-05-15T21:30:00+00:00",
       "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPa1BOUzJhU0pMVUs2bUVZTTY4SkEtbXhBZ0VUcWtrMEdSb1RZNjhncXk0b0ZMNnVUM3lZbm1yaVVvWGVic0g3QUlldEtQVnh6anFYdml4eWJ5VFJqenJ5cldxYkJZMTN3T0lwblZGWk1GZUFucmF2QWl1bDNPUGM0Rmo3TUNIUlNMZWVjTXdCUUxEb3NfWVlYaw?oc=5",
       "bucket": "Energie / Inflation",
       "summary": "Die Meldung betrifft Energiepreise oder Lieferwege. Das ist wichtig, weil Energie direkt auf Inflation, Transportkosten und Risikoappetit wirkt.",
@@ -6166,10 +6148,10 @@
       ]
     },
     {
-      "title": "Stock market today: Dow falls as oil prices, yields jump; Applied Materials, Nvidia, Cerebras slide (live coverage)",
-      "source": "MSN",
-      "publishedAt": "2026-05-15T12:41:33+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilAJBVV95cUxOSDdUTFhWbUVRUGhUZUxGY1J5RV9MZGJMOFlZdHpEUlo5Z3ZrQmR2UUFIR3JKZU15RDU3R1JOTV8xYlFBc05PdlhiNGVQcktRWUFYNmlSMnBNUUwwT1pBQ2x3TXhRMXQ3cU9aVG9sanlwNVFBRjVTa1NYX0F5aTY0V3JGVWY1bFluY1EyVHJqc0stdkFWNFlNU3AwQ0x0dFV2RXQ3ODUzMjNMQl9NNVdVZjRPYUxPS0N5TThtS0hGRkdIa3pORjBPbFNpRUE2dDhNV0IyWmM3RFJtbDJicG5aUHU4SzZ4WEFIVUNfYzhKd3VYXzBGdDUyTDB5S3FLRTZmNlZKX2JVdEcxUTRoY21fc1owSU8?oc=5",
+      "title": "This Week's Market Wrap: Narrow Leadership, Oil and China Trip, and Hot Inflation",
+      "source": "financialsense.com",
+      "publishedAt": "2026-05-15T20:29:00+00:00",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNWGR5c1BaTVg3MVF4YVJ1WUFlRDVqOERUTmttaXJZM1BMalJLSHM4b0VlZFRPdHJTXzNuVmhQRzZBQk9uZ28tU2JiZl9iUldfT1ZnSjI2d0ktNHJOdXF0UElkZEt0ZTJqWkpITGpqQ2h1ZmZ1bkprblY1MHRXblJ4WjNEVXd2SGNOSmxSNEVJNXlYUFlEZE9oSnUxUk9MV05MR2RSMFVRVXdKNmpCNm1sQmJtMW0?oc=5",
       "bucket": "Energie / Inflation",
       "summary": "Die Meldung betrifft Energiepreise oder Lieferwege. Das ist wichtig, weil Energie direkt auf Inflation, Transportkosten und Risikoappetit wirkt.",
       "impact": "Hoch, wenn der Preisanstieg anhält oder Lieferwege gestört bleiben.",
@@ -6181,6 +6163,23 @@
         "Energieaktien",
         "Inflation",
         "Staatsanleihen"
+      ]
+    },
+    {
+      "title": "How major US stock indexes fared Friday 5/15/2026",
+      "source": "The Washington Post",
+      "publishedAt": "2026-05-16T01:30:06+00:00",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQd2x1eWZrdmk0TTI2YVFnRW9LMVRFX0IyRWRzWG9xYjNrT2VacXdaNUVkSmp0SEphRGJId1VsdmRXWW5Ja3BwNkxHV0hTRkhOa05jRk01YmZ0dWtXWEY0QlNIazQzNy0xeUVSUlJvMGZWNGFYN2lmeVZFVkFwX2txY3FVdHlhZlpqLW93aTFpakJnMS1KOHpjODA1Q21BZ0xxeGpXUlNUTEdGc2RzZGRYMWpnSEhQYnl5UEV0NjBtQnJEWTl4ZTVn?oc=5",
+      "bucket": "Marktkontext",
+      "summary": "Die Meldung liefert zusätzlichen Kontext dafür, wie Risikoappetit, Wachstumserwartungen oder Inflation kurzfristig verschoben werden können.",
+      "impact": "Eher mittel. Der Effekt hängt davon ab, ob weitere Daten die Meldung bestätigen.",
+      "probability": "Mittel. Einzelmeldungen bewegen Märkte oft erst dann stärker, wenn Folgeinfos nachkommen.",
+      "horizon": "Kurzfristig bis einige Tage.",
+      "priceEffect": "Am ehesten betroffen sind breite Aktienindizes, Anleihen oder Währungen – je nachdem, worauf die Meldung einzahlt.",
+      "assets": [
+        "Aktien",
+        "Anleihen",
+        "Währungen"
       ]
     },
     {
