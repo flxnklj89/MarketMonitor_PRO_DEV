@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-04T21:48:34.166963+00:00",
+  "generatedAt": "2026-06-05T04:38:23.847034+00:00",
   "meta": {
     "schemaVersion": "1.0",
     "sourceSummary": [
@@ -43,10 +43,10 @@
   "technicalTriggers": [
     {
       "label": "50T vs. 200T",
-      "value": 5.7,
+      "value": 6.0,
       "unit": "%",
       "tone": "l",
-      "status": "50T liegt bei +5.7 % gegenüber dem 200T. Schlusskurs 26854, 50T 24596, 200T 23274. NASDAQ Composite (Fallback) über 50T (24596) und 200T (23274). Trendstruktur intakt.",
+      "status": "50T liegt bei +6.0 % gegenüber dem 200T. Schlusskurs 26831, 50T 24697, 200T 23300. NASDAQ Composite (Fallback) über 50T (24697) und 200T (23300). Trendstruktur intakt.",
       "history": [],
       "fallback": {
         "label": "Fallback: NASDAQ Composite",
@@ -56,10 +56,10 @@
     },
     {
       "label": "RSI (14)",
-      "value": 68.1,
+      "value": 67.5,
       "unit": "",
       "tone": "m",
-      "status": "RSI (14) bei 68.1. Kein Extremniveau in beide Richtungen.",
+      "status": "RSI (14) bei 67.5. Kein Extremniveau in beide Richtungen.",
       "history": [],
       "fallback": {
         "label": "Fallback: NASDAQ Composite",
@@ -69,10 +69,10 @@
     },
     {
       "label": "Drawdown vom Hoch",
-      "value": -0.9,
+      "value": -1.0,
       "unit": "%",
       "tone": "l",
-      "status": "-0.9 % vom Hoch. Kaum struktureller Druck.",
+      "status": "-1.0 % vom Hoch. Kaum struktureller Druck.",
       "history": []
     }
   ],
@@ -702,12 +702,6 @@
   "charts": {
     "chartLabel": "NASDAQ Composite",
     "qqq": [
-      {
-        "date": "2025-03-25",
-        "close": 18271.86,
-        "ma50": 18997.3,
-        "ma200": 18451.57
-      },
       {
         "date": "2025-03-26",
         "close": 17899.01,
@@ -2501,13 +2495,15 @@
         "close": 26853.98,
         "ma50": 24596.03,
         "ma200": 23274.25
+      },
+      {
+        "date": "2026-06-04",
+        "close": 26830.96,
+        "ma50": 24697.42,
+        "ma200": 23300.26
       }
     ],
     "rsi": [
-      {
-        "date": "2025-03-25",
-        "value": 49.1
-      },
       {
         "date": "2025-03-26",
         "value": 43.7
@@ -3703,6 +3699,10 @@
       {
         "date": "2026-06-03",
         "value": 68.1
+      },
+      {
+        "date": "2026-06-04",
+        "value": 67.5
       }
     ],
     "vix": [
@@ -6112,10 +6112,27 @@
   },
   "news": [
     {
-      "title": "The Stock Market Has Been Here Precisely Once Before. Buckle Up as Kevin Warsh Tries to Land the Plane",
-      "source": "24/7 Wall St.",
-      "publishedAt": "2026-06-04T17:07:29+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPODVtOEhaU29yR0d2c2l0RGJQUnBSTnBaVk9YUC11MWdiUTJvTVlXOG16RnhwR3pacDBGQWpSZXBMZlpJbEpXQVZFUTZ5U2ZuR3FzSjNEa2M3VEp4LUthSk1xUlI4UjJFWFhEbzNtUm4wRjdTUTNfTi1HWWpDc201M2J4ZzZFUVFXRlROR0tOVXdFUmg1czdsd2xEdkpfWFVxV05UMDVYckRuZjVXTkJ3MEl0d1ZuQmhkNGppdlpJWGtzNF92RUhhSWxBM3JHSkF5TEdZZWIxSTV0UUdqSmc?oc=5",
+      "title": "Japan’s stock market hits new record as AI boom gathers steam",
+      "source": "Al Jazeera",
+      "publishedAt": "2026-06-03T06:20:56+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNdW1CX0thdWpoXzhJWHhNX2x1V3lQVGh4MmRlb21jWnZpcXZPSnRuQXZTQUZ2RnlCajJETVp4U1lqc2R2WTFadC1xam9GNU1pNVFBb1N6bjE4X3ZyaXlXME1sVlRscHR4VGVJNk9MS0hKUmlMS2hKYlNaMVJvbEp6ZUVQLXJ5M3NINXRpdmV0VnpIZVpYTzNUT0hDMmxsSEFSaVA5NUZB0gGrAUFVX3lxTE5GWnZHSXFmRjVCbWMzUjlublN3ZmFqYXU2WDI4Z3hjaTZCU0xyQWx1NmoycEdhZEhiVHB3MTlFUTdsSnFsSG9zcllpTnFGSkdkUmk0Z3I5cVJnaGI4STgtWVIyc2tCbjY5NlFUVU13dFprbHZBQVNKU3lMd0ppQV8xTmJkUzBmaHFDOWF5MWNIMjhOV3lGbjZRVTJ0eXpHLTlOSS1FM3gzLXJ6SQ?oc=5",
+      "bucket": "Globales Wachstum",
+      "summary": "Die Meldung betrifft wichtige Wirtschaftsblöcke außerhalb der USA. Das ist relevant für Nachfrage, Währungen, Industrie und Rohstoffe.",
+      "impact": "Mittel, bei großen Wachstums- oder Währungssignalen auch hoch.",
+      "probability": "Mittel, weil globale Themen oft über mehrere Tage in Marktpreise einsickern.",
+      "horizon": "Tage bis Wochen.",
+      "priceEffect": "Weltaktien, Rohstoffe, Exportwerte und regionale Währungen könnten besonders reagieren.",
+      "assets": [
+        "Weltaktien",
+        "Währungen",
+        "Rohstoffe"
+      ]
+    },
+    {
+      "title": "Stocks drop as AI rally pauses, US-Iran peace talks stall",
+      "source": "Reuters",
+      "publishedAt": "2026-06-05T01:35:00+00:00",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPSDZvYjZiMW9PTFBnYWRFYVRVa0hDanhaTmdoRTFtSVJvY1NXMHR0LXMzdm9VZlJXcUVwbkdEbWd2UG9Tb1FCQk1Rdkl5YkNYWEJ6MkhxU1ZaS3A1eUhiOGxiSzZlbkNCUklYLUJhQmFzUFBmY0dPdGU0aEFTa0tDVmpLVQ?oc=5",
       "bucket": "Marktkontext",
       "summary": "Die Meldung liefert zusätzlichen Kontext dafür, wie Risikoappetit, Wachstumserwartungen oder Inflation kurzfristig verschoben werden können.",
       "impact": "Eher mittel. Der Effekt hängt davon ab, ob weitere Daten die Meldung bestätigen.",
@@ -6146,37 +6163,20 @@
       ]
     },
     {
-      "title": "Broadcom earnings, SpaceX's IPO price, World Cup worries and more in Morning Squawk",
-      "source": "CNBC",
-      "publishedAt": "2026-06-04T12:07:57+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQT09WdTZ2Q0U3Z0ZXNXNzV2gwWTVUbDBLNmJvOHFIZGxQemJCbnJKTm1qR05yeHAzTUNzLUNsLWZJbk5mN3dqZW03X0dMdzNJQUpleW43dWdyZTJIY3V1NjJyelBXVGJJWlh1ZXJFWXNraGRyTHllUGFaenB3T0dSQ3NEaFM3VDBMaTNZ0gGQAUFVX3lxTFBUUGxRaFhWOGRKSzFCc0lEZDZEMFBFS0NMS3F3ZnZvX1I3dTYxUUFERnRham5tajdseXhmNVpqZS0zdUZ6Z204aDZHLTRVVGxGcW1DMU85V0dsQm9kcE1CSDk5clZJdElmbDdOYVJLNVZTUEVMMkJyYlJDUnBWLTBlTlUwZ3JvUHllZmVlU0tOMQ?oc=5",
-      "bucket": "Unternehmensgewinne",
-      "summary": "Die Meldung zeigt, ob Unternehmen mit Kosten, Nachfrage und Margendruck besser oder schlechter klarkommen als gedacht.",
-      "impact": "Mittel, manchmal hoch – je nachdem, wie groß und richtungsweisend die betroffenen Unternehmen sind.",
-      "probability": "Hoch, wenn mehrere große Unternehmen in dieselbe Richtung überraschen.",
-      "horizon": "Kurzfristig bis zur nächsten Berichtswelle.",
-      "priceEffect": "Direkt betroffen sind Einzelaktien, Sektoren und oft auch der Gesamtmarkt über die Gewinnschätzungen.",
+      "title": "Kevin Warsh Just Pulled Off a Stock Market First — But History Says a Bigger Test Is Coming",
+      "source": "24/7 Wall St.",
+      "publishedAt": "2026-06-04T14:20:58+00:00",
+      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPaEowbFRXcDJlVExxUGcyNlJ0eWQtX3Jqa3poSF90ZnRUSlpBczQzZXE0ZmE2Q2QzVXpmNzhqS0VydGVDTWNQR3dTNFFiVkNfR3BMZlZKQjMxMVVsMHF3ZDZaV0F3RlQ2QWlQUHlNaGdxUmpxbTJla3NQV2JZRV9lOXF5S3ZqdlRqLU1MWHFkZ1pyQ240V1o5TE04bGI2d0hiMlBFQUxCeDhqTlVaTkZaby1OaDhoU0hac3Baempsa0hxaGVJV1JzT2VrZnMzQQ?oc=5",
+      "bucket": "Marktkontext",
+      "summary": "Die Meldung liefert zusätzlichen Kontext dafür, wie Risikoappetit, Wachstumserwartungen oder Inflation kurzfristig verschoben werden können.",
+      "impact": "Eher mittel. Der Effekt hängt davon ab, ob weitere Daten die Meldung bestätigen.",
+      "probability": "Mittel. Einzelmeldungen bewegen Märkte oft erst dann stärker, wenn Folgeinfos nachkommen.",
+      "horizon": "Kurzfristig bis einige Tage.",
+      "priceEffect": "Am ehesten betroffen sind breite Aktienindizes, Anleihen oder Währungen – je nachdem, worauf die Meldung einzahlt.",
       "assets": [
         "Aktien",
-        "Sektoren",
-        "Gewinnschätzungen"
-      ]
-    },
-    {
-      "title": "Japan’s stock market hits new record as AI boom gathers steam",
-      "source": "Al Jazeera",
-      "publishedAt": "2026-06-03T06:20:56+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNdW1CX0thdWpoXzhJWHhNX2x1V3lQVGh4MmRlb21jWnZpcXZPSnRuQXZTQUZ2RnlCajJETVp4U1lqc2R2WTFadC1xam9GNU1pNVFBb1N6bjE4X3ZyaXlXME1sVlRscHR4VGVJNk9MS0hKUmlMS2hKYlNaMVJvbEp6ZUVQLXJ5M3NINXRpdmV0VnpIZVpYTzNUT0hDMmxsSEFSaVA5NUZB0gGrAUFVX3lxTE5GWnZHSXFmRjVCbWMzUjlublN3ZmFqYXU2WDI4Z3hjaTZCU0xyQWx1NmoycEdhZEhiVHB3MTlFUTdsSnFsSG9zcllpTnFGSkdkUmk0Z3I5cVJnaGI4STgtWVIyc2tCbjY5NlFUVU13dFprbHZBQVNKU3lMd0ppQV8xTmJkUzBmaHFDOWF5MWNIMjhOV3lGbjZRVTJ0eXpHLTlOSS1FM3gzLXJ6SQ?oc=5",
-      "bucket": "Globales Wachstum",
-      "summary": "Die Meldung betrifft wichtige Wirtschaftsblöcke außerhalb der USA. Das ist relevant für Nachfrage, Währungen, Industrie und Rohstoffe.",
-      "impact": "Mittel, bei großen Wachstums- oder Währungssignalen auch hoch.",
-      "probability": "Mittel, weil globale Themen oft über mehrere Tage in Marktpreise einsickern.",
-      "horizon": "Tage bis Wochen.",
-      "priceEffect": "Weltaktien, Rohstoffe, Exportwerte und regionale Währungen könnten besonders reagieren.",
-      "assets": [
-        "Weltaktien",
-        "Währungen",
-        "Rohstoffe"
+        "Anleihen",
+        "Währungen"
       ]
     },
     {
@@ -6197,20 +6197,20 @@
       ]
     },
     {
-      "title": "Stocks drive record share of American wealth",
-      "source": "Axios",
-      "publishedAt": "2026-06-04T10:31:40+00:00",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE4tREZqZEtISDliRTZVeFV4MkhkbW9ueER2Z25YRDRuNXBDaGVGLTlKMC1JUUVfWXFYT2h3YWtwemRuVU9NLVg0Qi03bEdoQlBfcVBmckN6anZtZVVTakstVlVZWWU0bm5YSmUwaQ?oc=5",
-      "bucket": "Marktkontext",
-      "summary": "Die Meldung liefert zusätzlichen Kontext dafür, wie Risikoappetit, Wachstumserwartungen oder Inflation kurzfristig verschoben werden können.",
-      "impact": "Eher mittel. Der Effekt hängt davon ab, ob weitere Daten die Meldung bestätigen.",
-      "probability": "Mittel. Einzelmeldungen bewegen Märkte oft erst dann stärker, wenn Folgeinfos nachkommen.",
-      "horizon": "Kurzfristig bis einige Tage.",
-      "priceEffect": "Am ehesten betroffen sind breite Aktienindizes, Anleihen oder Währungen – je nachdem, worauf die Meldung einzahlt.",
+      "title": "Citi is bullish on these 2 chip stocks into Q1 earnings",
+      "source": "Investing.com",
+      "publishedAt": "2026-06-04T22:17:40+00:00",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQcjh1MlJ2VWdMWDItbDZwYWpBWEZYeE1vajg1aUhPM0VjZmdWNGFmeXI5eUUwcTg4TlNuMWZEcWE3WWdWNzlHamotMFVXRldLZDhGNDcybHFwLXRCWkxYSFRobHQzeWhjMG5Wa0RnUDhYNGNjSVlPUVloNDZ4S3FzZmJzRGttRkx3Mnlxa2dENVd2OXZmUWdGT1d6Zm5xbnFJTk1uOTYwRlo2dmtFZzdjQWV3?oc=5",
+      "bucket": "Unternehmensgewinne",
+      "summary": "Die Meldung zeigt, ob Unternehmen mit Kosten, Nachfrage und Margendruck besser oder schlechter klarkommen als gedacht.",
+      "impact": "Mittel, manchmal hoch – je nachdem, wie groß und richtungsweisend die betroffenen Unternehmen sind.",
+      "probability": "Hoch, wenn mehrere große Unternehmen in dieselbe Richtung überraschen.",
+      "horizon": "Kurzfristig bis zur nächsten Berichtswelle.",
+      "priceEffect": "Direkt betroffen sind Einzelaktien, Sektoren und oft auch der Gesamtmarkt über die Gewinnschätzungen.",
       "assets": [
         "Aktien",
-        "Anleihen",
-        "Währungen"
+        "Sektoren",
+        "Gewinnschätzungen"
       ]
     }
   ]
