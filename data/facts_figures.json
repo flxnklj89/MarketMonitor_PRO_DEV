@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-05T04:38:23.847034+00:00",
+  "generatedAt": "2026-06-05T11:34:14.578706+00:00",
   "meta": {
     "schemaVersion": "1.0",
     "sourceSummary": [
@@ -6129,44 +6129,10 @@
       ]
     },
     {
-      "title": "Stocks drop as AI rally pauses, US-Iran peace talks stall",
+      "title": "Stocks drop as US-Iran peace talks stall, AI rally cools",
       "source": "Reuters",
-      "publishedAt": "2026-06-05T01:35:00+00:00",
+      "publishedAt": "2026-06-05T09:01:45+00:00",
       "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPSDZvYjZiMW9PTFBnYWRFYVRVa0hDanhaTmdoRTFtSVJvY1NXMHR0LXMzdm9VZlJXcUVwbkdEbWd2UG9Tb1FCQk1Rdkl5YkNYWEJ6MkhxU1ZaS3A1eUhiOGxiSzZlbkNCUklYLUJhQmFzUFBmY0dPdGU0aEFTa0tDVmpLVQ?oc=5",
-      "bucket": "Marktkontext",
-      "summary": "Die Meldung liefert zusätzlichen Kontext dafür, wie Risikoappetit, Wachstumserwartungen oder Inflation kurzfristig verschoben werden können.",
-      "impact": "Eher mittel. Der Effekt hängt davon ab, ob weitere Daten die Meldung bestätigen.",
-      "probability": "Mittel. Einzelmeldungen bewegen Märkte oft erst dann stärker, wenn Folgeinfos nachkommen.",
-      "horizon": "Kurzfristig bis einige Tage.",
-      "priceEffect": "Am ehesten betroffen sind breite Aktienindizes, Anleihen oder Währungen – je nachdem, worauf die Meldung einzahlt.",
-      "assets": [
-        "Aktien",
-        "Anleihen",
-        "Währungen"
-      ]
-    },
-    {
-      "title": "KBA Tells The Story of China’s Equity Market Evolution",
-      "source": "KraneShares",
-      "publishedAt": "2026-06-04T20:17:05+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQYjRQNk9SWkw1S2QzaHZfQ01lM2dzVERLLWU5MVpLSXNhb0ItblFZMDBvZHRHYThOdzFqT2FDLWd3OXZIX29XbW5mU0FWYVhTOVZQTXBILXh0R2UxeHpaanhvbTB1VVFVQ0JrSTZHZGJETXBYbUZja0ppYjV3MVFab2NCTnc?oc=5",
-      "bucket": "Globales Wachstum",
-      "summary": "Die Meldung betrifft wichtige Wirtschaftsblöcke außerhalb der USA. Das ist relevant für Nachfrage, Währungen, Industrie und Rohstoffe.",
-      "impact": "Mittel, bei großen Wachstums- oder Währungssignalen auch hoch.",
-      "probability": "Mittel, weil globale Themen oft über mehrere Tage in Marktpreise einsickern.",
-      "horizon": "Tage bis Wochen.",
-      "priceEffect": "Weltaktien, Rohstoffe, Exportwerte und regionale Währungen könnten besonders reagieren.",
-      "assets": [
-        "Weltaktien",
-        "Währungen",
-        "Rohstoffe"
-      ]
-    },
-    {
-      "title": "Kevin Warsh Just Pulled Off a Stock Market First — But History Says a Bigger Test Is Coming",
-      "source": "24/7 Wall St.",
-      "publishedAt": "2026-06-04T14:20:58+00:00",
-      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPaEowbFRXcDJlVExxUGcyNlJ0eWQtX3Jqa3poSF90ZnRUSlpBczQzZXE0ZmE2Q2QzVXpmNzhqS0VydGVDTWNQR3dTNFFiVkNfR3BMZlZKQjMxMVVsMHF3ZDZaV0F3RlQ2QWlQUHlNaGdxUmpxbTJla3NQV2JZRV9lOXF5S3ZqdlRqLU1MWHFkZ1pyQ240V1o5TE04bGI2d0hiMlBFQUxCeDhqTlVaTkZaby1OaDhoU0hac3Baempsa0hxaGVJV1JzT2VrZnMzQQ?oc=5",
       "bucket": "Marktkontext",
       "summary": "Die Meldung liefert zusätzlichen Kontext dafür, wie Risikoappetit, Wachstumserwartungen oder Inflation kurzfristig verschoben werden können.",
       "impact": "Eher mittel. Der Effekt hängt davon ab, ob weitere Daten die Meldung bestätigen.",
@@ -6197,20 +6163,55 @@
       ]
     },
     {
-      "title": "Citi is bullish on these 2 chip stocks into Q1 earnings",
-      "source": "Investing.com",
-      "publishedAt": "2026-06-04T22:17:40+00:00",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQcjh1MlJ2VWdMWDItbDZwYWpBWEZYeE1vajg1aUhPM0VjZmdWNGFmeXI5eUUwcTg4TlNuMWZEcWE3WWdWNzlHamotMFVXRldLZDhGNDcybHFwLXRCWkxYSFRobHQzeWhjMG5Wa0RnUDhYNGNjSVlPUVloNDZ4S3FzZmJzRGttRkx3Mnlxa2dENVd2OXZmUWdGT1d6Zm5xbnFJTk1uOTYwRlo2dmtFZzdjQWV3?oc=5",
-      "bucket": "Unternehmensgewinne",
-      "summary": "Die Meldung zeigt, ob Unternehmen mit Kosten, Nachfrage und Margendruck besser oder schlechter klarkommen als gedacht.",
-      "impact": "Mittel, manchmal hoch – je nachdem, wie groß und richtungsweisend die betroffenen Unternehmen sind.",
-      "probability": "Hoch, wenn mehrere große Unternehmen in dieselbe Richtung überraschen.",
-      "horizon": "Kurzfristig bis zur nächsten Berichtswelle.",
-      "priceEffect": "Direkt betroffen sind Einzelaktien, Sektoren und oft auch der Gesamtmarkt über die Gewinnschätzungen.",
+      "title": "KBA Tells The Story of China’s Equity Market Evolution",
+      "source": "KraneShares",
+      "publishedAt": "2026-06-04T20:17:05+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQYjRQNk9SWkw1S2QzaHZfQ01lM2dzVERLLWU5MVpLSXNhb0ItblFZMDBvZHRHYThOdzFqT2FDLWd3OXZIX29XbW5mU0FWYVhTOVZQTXBILXh0R2UxeHpaanhvbTB1VVFVQ0JrSTZHZGJETXBYbUZja0ppYjV3MVFab2NCTnc?oc=5",
+      "bucket": "Globales Wachstum",
+      "summary": "Die Meldung betrifft wichtige Wirtschaftsblöcke außerhalb der USA. Das ist relevant für Nachfrage, Währungen, Industrie und Rohstoffe.",
+      "impact": "Mittel, bei großen Wachstums- oder Währungssignalen auch hoch.",
+      "probability": "Mittel, weil globale Themen oft über mehrere Tage in Marktpreise einsickern.",
+      "horizon": "Tage bis Wochen.",
+      "priceEffect": "Weltaktien, Rohstoffe, Exportwerte und regionale Währungen könnten besonders reagieren.",
+      "assets": [
+        "Weltaktien",
+        "Währungen",
+        "Rohstoffe"
+      ]
+    },
+    {
+      "title": "Ray Dalio warns stock market approaching 1929 and 2000 bubble levels",
+      "source": "Fortune",
+      "publishedAt": "2026-06-04T13:37:00+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPeEZjTlNfVDc1MmR6RDZHZXJVbnFLQVZCejhBdGdZcnEza3hXSEgzLUtLVnFNRC0xSDNSRjJWQkhtMUROV0ZoYWpKSW5RWGRmS2pvN19qdFdWR002Y2FWc2RsZktESVJxbzR6Vnd0MVlQV1RTaFJQQ1poRU11aERfajFsYWptTEhoWC00NlZQV05xaGJPUkdLZzluVUFMRFF4T2tPWA?oc=5",
+      "bucket": "Marktkontext",
+      "summary": "Die Meldung liefert zusätzlichen Kontext dafür, wie Risikoappetit, Wachstumserwartungen oder Inflation kurzfristig verschoben werden können.",
+      "impact": "Eher mittel. Der Effekt hängt davon ab, ob weitere Daten die Meldung bestätigen.",
+      "probability": "Mittel. Einzelmeldungen bewegen Märkte oft erst dann stärker, wenn Folgeinfos nachkommen.",
+      "horizon": "Kurzfristig bis einige Tage.",
+      "priceEffect": "Am ehesten betroffen sind breite Aktienindizes, Anleihen oder Währungen – je nachdem, worauf die Meldung einzahlt.",
       "assets": [
         "Aktien",
-        "Sektoren",
-        "Gewinnschätzungen"
+        "Anleihen",
+        "Währungen"
+      ]
+    },
+    {
+      "title": "Asian Stocks Poised to Edge Lower, Oil Steadies: Markets Wrap",
+      "source": "Bloomberg.com",
+      "publishedAt": "2026-06-04T22:12:54+00:00",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPQlpfRFl3aE84NGh5WlRyWGhRMkZDcE1WNmUzVlVOTEhId0l0dXJ0aF9JZXFhdEhGbG1XRWF6dkROT0YybkQzRmdSbERBOHVITGNLdFNwQW15bkpyZkZCQUlRTVc2czRtMl9TQVB6ang4d1haVkpwODkwSXQwQUg4d0VjWG9VY0Y5a1g4NEpvaXlfcGJzXzlqa2l5RWQySHJQeXRTQ3F1M0ZjRU8tRmFn?oc=5",
+      "bucket": "Energie / Inflation",
+      "summary": "Die Meldung betrifft Energiepreise oder Lieferwege. Das ist wichtig, weil Energie direkt auf Inflation, Transportkosten und Risikoappetit wirkt.",
+      "impact": "Hoch, wenn der Preisanstieg anhält oder Lieferwege gestört bleiben.",
+      "probability": "Mittel bis hoch, wenn die Meldung anhaltende Angebotsknappheit beschreibt.",
+      "horizon": "Sofort bis einige Wochen.",
+      "priceEffect": "Vor allem Öl, Energieaktien, Inflationserwartungen, Staatsanleihen und zinssensitive Aktien könnten reagieren.",
+      "assets": [
+        "Öl",
+        "Energieaktien",
+        "Inflation",
+        "Staatsanleihen"
       ]
     }
   ]
