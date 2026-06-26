@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-26T11:10:17.278292+00:00",
+  "fetchedAt": "2026-06-26T14:40:07.249452+00:00",
   "meta": {
     "schemaVersion": "4.0-pro",
     "source": "FRED + Google News RSS",
@@ -28,7 +28,7 @@
     },
     "fedRate": {
       "value": 3.63,
-      "date": "2026-06-24",
+      "date": "2026-06-25",
       "cadence": "daily",
       "series": "EFFR",
       "displayName": "Effective Federal Funds Rate",
@@ -102,7 +102,7 @@
       "cadence": "daily",
       "method": "proxy",
       "components": {
-        "vix": 18.63,
+        "vix": 18.89,
         "brent": 76.49,
         "eurusd": 1.147,
         "us10y": 4.41
@@ -127,7 +127,7 @@
       "name": "Europa",
       "score": 34.0,
       "label": "Stabil",
-      "date": "2026-06-25",
+      "date": "2026-06-26",
       "summary": "Europa wird hier über Preisdruck, Zinsniveau und den Euro gegenüber dem US-Dollar gelesen. Ein schwächerer Euro und hoher Preisdruck erhöhen den Stress im Block.",
       "driverText": "Europa wird hier über Preisdruck, Zinsniveau und den Euro gegenüber dem US-Dollar gelesen. Ein schwächerer Euro und hoher Preisdruck erhöhen den Stress im Block.",
       "inflation": {
@@ -140,7 +140,7 @@
       "growthOrRate": {
         "label": "ECB Einlagezins",
         "value": 2.25,
-        "date": "2026-06-25",
+        "date": "2026-06-26",
         "unit": "%",
         "cadence": "daily",
         "series": "ECBDFR"
@@ -230,9 +230,9 @@
     {
       "label": "VIX",
       "icon": "⚡",
-      "val": 18.63,
-      "chg": -0.86,
-      "chgPct": -4.41,
+      "val": 18.89,
+      "chg": 0.26,
+      "chgPct": 1.4,
       "unit": "",
       "dec": 2
     },
@@ -6942,6 +6942,10 @@
       },
       {
         "date": "2026-06-24",
+        "value": 3.63
+      },
+      {
+        "date": "2026-06-25",
         "value": 3.63
       }
     ],
@@ -20620,6 +20624,57 @@
   },
   "news": [
     {
+      "title": "The memory crunch, Supreme Court rulings, 'inheritourism' and more in Morning Squawk",
+      "source": "CNBC",
+      "publishedAt": "2026-06-26T12:18:19+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQbC1iNklXNHBjelZqRS1TSTlRVTJwTEhvb1VOVF9KZTFrcEpYcVJURmQxT21CeXlvcEZYNkNmcjQ4M1VVcU9pMHc4V3VJSnJMWUZ3enRnM3F3d1dFSGJ2dExjMlpLS3IwXzA4NUlMUHh3eW9SU2RLWmVHd2EzMkZYbkRZR2RJaWh1b2dhelRTY1_SAZABQVVfeXFMUGwtYjZJVzRwY3pWakUtU0k5UVUycExIb29VTlRfSmUxa3BKWHFSVEZkMU9tQnl5b3BGWDZDZnI0ODNVVXFPaTB3OFd1SUpyTFlGd3p0ZzNxd3dXRUhidnRMYzJaS0tyMF8wODVJTFB4d3lvUlNkS1plR3dhMzJGWG5EWUdkSWlodW9nYXpUU2Nf?oc=5",
+      "bucket": "Marktkontext",
+      "summary": "Die Meldung liefert zusätzlichen Kontext dafür, wie Risikoappetit, Wachstumserwartungen oder Inflation kurzfristig verschoben werden können.",
+      "impact": "Eher mittel. Der Effekt hängt davon ab, ob weitere Daten die Meldung bestätigen.",
+      "probability": "Mittel. Einzelmeldungen bewegen Märkte oft erst dann stärker, wenn Folgeinfos nachkommen.",
+      "horizon": "Kurzfristig bis einige Tage.",
+      "priceEffect": "Am ehesten betroffen sind breite Aktienindizes, Anleihen oder Währungen – je nachdem, worauf die Meldung einzahlt.",
+      "assets": [
+        "Aktien",
+        "Anleihen",
+        "Währungen"
+      ]
+    },
+    {
+      "title": "Hang Seng Index caps worst week in over a year amid tech sell-off",
+      "source": "South China Morning Post",
+      "publishedAt": "2026-06-26T10:50:07+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPdlZzVXo1eFI0bnZaakhNN3RvMGdOY3cyQjY4OG1WaS04VGVOT0RnMjc1MmhsUG12bGVWeDVrTnJldlZQNHVLS1hEUkdXaGdvanpzQXdJYzkwN3ozWE1MZ1BqYVNxdEZ1NlpodXl1MmFEOXU2MDdXc1QtcC15dDBXeFEwdWx4UC1EbkxMVTVqOUlvN1BQTWNObTZTdThMUFhwTWhWYzBLTm5QZ0dWVnNpRlE0bnVNekFNQjNjbWw0UlZGcjd3Y0xELWVMSF9EaHRx0gHQAUFVX3lxTE5mdlpXT2JYa3hWR1RsS29zai1EUjd0T2dXd2tEU1BJNEJ0dWhGXzhIY0czYjlxU0pKSW1JZ2l4dHdfODdIZEstdHVwTHNEa0J6eTJudDNrQ0xjZFZHemQyUDhOa0JfVjdra3lhLXBZN1BscUd5M3lvbXlTdHV2QWpPc1lrRVJkZFVaRlhvNUlLYkZQekk0YnRTd2g5R3BBZjBCVEF3WUM2RmF0c2lPYUF1NWR1VDhlaTRQMEdZT2xUekVScmpWNmM0eTIyR3NWc2I?oc=5",
+      "bucket": "Marktkontext",
+      "summary": "Die Meldung liefert zusätzlichen Kontext dafür, wie Risikoappetit, Wachstumserwartungen oder Inflation kurzfristig verschoben werden können.",
+      "impact": "Eher mittel. Der Effekt hängt davon ab, ob weitere Daten die Meldung bestätigen.",
+      "probability": "Mittel. Einzelmeldungen bewegen Märkte oft erst dann stärker, wenn Folgeinfos nachkommen.",
+      "horizon": "Kurzfristig bis einige Tage.",
+      "priceEffect": "Am ehesten betroffen sind breite Aktienindizes, Anleihen oder Währungen – je nachdem, worauf die Meldung einzahlt.",
+      "assets": [
+        "Aktien",
+        "Anleihen",
+        "Währungen"
+      ]
+    },
+    {
+      "title": "Stock market today: Dow, S&P 500, Nasdaq slide as report of OpenAI IPO delay rattles techs",
+      "source": "Yahoo Finance",
+      "publishedAt": "2026-06-26T13:37:53+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOXzdydllMRl9ySjRxX3IwWHVVdkcyRngyTXFoMVFibXVzTnNjOFJqODJJbHByaFRfR0EtMzlkOFp2c0poZk9zbDA3YWNTRDRSS3h3R2tfN2lzUlNFakIyTWplWlVsQzR1M0FVRm84bVdzT3JncmxBTTMtUWJTZHIycENRNGl2bHJWVUMtcmZtQTJ1MktaZXRZTFA3MjNObjR3bmFsWnN5RFl5VDliaXNEc3BZRERsWFk4MXh4UWN4NU1PSTdmb2xmX0s2SHhvaU03TGFjWlhxQQ?oc=5",
+      "bucket": "Marktkontext",
+      "summary": "Die Meldung liefert zusätzlichen Kontext dafür, wie Risikoappetit, Wachstumserwartungen oder Inflation kurzfristig verschoben werden können.",
+      "impact": "Eher mittel. Der Effekt hängt davon ab, ob weitere Daten die Meldung bestätigen.",
+      "probability": "Mittel. Einzelmeldungen bewegen Märkte oft erst dann stärker, wenn Folgeinfos nachkommen.",
+      "horizon": "Kurzfristig bis einige Tage.",
+      "priceEffect": "Am ehesten betroffen sind breite Aktienindizes, Anleihen oder Währungen – je nachdem, worauf die Meldung einzahlt.",
+      "assets": [
+        "Aktien",
+        "Anleihen",
+        "Währungen"
+      ]
+    },
+    {
       "title": "Stocks slip as Apple price hikes fan tech jitters, oil slides",
       "source": "Reuters",
       "publishedAt": "2026-06-26T02:22:00+00:00",
@@ -20638,20 +20693,21 @@
       ]
     },
     {
-      "title": "Hang Seng Index caps worst week in over a year amid tech sell-off",
-      "source": "South China Morning Post",
-      "publishedAt": "2026-06-26T03:42:12+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPdlZzVXo1eFI0bnZaakhNN3RvMGdOY3cyQjY4OG1WaS04VGVOT0RnMjc1MmhsUG12bGVWeDVrTnJldlZQNHVLS1hEUkdXaGdvanpzQXdJYzkwN3ozWE1MZ1BqYVNxdEZ1NlpodXl1MmFEOXU2MDdXc1QtcC15dDBXeFEwdWx4UC1EbkxMVTVqOUlvN1BQTWNObTZTdThMUFhwTWhWYzBLTm5QZ0dWVnNpRlE0bnVNekFNQjNjbWw0UlZGcjd3Y0xELWVMSF9EaHRx0gHQAUFVX3lxTE5mdlpXT2JYa3hWR1RsS29zai1EUjd0T2dXd2tEU1BJNEJ0dWhGXzhIY0czYjlxU0pKSW1JZ2l4dHdfODdIZEstdHVwTHNEa0J6eTJudDNrQ0xjZFZHemQyUDhOa0JfVjdra3lhLXBZN1BscUd5M3lvbXlTdHV2QWpPc1lrRVJkZFVaRlhvNUlLYkZQekk0YnRTd2g5R3BBZjBCVEF3WUM2RmF0c2lPYUF1NWR1VDhlaTRQMEdZT2xUekVScmpWNmM0eTIyR3NWc2I?oc=5",
-      "bucket": "Marktkontext",
-      "summary": "Die Meldung liefert zusätzlichen Kontext dafür, wie Risikoappetit, Wachstumserwartungen oder Inflation kurzfristig verschoben werden können.",
-      "impact": "Eher mittel. Der Effekt hängt davon ab, ob weitere Daten die Meldung bestätigen.",
-      "probability": "Mittel. Einzelmeldungen bewegen Märkte oft erst dann stärker, wenn Folgeinfos nachkommen.",
-      "horizon": "Kurzfristig bis einige Tage.",
-      "priceEffect": "Am ehesten betroffen sind breite Aktienindizes, Anleihen oder Währungen – je nachdem, worauf die Meldung einzahlt.",
+      "title": "Oil prices fall, tech sell-off hits S&P 500 and Nasdaq",
+      "source": "qz.com",
+      "publishedAt": "2026-06-26T11:35:09+00:00",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9IOHNlMnZwYjRuSVdDR0pIT3Itai1fSkQ0TzN5Vi1pLVNQRlVwdWpoTEM3QURUaGRsRGpQNFdZMktDZnZOekotbjlXOVRKOTItNjFXeWVyY2lXbnUzdG92bGd1bjVpbHkwcF85N1RUT3ZDTDA?oc=5",
+      "bucket": "Energie / Inflation",
+      "summary": "Die Meldung betrifft Energiepreise oder Lieferwege. Das ist wichtig, weil Energie direkt auf Inflation, Transportkosten und Risikoappetit wirkt.",
+      "impact": "Hoch, wenn der Preisanstieg anhält oder Lieferwege gestört bleiben.",
+      "probability": "Mittel bis hoch, wenn die Meldung anhaltende Angebotsknappheit beschreibt.",
+      "horizon": "Sofort bis einige Wochen.",
+      "priceEffect": "Vor allem Öl, Energieaktien, Inflationserwartungen, Staatsanleihen und zinssensitive Aktien könnten reagieren.",
       "assets": [
-        "Aktien",
-        "Anleihen",
-        "Währungen"
+        "Öl",
+        "Energieaktien",
+        "Inflation",
+        "Staatsanleihen"
       ]
     },
     {
@@ -20670,57 +20726,6 @@
         "Aktien",
         "US-Dollar",
         "Gold"
-      ]
-    },
-    {
-      "title": "Stock Market Today, June 25: BlackBerry Surges After Earnings Beat and Revenue Tops Estimates",
-      "source": "The Motley Fool",
-      "publishedAt": "2026-06-25T21:00:33+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPRUExa2tqRGc3ejJBQzdxbE45NnRZUi1kNFVlcHQ1WXJ1cDBBd1A2ZmJONGtqMXlWMkFaMExDYmRrVXdvN1pfTlp4eTRxajFiZW55b2NyUzZHNk5fSUlVdmVOMFltbkZPaXl2ZGlDQzZzMTBCRzJ2aEhHb19adlozVTRsUVo2SnQ3UHI3OWUyRG1UaS1WZGxFX1k5X1NKTjYwOURfZTI2RE54RXZQWlFtX3VzNk5aZFBHaGVxOG13TVloU0VzSXFjOU9zYWsyMXVUUGg2a1lBODN1dXc2MW9KREpvNmxHOEE?oc=5",
-      "bucket": "Unternehmensgewinne",
-      "summary": "Die Meldung zeigt, ob Unternehmen mit Kosten, Nachfrage und Margendruck besser oder schlechter klarkommen als gedacht.",
-      "impact": "Mittel, manchmal hoch – je nachdem, wie groß und richtungsweisend die betroffenen Unternehmen sind.",
-      "probability": "Hoch, wenn mehrere große Unternehmen in dieselbe Richtung überraschen.",
-      "horizon": "Kurzfristig bis zur nächsten Berichtswelle.",
-      "priceEffect": "Direkt betroffen sind Einzelaktien, Sektoren und oft auch der Gesamtmarkt über die Gewinnschätzungen.",
-      "assets": [
-        "Aktien",
-        "Sektoren",
-        "Gewinnschätzungen"
-      ]
-    },
-    {
-      "title": "Why this earnings exuberance may be a problem for the stock market, according to this Wall Street veteran",
-      "source": "MarketWatch",
-      "publishedAt": "2026-06-26T10:47:00+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOazBrXzhwX2hJcTAyaDRGcmtHS3B6X1VoYmlqQUhfb2pPOEtuZFBiNzVIRTVHWjl6Zm9kaG0yaFBjTlRobUxLQW80S3oxOVdxemZxRzIxdU5JYWVfX1RzVnFyV18tRkg4Sm1XMllqc0s2TmRUc3VZQ18zSExpeG45WUV0b3F4WHVmZEkxcndvNWhXN1JxLV9FT2VjdEd1T0pjUkwyZURyZjQ3a0NDMDM3V0tXSnlFMHA3NzFROWs4Qm9kczhzZGhnbkVGM3BWYTlGMXlwN3h0eDZEcVQzaG9USA?oc=5",
-      "bucket": "Unternehmensgewinne",
-      "summary": "Die Meldung zeigt, ob Unternehmen mit Kosten, Nachfrage und Margendruck besser oder schlechter klarkommen als gedacht.",
-      "impact": "Mittel, manchmal hoch – je nachdem, wie groß und richtungsweisend die betroffenen Unternehmen sind.",
-      "probability": "Hoch, wenn mehrere große Unternehmen in dieselbe Richtung überraschen.",
-      "horizon": "Kurzfristig bis zur nächsten Berichtswelle.",
-      "priceEffect": "Direkt betroffen sind Einzelaktien, Sektoren und oft auch der Gesamtmarkt über die Gewinnschätzungen.",
-      "assets": [
-        "Aktien",
-        "Sektoren",
-        "Gewinnschätzungen"
-      ]
-    },
-    {
-      "title": "Stock Market Forecast For Next Six Months: Why More Gains May Lie Ahead",
-      "source": "Investor's Business Daily",
-      "publishedAt": "2026-06-25T21:37:00+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNeTFDTVlOLU9tckVpTGRXVDVPZV82elNENmpvN2pQSkpISk1iQmJoZXg0QzFCb0Zhb1ByNVR2eGhLSDZWU2thRVcydG9GTTZyY2tOOXZTdENHTW5ac3N0VERtVkZUdG1HbVV1aFVHcS1kdWtuLUN4S1MtSmlSQ0w3Mk5rbHl0bjJ2ZE5VeA?oc=5",
-      "bucket": "Unternehmensgewinne",
-      "summary": "Die Meldung zeigt, ob Unternehmen mit Kosten, Nachfrage und Margendruck besser oder schlechter klarkommen als gedacht.",
-      "impact": "Mittel, manchmal hoch – je nachdem, wie groß und richtungsweisend die betroffenen Unternehmen sind.",
-      "probability": "Hoch, wenn mehrere große Unternehmen in dieselbe Richtung überraschen.",
-      "horizon": "Kurzfristig bis zur nächsten Berichtswelle.",
-      "priceEffect": "Direkt betroffen sind Einzelaktien, Sektoren und oft auch der Gesamtmarkt über die Gewinnschätzungen.",
-      "assets": [
-        "Aktien",
-        "Sektoren",
-        "Gewinnschätzungen"
       ]
     }
   ],
@@ -20826,7 +20831,7 @@
       "actionMatrixKey": "normal"
     },
     "statusLine": {
-      "dataAsOf": "2026-06-26T11:10:17.278292+00:00",
+      "dataAsOf": "2026-06-26T14:40:07.249452+00:00",
       "updateCadence": "Gemischt: täglich bis jährlich",
       "systemNote": "Technische Meta-Informationen werden bewusst dezent gehalten."
     }
