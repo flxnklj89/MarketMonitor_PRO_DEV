@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-13T18:02:23.576990+00:00",
+  "generatedAt": "2026-07-13T21:05:32.504223+00:00",
   "meta": {
     "schemaVersion": "1.0",
     "sourceSummary": [
@@ -6130,24 +6130,6 @@
       ]
     },
     {
-      "title": "Markets Face Inflation, Oil, Fed Volatility This Week—Earnings Are Make or Break",
-      "source": "Barron's",
-      "publishedAt": "2026-07-13T12:09:00+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQSjBhdkFTRndvMkpyZUttRXJmWGIzT3FtV3pkTG1oSllRaEcwZXpUWldHbFk2aF9aUDlYYW11NEhXQ2NDblNxR0RfVjdqRUx1VmZxeE9aNkNzUlZ4RUIxbGlrLXppeWdaaE5xQ0dRN3E1b01aSTRiSG9MQWg0cGV1QUU3Qk5zMlFTNlhMaV9XWkE3UVlObEV0UVFTSS16YzA?oc=5",
-      "bucket": "Energie / Inflation",
-      "summary": "Die Meldung betrifft Energiepreise oder Lieferwege. Das ist wichtig, weil Energie direkt auf Inflation, Transportkosten und Risikoappetit wirkt.",
-      "impact": "Hoch, wenn der Preisanstieg anhält oder Lieferwege gestört bleiben.",
-      "probability": "Mittel bis hoch, wenn die Meldung anhaltende Angebotsknappheit beschreibt.",
-      "horizon": "Sofort bis einige Wochen.",
-      "priceEffect": "Vor allem Öl, Energieaktien, Inflationserwartungen, Staatsanleihen und zinssensitive Aktien könnten reagieren.",
-      "assets": [
-        "Öl",
-        "Energieaktien",
-        "Inflation",
-        "Staatsanleihen"
-      ]
-    },
-    {
       "title": "Wall Street mixed and oil prices jump after Iran and the U.S. trade another round of attacks",
       "source": "Spectrum News",
       "publishedAt": "2026-07-13T13:04:00+00:00",
@@ -6216,6 +6198,24 @@
         "Aktien",
         "US-Dollar",
         "Gold"
+      ]
+    },
+    {
+      "title": "Dow Jones Futures: Techs Fall, Oil Prices Rise Amid New U.S.-Iran Attacks; Taiwan Semi, Nvidia, Micron, Sandisk",
+      "source": "Investor's Business Daily",
+      "publishedAt": "2026-07-13T12:12:00+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxORU9feGs2S085SEFuY29nazFKXzBHU0hjVDlBMmNzTXREN25hTEEzcXlzR2tiRTEwNVQyMDloQk5mNkxYTFlSeXI1ZmlhSW5hMWNYbFBkbjJPdUI3ZF9Ya0tuSENUVGhHNG5NSnFGQ1hYMk90ZDltNlo0c0M3QmY1X2ozNkVXYlNZZDJhY0RJeTZKN3FZUzZsb3diekV3b0dPZWl5dmhodm9LUDVZMmFYM01UVXhpVDJqdXNNalYyVzNyUlRLMGpyRjRPYXFyRXdM?oc=5",
+      "bucket": "Energie / Inflation",
+      "summary": "Die Meldung betrifft Energiepreise oder Lieferwege. Das ist wichtig, weil Energie direkt auf Inflation, Transportkosten und Risikoappetit wirkt.",
+      "impact": "Hoch, wenn der Preisanstieg anhält oder Lieferwege gestört bleiben.",
+      "probability": "Mittel bis hoch, wenn die Meldung anhaltende Angebotsknappheit beschreibt.",
+      "horizon": "Sofort bis einige Wochen.",
+      "priceEffect": "Vor allem Öl, Energieaktien, Inflationserwartungen, Staatsanleihen und zinssensitive Aktien könnten reagieren.",
+      "assets": [
+        "Öl",
+        "Energieaktien",
+        "Inflation",
+        "Staatsanleihen"
       ]
     }
   ]
