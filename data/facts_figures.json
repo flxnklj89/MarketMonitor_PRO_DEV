@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-17T06:23:14.610987+00:00",
+  "generatedAt": "2026-07-17T10:06:28.412841+00:00",
   "meta": {
     "schemaVersion": "1.0",
     "sourceSummary": [
@@ -6112,28 +6112,28 @@
   },
   "news": [
     {
+      "title": "Stocks sink as chip rout deepens, oil set for weekly gain",
+      "source": "Reuters",
+      "publishedAt": "2026-07-17T01:16:00+00:00",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNVTBUX2ZaNk9EY2M2SU5BaEw4VkRFXzF6OE1MeENrcVRwT1hnd2gtbzVDODJ3VUh2ZXdOYi03b2ZobHhhdlMzSE1fOWM0b3lWTlh1Q2VENEFFdHlKWmNuOVltd0R4X254aFM0SmNjZ3RIWVNqREU3OXlHSFNsUGtBUXYyUQ?oc=5",
+      "bucket": "Energie / Inflation",
+      "summary": "Die Meldung betrifft Energiepreise oder Lieferwege. Das ist wichtig, weil Energie direkt auf Inflation, Transportkosten und Risikoappetit wirkt.",
+      "impact": "Hoch, wenn der Preisanstieg anhält oder Lieferwege gestört bleiben.",
+      "probability": "Mittel bis hoch, wenn die Meldung anhaltende Angebotsknappheit beschreibt.",
+      "horizon": "Sofort bis einige Wochen.",
+      "priceEffect": "Vor allem Öl, Energieaktien, Inflationserwartungen, Staatsanleihen und zinssensitive Aktien könnten reagieren.",
+      "assets": [
+        "Öl",
+        "Energieaktien",
+        "Inflation",
+        "Staatsanleihen"
+      ]
+    },
+    {
       "title": "The Latest Inflation Data Is Good News for the Stock Market. Here's Why.",
       "source": "Yahoo Finance",
       "publishedAt": "2026-07-16T17:35:00+00:00",
       "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNTlQwRFFQNVEyWFVmQl9keTBtU3FNemt1Z1R3bmktU3ozUVdOdDE2MndkSlJCTEVLYWxLOENsb21sczBDQlM2YWZieG1pWjZTcm1tNUx6TGdtRlVZMVkzaUtweEJRNUFMMjBrdGpSMC14cU5YdjgwclRuQ29MLVJTV0Z4dzd2ZDFVT2pha1RaLTR1dG5lcVRGLXJmbWk?oc=5",
-      "bucket": "Zinsen / Inflation",
-      "summary": "Die Meldung verschiebt Erwartungen an Zentralbanken, Zinsen oder Inflation. Das trifft oft direkt auf Bewertungen und Renditen.",
-      "impact": "Mittel bis hoch, weil Zins- und Inflationspfade fast alle Anlageklassen beeinflussen.",
-      "probability": "Hoch, wenn die Nachricht harte Daten oder klare Aussagen von Zentralbanken enthält.",
-      "horizon": "Von sofort bis mehrere Wochen.",
-      "priceEffect": "Besonders betroffen sind Staatsanleihen, Wachstumstitel, US-Dollar, Gold und breite Aktienindizes.",
-      "assets": [
-        "Staatsanleihen",
-        "Aktien",
-        "US-Dollar",
-        "Gold"
-      ]
-    },
-    {
-      "title": "Stocks rise after soft US inflation reading with Middle East in focus",
-      "source": "Reuters",
-      "publishedAt": "2026-07-16T04:31:08+00:00",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQcEtOY19xRkd1VVhIYWg3cmFaU1BOUXRpRDhzaXN6UzFSa2Z2c3cwOE5YYjV5bXRwQVhiX2VhTGE1d1dvR2dQS3FnQm56VkZwOE00WER6bWoyM3U5aWtjd0xjUENON1dXcWVlLW85TGhZazVKY3BZbmRQT19IaE9TMm43Yw?oc=5",
       "bucket": "Zinsen / Inflation",
       "summary": "Die Meldung verschiebt Erwartungen an Zentralbanken, Zinsen oder Inflation. Das trifft oft direkt auf Bewertungen und Renditen.",
       "impact": "Mittel bis hoch, weil Zins- und Inflationspfade fast alle Anlageklassen beeinflussen.",
@@ -6183,10 +6183,27 @@
       ]
     },
     {
-      "title": "Investors Just Got a Subtle Warning From the Federal Reserve. History Says the Stock Market Will Do This Next.",
-      "source": "The Motley Fool",
-      "publishedAt": "2026-07-16T10:02:00+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNRTA5ZVFoVU0xb1h6cUpDUTZiQnRObGN1andUQmU0NkpZbVc5Zk8xNlB0Tmk5VUlGLWpIbGZvaGhra19vcFhwZWJGNmlrU3duc0hzNk9nOWxncllld09FcGJDdFAzc000MmI2emdPUnZGNzdZTjZwOGVZRzZxSXFWTkdVaUs1TGFKelJSUFpJYk1GdlFuaUpj?oc=5",
+      "title": "'Bloodbath': Analysts react to Asian shares sinking on tech selloff",
+      "source": "Reuters",
+      "publishedAt": "2026-07-17T07:27:43+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNSVJOZngtYmRxdXlreVFWNDhPaFpsZ254UkJxT0ZhMk9jSlR0RkhWeEtMNHgwZlk1TWk0dG8yaTQ3TVJfaXdoY2lpQ2lLTV9TX0djRVRwUkp1cDFjSzBIOXRIeHozeHZBcl9neWV1T0RQVms2Z2xrV3pHelRjQTVaUDdiWVdLQnFB?oc=5",
+      "bucket": "Marktkontext",
+      "summary": "Die Meldung liefert zusätzlichen Kontext dafür, wie Risikoappetit, Wachstumserwartungen oder Inflation kurzfristig verschoben werden können.",
+      "impact": "Eher mittel. Der Effekt hängt davon ab, ob weitere Daten die Meldung bestätigen.",
+      "probability": "Mittel. Einzelmeldungen bewegen Märkte oft erst dann stärker, wenn Folgeinfos nachkommen.",
+      "horizon": "Kurzfristig bis einige Tage.",
+      "priceEffect": "Am ehesten betroffen sind breite Aktienindizes, Anleihen oder Währungen – je nachdem, worauf die Meldung einzahlt.",
+      "assets": [
+        "Aktien",
+        "Anleihen",
+        "Währungen"
+      ]
+    },
+    {
+      "title": "Japan Utility Stocks to Watch as Inflation Lifts Power Prices",
+      "source": "simplywall.st",
+      "publishedAt": "2026-07-17T08:40:47+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNbkVEMlc2MlZuZXBpajM4WW1xVnN0X04wNFpkSl9XME9Vd0pJdllmMjVmazMzaE1lMkM2d19wazFCVUFyQ3dlV3NvakdCTnIzWTc0Q3plLXRJX1NwdHlub1lZVzhuWVBEb05SeUJmVjZVcjhIWDlYMGpWa2Q5bFV1V0tSMjlQWFRPMzZmd3BGcHFNVF9nODFLa09HLTlHVWhXWFRBcXcxSlI4TXpjaEgzR0JoTzRzaFRDMTlRMmk1VnBIWVZBcE9vZE1DSEV2TGMweVlVd1VSNUlzcmdDNTFOR3UzNkdYZVp1V2lFQkE0aFExWlHSAfgBQVVfeXFMUHNGNVVKcmNDM05iT1JzQl9SYXR3RGpMbVFwUGV4Mk1TaFJXYlJRdngyTGpyNzVKMWQweGNtMjFROHkzSzZtYTU4M242VklQeE81Z3pWdzdrQUxacDRDSzVlMVE1RE9Cdl8tVXZidW45aEpkMEFTUkRoR3JRRkdTUnVTQ3F4Z2JHXzFJMjQtTld5OWFyMlA4N0Y0TGhPRmYyVlRYWnlJRG13WXp0eFZDLXllcDh5VUxxVHFwNXlkVC1oNHV3X1dpelBubVJWWTNVbndsRWJMTC1Ta0R0T3hWdi1CWTI1a0FqcVl6ZVBqNWhWaHhZcy1EY3U?oc=5",
       "bucket": "Zinsen / Inflation",
       "summary": "Die Meldung verschiebt Erwartungen an Zentralbanken, Zinsen oder Inflation. Das trifft oft direkt auf Bewertungen und Renditen.",
       "impact": "Mittel bis hoch, weil Zins- und Inflationspfade fast alle Anlageklassen beeinflussen.",
@@ -6198,24 +6215,6 @@
         "Aktien",
         "US-Dollar",
         "Gold"
-      ]
-    },
-    {
-      "title": "Asian Stocks Drop After Chip Selloff, Oil Gains: Markets Wrap",
-      "source": "Bloomberg.com",
-      "publishedAt": "2026-07-16T22:05:23+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZ1hEY0xabmQwOE5fek9mUk12anNLVlJ4Q2JVcUstZEtaYzVNRk5zTWlqTkVfeEsxME5sa1BQTDBMeU9ScldYZTlWaTRDQzFuMGlLWVpYeVQtRkR0OXNsTV9Ib3gydHQ4SWtWazQ2SG1FNUF6dE5icjc0cGFZTGJyaE5uYW5SR1pkV09SaHp2dVFqWTdD?oc=5",
-      "bucket": "Energie / Inflation",
-      "summary": "Die Meldung betrifft Energiepreise oder Lieferwege. Das ist wichtig, weil Energie direkt auf Inflation, Transportkosten und Risikoappetit wirkt.",
-      "impact": "Hoch, wenn der Preisanstieg anhält oder Lieferwege gestört bleiben.",
-      "probability": "Mittel bis hoch, wenn die Meldung anhaltende Angebotsknappheit beschreibt.",
-      "horizon": "Sofort bis einige Wochen.",
-      "priceEffect": "Vor allem Öl, Energieaktien, Inflationserwartungen, Staatsanleihen und zinssensitive Aktien könnten reagieren.",
-      "assets": [
-        "Öl",
-        "Energieaktien",
-        "Inflation",
-        "Staatsanleihen"
       ]
     }
   ]
