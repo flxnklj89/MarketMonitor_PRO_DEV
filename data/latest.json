@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-28T14:26:58.106333+00:00",
+  "fetchedAt": "2026-07-28T17:41:10.483433+00:00",
   "meta": {
     "schemaVersion": "4.0-pro",
     "source": "FRED + Google News RSS",
@@ -20612,43 +20612,9 @@
   },
   "news": [
     {
-      "title": "Where the US Stock Market May Be Heading Next and What to Buy Now",
-      "source": "Morningstar",
-      "publishedAt": "2026-07-28T06:26:57+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQZDBYRXR4TFFoQzdnQ0ZieFctRk9aNGlGczZuMFNlUm02YTB1ZDhhWDlSM0pRS3JrekVWckZQRnFKcnRGeGl2aFpCVGd6ZldHMkNXTWpHd09UMDVGaUx1d3ZPX2lzWmREOGttM0x4Z3ZFcXN4NnZtd1c5QUdIelQ4d2taWDFQcFRpUktiejlnNG56Qk9jekNTcVBBZks?oc=5",
-      "bucket": "Marktkontext",
-      "summary": "Die Meldung liefert zusätzlichen Kontext dafür, wie Risikoappetit, Wachstumserwartungen oder Inflation kurzfristig verschoben werden können.",
-      "impact": "Eher mittel. Der Effekt hängt davon ab, ob weitere Daten die Meldung bestätigen.",
-      "probability": "Mittel. Einzelmeldungen bewegen Märkte oft erst dann stärker, wenn Folgeinfos nachkommen.",
-      "horizon": "Kurzfristig bis einige Tage.",
-      "priceEffect": "Am ehesten betroffen sind breite Aktienindizes, Anleihen oder Währungen – je nachdem, worauf die Meldung einzahlt.",
-      "assets": [
-        "Aktien",
-        "Anleihen",
-        "Währungen"
-      ]
-    },
-    {
-      "title": "Stock market today: S&P 500, Nasdaq futures slide as chip sell-off deepens",
-      "source": "Yahoo Finance",
-      "publishedAt": "2026-07-28T09:00:33+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPMkZsQXlQVWtDVFpoZFFSUndsZzdOUTk4U2FUS3BlZ2NWZ3pVczhfcTBZbTJqZzEyRXVIdlhJZ2o3SGNqUnl2anRJTjlBTmpNRDg2clIzeVpSV2pBWTVRWGZzdkVSaUIyWHpNQm9mWVFTMm1fcjBCT1lYTFoyWXJkRGRsMG8zaVNMYWdnb0hBOGJIMDAzUVVETjBRT2dteWZ6YVVldUw5VHprdw?oc=5",
-      "bucket": "Marktkontext",
-      "summary": "Die Meldung liefert zusätzlichen Kontext dafür, wie Risikoappetit, Wachstumserwartungen oder Inflation kurzfristig verschoben werden können.",
-      "impact": "Eher mittel. Der Effekt hängt davon ab, ob weitere Daten die Meldung bestätigen.",
-      "probability": "Mittel. Einzelmeldungen bewegen Märkte oft erst dann stärker, wenn Folgeinfos nachkommen.",
-      "horizon": "Kurzfristig bis einige Tage.",
-      "priceEffect": "Am ehesten betroffen sind breite Aktienindizes, Anleihen oder Währungen – je nachdem, worauf die Meldung einzahlt.",
-      "assets": [
-        "Aktien",
-        "Anleihen",
-        "Währungen"
-      ]
-    },
-    {
       "title": "Weekly market commentary",
       "source": "BlackRock",
-      "publishedAt": "2026-07-28T01:06:39+00:00",
+      "publishedAt": "2026-07-28T05:09:27+00:00",
       "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQLWJDTjBBalYwVHVpc0VxV1BwRE1xeUt1RWlLQ1VJdnJQRXNnb3p6MnFNbjRBV0s0TnlldW4wSVIycFRQeVNISWJ3VV9wMWdjX1ZndE1Tc24tNzc0anNYWjl0SVBsRDhSa0dVTWlyVVYxX0w5b2JhTFB0Tm9Vb2FwYVZubTU1SVJlcy0zMEpXOEM4ZlhiSU1QazdVQVlldw?oc=5",
       "bucket": "Marktkontext",
       "summary": "Die Meldung liefert zusätzlichen Kontext dafür, wie Risikoappetit, Wachstumserwartungen oder Inflation kurzfristig verschoben werden können.",
@@ -20663,10 +20629,10 @@
       ]
     },
     {
-      "title": "5 Things to Know Before the Stock Market Opens on Tuesday",
-      "source": "Investopedia",
-      "publishedAt": "2026-07-28T12:11:08+00:00",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNcmhQRi04QXVHbFVJVmlwODFydDB5dTQtVWY3OEZhbk1GRU5WeHhzV0ZDM0lOUlBHbTg5Q21MVWpVbWx1cW0zVnhDR2ZxYVgxeEtYejI5Q3pJVS1hREpBcDdfdDdMeDVmUnVfejJwZFZZVjR0cHFiSUNnWk96dkJrN3lWbGlpSHQ5WFZVMUJlN1NqVFMxM1Z1cGw5SEZoSC0takJKN0xDRTFaUHZJ?oc=5",
+      "title": "Stock market today: Nasdaq pares losses as chip stocks sell off, S&P 500 and Dow rise",
+      "source": "Yahoo! Finance Canada",
+      "publishedAt": "2026-07-28T15:53:10+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOUmpZQlVVa0dyNE5Yem5IQ0NvRzFtazRCem9hazg1QzZSdnVSTHoybjdXR1c0WXZ1SlZ1M1N0a2tPa0ZaaDJ0RWtJSkd2MG9JYzNtN0ZHSWhBREQzTWhJYkw3dW1ZazQtaTFZYkUxZTFRRlBHQkxOTTItOXRnZ25YQ0tTZE44Q29uZTlIVFhQUW14bXd0UzNGSnowbVkxZHZXWTVN?oc=5",
       "bucket": "Marktkontext",
       "summary": "Die Meldung liefert zusätzlichen Kontext dafür, wie Risikoappetit, Wachstumserwartungen oder Inflation kurzfristig verschoben werden können.",
       "impact": "Eher mittel. Der Effekt hängt davon ab, ob weitere Daten die Meldung bestätigen.",
@@ -20680,9 +20646,9 @@
       ]
     },
     {
-      "title": "Tech Stocks Tumble on Worries About A.I. Spending and China’s Chip Competition",
+      "title": "Tech Stocks Tumble on Worries Over A.I. Spending and China’s Chips",
       "source": "The New York Times",
-      "publishedAt": "2026-07-28T12:33:28+00:00",
+      "publishedAt": "2026-07-28T16:23:42+00:00",
       "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE45VWk0QW5DWTBhXzVzQTQ4MXNtMDR5NVRKZnFsLWhWLVRhbVB6N2ZDNUZxcndKVWd6WW5vaWNjTzBoUUlzUzlWZWE1SkVWV0R1RXRoMklLWjUxOUw3dm5ncW9PZmlKOFc5a2U3V3Y2UXh3UQ?oc=5",
       "bucket": "Globales Wachstum",
       "summary": "Die Meldung betrifft wichtige Wirtschaftsblöcke außerhalb der USA. Das ist relevant für Nachfrage, Währungen, Industrie und Rohstoffe.",
@@ -20694,6 +20660,41 @@
         "Weltaktien",
         "Währungen",
         "Rohstoffe"
+      ]
+    },
+    {
+      "title": "Wall Street's flip from AI stocks to elsewhere accelerates, while oil prices keep easing",
+      "source": "Chattanooga Times Free Press",
+      "publishedAt": "2026-07-28T17:00:00+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNNEhtWk0tVHJ0NmZnWHg4eXNvbTgySF9Rbk5WWW9kQWM5Z0w1MVduaEt3dnpUOTN3NlduMk5zeTRqTWJvbE82OUFldEdXSXNxcF9XNHlocmszYVc2V0dYRWdHRUx1OC1Ccl9ILXFXYTlpeVM0emdnOENLQUh5bW9QNEN6Vk1tTUs5bWdQNjd2UUFwTFhNdUdpb3pvSV91YUE0ZWZ5dlVaQ2JVMHJxbXNSVHJiZzdCeWYtemVCLS1rMjg2VmxZVm5rZzE2QS1mRkpvbEpmS1hB?oc=5",
+      "bucket": "Energie / Inflation",
+      "summary": "Die Meldung betrifft Energiepreise oder Lieferwege. Das ist wichtig, weil Energie direkt auf Inflation, Transportkosten und Risikoappetit wirkt.",
+      "impact": "Hoch, wenn der Preisanstieg anhält oder Lieferwege gestört bleiben.",
+      "probability": "Mittel bis hoch, wenn die Meldung anhaltende Angebotsknappheit beschreibt.",
+      "horizon": "Sofort bis einige Wochen.",
+      "priceEffect": "Vor allem Öl, Energieaktien, Inflationserwartungen, Staatsanleihen und zinssensitive Aktien könnten reagieren.",
+      "assets": [
+        "Öl",
+        "Energieaktien",
+        "Inflation",
+        "Staatsanleihen"
+      ]
+    },
+    {
+      "title": "Where the US Stock Market May Be Heading Next and What to Buy Now",
+      "source": "Morningstar",
+      "publishedAt": "2026-07-28T06:26:57+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQZDBYRXR4TFFoQzdnQ0ZieFctRk9aNGlGczZuMFNlUm02YTB1ZDhhWDlSM0pRS3JrekVWckZQRnFKcnRGeGl2aFpCVGd6ZldHMkNXTWpHd09UMDVGaUx1d3ZPX2lzWmREOGttM0x4Z3ZFcXN4NnZtd1c5QUdIelQ4d2taWDFQcFRpUktiejlnNG56Qk9jekNTcVBBZks?oc=5",
+      "bucket": "Marktkontext",
+      "summary": "Die Meldung liefert zusätzlichen Kontext dafür, wie Risikoappetit, Wachstumserwartungen oder Inflation kurzfristig verschoben werden können.",
+      "impact": "Eher mittel. Der Effekt hängt davon ab, ob weitere Daten die Meldung bestätigen.",
+      "probability": "Mittel. Einzelmeldungen bewegen Märkte oft erst dann stärker, wenn Folgeinfos nachkommen.",
+      "horizon": "Kurzfristig bis einige Tage.",
+      "priceEffect": "Am ehesten betroffen sind breite Aktienindizes, Anleihen oder Währungen – je nachdem, worauf die Meldung einzahlt.",
+      "assets": [
+        "Aktien",
+        "Anleihen",
+        "Währungen"
       ]
     },
     {
@@ -20818,7 +20819,7 @@
       "actionMatrixKey": "normal"
     },
     "statusLine": {
-      "dataAsOf": "2026-07-28T14:26:58.106333+00:00",
+      "dataAsOf": "2026-07-28T17:41:10.483433+00:00",
       "updateCadence": "Gemischt: täglich bis jährlich",
       "systemNote": "Technische Meta-Informationen werden bewusst dezent gehalten."
     }
