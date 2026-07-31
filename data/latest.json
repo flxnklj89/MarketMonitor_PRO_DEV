@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-31T03:39:37.966916+00:00",
+  "fetchedAt": "2026-07-31T06:50:36.693904+00:00",
   "meta": {
     "schemaVersion": "4.0-pro",
     "source": "FRED + Google News RSS",
@@ -20600,6 +20600,23 @@
   },
   "news": [
     {
+      "title": "Stock Market Today, July 30: Amazon Soars Over 8% After Hours on Earnings Beat",
+      "source": "The Motley Fool",
+      "publishedAt": "2026-07-30T21:25:37+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQbkV4LUthUEJsNlVDS2stb18tM2ttXzZfQmJ6NzdqR3lTUTRuV1BBSlFPUllQcDhFMXV6Mk9SSjNSSE0xUWs4aHIyV3V1ZVBUbW0wcldITXNxMVVRXzZ2OWtaYXI1dHZOaUhDN1RvbkVQS1JISFRjQ0lISV9yc3FiQ2lkZmlHdFBQdGJFcGhsMHd6NkNTdmw3MmVJb1I5Z0FnYWx0azdDY1hFZUdpWXlKZVNMaWVqdGp5b3FTbTI5eGNTLUJreHFMNy16TTN5SU9jX0E?oc=5",
+      "bucket": "Unternehmensgewinne",
+      "summary": "Die Meldung zeigt, ob Unternehmen mit Kosten, Nachfrage und Margendruck besser oder schlechter klarkommen als gedacht.",
+      "impact": "Mittel, manchmal hoch – je nachdem, wie groß und richtungsweisend die betroffenen Unternehmen sind.",
+      "probability": "Hoch, wenn mehrere große Unternehmen in dieselbe Richtung überraschen.",
+      "horizon": "Kurzfristig bis zur nächsten Berichtswelle.",
+      "priceEffect": "Direkt betroffen sind Einzelaktien, Sektoren und oft auch der Gesamtmarkt über die Gewinnschätzungen.",
+      "assets": [
+        "Aktien",
+        "Sektoren",
+        "Gewinnschätzungen"
+      ]
+    },
+    {
       "title": "Microsoft’s best day since 2008 leads US stocks, while inflation worries remain in the bond market",
       "source": "Orlando Sentinel",
       "publishedAt": "2026-07-30T19:40:45+00:00",
@@ -20618,20 +20635,55 @@
       ]
     },
     {
-      "title": "Stock Market Today, July 30: Amazon Soars Over 8% After Hours on Earnings Beat",
-      "source": "The Motley Fool",
-      "publishedAt": "2026-07-30T21:25:37+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQbkV4LUthUEJsNlVDS2stb18tM2ttXzZfQmJ6NzdqR3lTUTRuV1BBSlFPUllQcDhFMXV6Mk9SSjNSSE0xUWs4aHIyV3V1ZVBUbW0wcldITXNxMVVRXzZ2OWtaYXI1dHZOaUhDN1RvbkVQS1JISFRjQ0lISV9yc3FiQ2lkZmlHdFBQdGJFcGhsMHd6NkNTdmw3MmVJb1I5Z0FnYWx0azdDY1hFZUdpWXlKZVNMaWVqdGp5b3FTbTI5eGNTLUJreHFMNy16TTN5SU9jX0E?oc=5",
-      "bucket": "Unternehmensgewinne",
-      "summary": "Die Meldung zeigt, ob Unternehmen mit Kosten, Nachfrage und Margendruck besser oder schlechter klarkommen als gedacht.",
-      "impact": "Mittel, manchmal hoch – je nachdem, wie groß und richtungsweisend die betroffenen Unternehmen sind.",
-      "probability": "Hoch, wenn mehrere große Unternehmen in dieselbe Richtung überraschen.",
-      "horizon": "Kurzfristig bis zur nächsten Berichtswelle.",
-      "priceEffect": "Direkt betroffen sind Einzelaktien, Sektoren und oft auch der Gesamtmarkt über die Gewinnschätzungen.",
+      "title": "Asia stocks surge, yen awaits Ueda's presser after intervention boost",
+      "source": "Reuters",
+      "publishedAt": "2026-07-31T01:31:00+00:00",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPNlVXYXdFRjZLcGRvZUdsRkVNc0ZwYUJzNE1rcHdzN3VQOC00WF90TVNOdXhudGZVY3BqWlJ5ZUVTUDZYLVVhd2VEekFRX25rdnZwck13QThNMUhLOEpuVUZHUDhMV3d5ZmlKbDJOTmJmRDQ2Y29uTDBONzZSZ2d5aGtNZw?oc=5",
+      "bucket": "Globales Wachstum",
+      "summary": "Die Meldung betrifft wichtige Wirtschaftsblöcke außerhalb der USA. Das ist relevant für Nachfrage, Währungen, Industrie und Rohstoffe.",
+      "impact": "Mittel, bei großen Wachstums- oder Währungssignalen auch hoch.",
+      "probability": "Mittel, weil globale Themen oft über mehrere Tage in Marktpreise einsickern.",
+      "horizon": "Tage bis Wochen.",
+      "priceEffect": "Weltaktien, Rohstoffe, Exportwerte und regionale Währungen könnten besonders reagieren.",
       "assets": [
-        "Aktien",
-        "Sektoren",
-        "Gewinnschätzungen"
+        "Weltaktien",
+        "Währungen",
+        "Rohstoffe"
+      ]
+    },
+    {
+      "title": "China, Its Economy Stumbling, Signals Only Cautious Support",
+      "source": "The New York Times",
+      "publishedAt": "2026-07-30T12:32:33+00:00",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9TRmNOT1NtYjRsTW4xOWJ6X3dHMmpLYkp4QThERHMwTXpwT2FPVW5wWDg0dGE4VUI5WXBvR3pZSnRNSWFXT0t6eW15YkQwd1A0U19LOVhQZDYyLUNVU3J1OFZVWS1iTlVPaXZyOHdSSmtHNTZ1Yk9IaDJLZFY?oc=5",
+      "bucket": "Globales Wachstum",
+      "summary": "Die Meldung betrifft wichtige Wirtschaftsblöcke außerhalb der USA. Das ist relevant für Nachfrage, Währungen, Industrie und Rohstoffe.",
+      "impact": "Mittel, bei großen Wachstums- oder Währungssignalen auch hoch.",
+      "probability": "Mittel, weil globale Themen oft über mehrere Tage in Marktpreise einsickern.",
+      "horizon": "Tage bis Wochen.",
+      "priceEffect": "Weltaktien, Rohstoffe, Exportwerte und regionale Währungen könnten besonders reagieren.",
+      "assets": [
+        "Weltaktien",
+        "Währungen",
+        "Rohstoffe"
+      ]
+    },
+    {
+      "title": "Oil prices jump, while the Dow drops more than 1,100 as sinking AI stocks drag Wall Street lower",
+      "source": "AP News",
+      "publishedAt": "2026-07-29T20:47:00+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVVhqMlRBNU0taHdVcUdHUUE3eDFsZEFQbTZ6dElnTEtMOGVSb1ktYlhpbmJHMm9NY2xRc1lQRWRXcGZ2N0NUNm9FSWV1ZkQ2MjAtaE5WWkwxeHFDMmxxX3I4MHNDNmduRnZ4ODNzNUtSZ2hyZEh3NVBtMmthTHA5UDRzcTBXOWJYNS0yVHlUM0loVXE5VThkeg?oc=5",
+      "bucket": "Energie / Inflation",
+      "summary": "Die Meldung betrifft Energiepreise oder Lieferwege. Das ist wichtig, weil Energie direkt auf Inflation, Transportkosten und Risikoappetit wirkt.",
+      "impact": "Hoch, wenn der Preisanstieg anhält oder Lieferwege gestört bleiben.",
+      "probability": "Mittel bis hoch, wenn die Meldung anhaltende Angebotsknappheit beschreibt.",
+      "horizon": "Sofort bis einige Wochen.",
+      "priceEffect": "Vor allem Öl, Energieaktien, Inflationserwartungen, Staatsanleihen und zinssensitive Aktien könnten reagieren.",
+      "assets": [
+        "Öl",
+        "Energieaktien",
+        "Inflation",
+        "Staatsanleihen"
       ]
     },
     {
@@ -20649,57 +20701,6 @@
         "Aktien",
         "Anleihen",
         "Währungen"
-      ]
-    },
-    {
-      "title": "Asia stocks surge, yen in the spotlight after suspected intervention",
-      "source": "Reuters",
-      "publishedAt": "2026-07-31T01:31:00+00:00",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPNlVXYXdFRjZLcGRvZUdsRkVNc0ZwYUJzNE1rcHdzN3VQOC00WF90TVNOdXhudGZVY3BqWlJ5ZUVTUDZYLVVhd2VEekFRX25rdnZwck13QThNMUhLOEpuVUZHUDhMV3d5ZmlKbDJOTmJmRDQ2Y29uTDBONzZSZ2d5aGtNZw?oc=5",
-      "bucket": "Globales Wachstum",
-      "summary": "Die Meldung betrifft wichtige Wirtschaftsblöcke außerhalb der USA. Das ist relevant für Nachfrage, Währungen, Industrie und Rohstoffe.",
-      "impact": "Mittel, bei großen Wachstums- oder Währungssignalen auch hoch.",
-      "probability": "Mittel, weil globale Themen oft über mehrere Tage in Marktpreise einsickern.",
-      "horizon": "Tage bis Wochen.",
-      "priceEffect": "Weltaktien, Rohstoffe, Exportwerte und regionale Währungen könnten besonders reagieren.",
-      "assets": [
-        "Weltaktien",
-        "Währungen",
-        "Rohstoffe"
-      ]
-    },
-    {
-      "title": "China’s Tech Stocks Are Falling Despite Their Own Breakthroughs",
-      "source": "The Wire China",
-      "publishedAt": "2026-07-30T22:03:58+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPc3BjM3VpSDVaWFBBdGxLTkxMNUduZjE1Q2JlVzJtQmRGdUxPd1Q2S3BwQTFuSXlXN3FSMzBMVE1vaFVTQVRuanVuWjZ6dFZVaEVEZC1va083aWxCUWRaUzBaTDB1X1loc3JTalVLVGtxSEczV2VFRGZNYW1ZSlVnOE5JanRPMHlJZkZxaFlhcUZmYVN4aXJrZWRjc20talE0dEhqNUNR?oc=5",
-      "bucket": "Globales Wachstum",
-      "summary": "Die Meldung betrifft wichtige Wirtschaftsblöcke außerhalb der USA. Das ist relevant für Nachfrage, Währungen, Industrie und Rohstoffe.",
-      "impact": "Mittel, bei großen Wachstums- oder Währungssignalen auch hoch.",
-      "probability": "Mittel, weil globale Themen oft über mehrere Tage in Marktpreise einsickern.",
-      "horizon": "Tage bis Wochen.",
-      "priceEffect": "Weltaktien, Rohstoffe, Exportwerte und regionale Währungen könnten besonders reagieren.",
-      "assets": [
-        "Weltaktien",
-        "Währungen",
-        "Rohstoffe"
-      ]
-    },
-    {
-      "title": "Coinbase shares slide as revenue and earnings miss despite record market share",
-      "source": "SiliconANGLE",
-      "publishedAt": "2026-07-30T22:24:03+00:00",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOekVaNFQ0aTdDUnM0cGpvWDktdFVCZW9mVWZneEt0Q2xTYnYyXzlpU2VCMEswYm9PdGlqVWZPSVQ3VTZKLUJsZExJd0oyRlUybVc5Snd2cGExVkhxZFhmRDlxWGQwRl9RQzF1aTdibl9oU1hjWk5ZLUpQb1labHQxS0JPMDlPMlZVLU9NQ0lIY2tTYUFmVXk3ckVfYnhqSnJpYzAyOHJwRk55Y1Zr?oc=5",
-      "bucket": "Unternehmensgewinne",
-      "summary": "Die Meldung zeigt, ob Unternehmen mit Kosten, Nachfrage und Margendruck besser oder schlechter klarkommen als gedacht.",
-      "impact": "Mittel, manchmal hoch – je nachdem, wie groß und richtungsweisend die betroffenen Unternehmen sind.",
-      "probability": "Hoch, wenn mehrere große Unternehmen in dieselbe Richtung überraschen.",
-      "horizon": "Kurzfristig bis zur nächsten Berichtswelle.",
-      "priceEffect": "Direkt betroffen sind Einzelaktien, Sektoren und oft auch der Gesamtmarkt über die Gewinnschätzungen.",
-      "assets": [
-        "Aktien",
-        "Sektoren",
-        "Gewinnschätzungen"
       ]
     }
   ],
@@ -20806,7 +20807,7 @@
       "actionMatrixKey": "caution"
     },
     "statusLine": {
-      "dataAsOf": "2026-07-31T03:39:37.966916+00:00",
+      "dataAsOf": "2026-07-31T06:50:36.693904+00:00",
       "updateCadence": "Gemischt: täglich bis jährlich",
       "systemNote": "Technische Meta-Informationen werden bewusst dezent gehalten."
     }
