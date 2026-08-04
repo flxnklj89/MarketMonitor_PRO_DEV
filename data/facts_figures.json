@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-04T14:33:04.497078+00:00",
+  "generatedAt": "2026-08-04T17:56:46.293555+00:00",
   "meta": {
     "schemaVersion": "1.0",
     "sourceSummary": [
@@ -6112,24 +6112,6 @@
   },
   "news": [
     {
-      "title": "US stocks near record high, oil falls as Trump claims Iran talks under way",
-      "source": "Al Jazeera",
-      "publishedAt": "2026-08-04T08:58:03+00:00",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQM3lRMnNtREFPd01Dc2NnWXZXclZnUjZsQ3pWNTd5bW12dmFSdDFyNWRxcFBzczF5TGFNZ3pwbzIwU1paUzNZMV9BNTd1c2d4UzBleW1aX1YyMnpIeVVZZ0N6SVB4Q1Q4aThZLW43LVR6OVhuQTNST2VyZGlYaXQ4cm1SaWpLMElIajRaWF9nalQybHI1MVV4Z3dvV3pNYURpMEk3cGVrZDlITEdJbFdnckVEeWo0UdIBuwFBVV95cUxNbjVjcldMX0ljOVNVdEVHajk2alBIaURLeF9Za1Zia1h3aTR6YUNMUDQwdmh5TUZqbmIzZjdGbDcxSHcyeVZjMGRxYWpZYU9hNS1tSHBzQ1RsWWpNMUNjN3BUUjdkVnM3NlgxbnRDR180SnRzbkwyeDdfX3pQRTBHTGU2M3VRVTZnTDVVWTk5dlhPLXBGZXF4MHlUUnpWMTg1emtyb2lrOGdUMnNxVmhsNm5wM2ZKY0txXzFF?oc=5",
-      "bucket": "Energie / Inflation",
-      "summary": "Die Meldung betrifft Energiepreise oder Lieferwege. Das ist wichtig, weil Energie direkt auf Inflation, Transportkosten und Risikoappetit wirkt.",
-      "impact": "Hoch, wenn der Preisanstieg anhält oder Lieferwege gestört bleiben.",
-      "probability": "Mittel bis hoch, wenn die Meldung anhaltende Angebotsknappheit beschreibt.",
-      "horizon": "Sofort bis einige Wochen.",
-      "priceEffect": "Vor allem Öl, Energieaktien, Inflationserwartungen, Staatsanleihen und zinssensitive Aktien könnten reagieren.",
-      "assets": [
-        "Öl",
-        "Energieaktien",
-        "Inflation",
-        "Staatsanleihen"
-      ]
-    },
-    {
       "title": "US stocks rally near a record as falling oil prices ease Wall Street’s worries about inflation",
       "source": "AP News",
       "publishedAt": "2026-08-03T20:53:00+00:00",
@@ -6183,20 +6165,39 @@
       ]
     },
     {
-      "title": "Stock market today: Dow, S&P 500, Nasdaq futures coast higher as earnings roll in, Palantir stock soars",
-      "source": "AOL.com",
-      "publishedAt": "2026-08-04T10:16:59+00:00",
-      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE8xTHlBT2hUbmdZUVdFR3FGd2EtZG9HbTg5X3dMby03RXRYQnd0YWVfZG43b2VRM2IwcUR5S0xOcGtRTnAyMFFWLVZuNVBsMjRhV2hodk9mQ2hkZnpadkh2XzNKU1dia2M0NmZRWFAwNVEzWF84VWVZ?oc=5",
-      "bucket": "Unternehmensgewinne",
-      "summary": "Die Meldung zeigt, ob Unternehmen mit Kosten, Nachfrage und Margendruck besser oder schlechter klarkommen als gedacht.",
-      "impact": "Mittel, manchmal hoch – je nachdem, wie groß und richtungsweisend die betroffenen Unternehmen sind.",
-      "probability": "Hoch, wenn mehrere große Unternehmen in dieselbe Richtung überraschen.",
-      "horizon": "Kurzfristig bis zur nächsten Berichtswelle.",
-      "priceEffect": "Direkt betroffen sind Einzelaktien, Sektoren und oft auch der Gesamtmarkt über die Gewinnschätzungen.",
+      "title": "US stocks leap toward a record as profits keep piling up and oil prices ease",
+      "source": "WRAL",
+      "publishedAt": "2026-08-04T11:21:45+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNaHEtQXpsbDZZUGxpWGlUX3NCX3ZfeUgzRFNUUDA1NkdreHpyR29LcmVmaTFXSlY4MnFITjJFaUd1RlY4ZEFWYXhPXzlNNENkelVlVi15bXpEWnYyY2M2MUlaX0l4bmtPRWZ2M3h6N2VCLUx2TUZBakNWelZTMm5JRDF2ZGtseEc4?oc=5",
+      "bucket": "Energie / Inflation",
+      "summary": "Die Meldung betrifft Energiepreise oder Lieferwege. Das ist wichtig, weil Energie direkt auf Inflation, Transportkosten und Risikoappetit wirkt.",
+      "impact": "Hoch, wenn der Preisanstieg anhält oder Lieferwege gestört bleiben.",
+      "probability": "Mittel bis hoch, wenn die Meldung anhaltende Angebotsknappheit beschreibt.",
+      "horizon": "Sofort bis einige Wochen.",
+      "priceEffect": "Vor allem Öl, Energieaktien, Inflationserwartungen, Staatsanleihen und zinssensitive Aktien könnten reagieren.",
       "assets": [
-        "Aktien",
-        "Sektoren",
-        "Gewinnschätzungen"
+        "Öl",
+        "Energieaktien",
+        "Inflation",
+        "Staatsanleihen"
+      ]
+    },
+    {
+      "title": "Stock market today: Nasdaq surges, Dow and S&P 500 trade at record highs amid US-Iran optimism, tech rally",
+      "source": "AOL.com",
+      "publishedAt": "2026-08-04T13:08:58+00:00",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE8xTHlBT2hUbmdZUVdFR3FGd2EtZG9HbTg5X3dMby03RXRYQnd0YWVfZG43b2VRM2IwcUR5S0xOcGtRTnAyMFFWLVZuNVBsMjRhV2hodk9mQ2hkZnpadkh2XzNKU1dia2M0NmZRWFAwNVEzWF84VWVZ?oc=5",
+      "bucket": "Handel / Lieferketten",
+      "summary": "Die Meldung betrifft Zölle, Sanktionen oder Logistik. Das ist wichtig, weil solche Themen Preise, Margen und Verfügbarkeit von Vorprodukten beeinflussen.",
+      "impact": "Mittel bis hoch, wenn die Störung mehrere Branchen oder Länder betrifft.",
+      "probability": "Mittel, weil politische Schlagzeilen oft erst bestätigt werden müssen.",
+      "horizon": "Sofort bis mehrere Wochen.",
+      "priceEffect": "Besonders empfindlich reagieren Industrie, Transport, Rohstoffe, Inflationspreise und konjunktursensitive Aktien.",
+      "assets": [
+        "Industrieaktien",
+        "Rohstoffe",
+        "Inflation",
+        "Transport"
       ]
     },
     {
