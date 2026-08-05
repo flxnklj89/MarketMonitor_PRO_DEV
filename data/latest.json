@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-05T06:35:25.840164+00:00",
+  "fetchedAt": "2026-08-05T10:43:34.735321+00:00",
   "meta": {
     "schemaVersion": "4.0-pro",
     "source": "FRED + Google News RSS",
@@ -20618,7 +20618,7 @@
     {
       "title": "US stock market hits record high amid hopes for Strait of Hormuz reopening",
       "source": "Al Jazeera",
-      "publishedAt": "2026-08-05T02:14:19+00:00",
+      "publishedAt": "2026-08-05T08:22:17+00:00",
       "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOdnNodFRlOXZtOTlIUnRSTlFmbTVsUF82dFRfeXlKYVAwUHZidGt1eU5GcmpYMHRSYmVMa2pHY0I4d2dtTThnLWJGdWF6NTk2a0ZXNlNhTDk5Z2R0VE5BRjllOWJENWFGOXR0QWNreWVSbjVWQVFXQ0pJQlFvaUpDeGI4VnRUYW8wOXZ5SFkxVWxfeENoYVcxQ1FtRjNLaHVKd290V0ZLRWpJTDcyTElDbmNKTDJCVDZp0gG-AUFVX3lxTE9BLU5sYmQzSWNsVUdkeXFmSXhPbUZ1eU51cFdtbEo3d3FCU1VlMUVINGZKOXZXaWVDanpJT2JSS3ZKZXhic2MwYzVNQTRSd0ZMSGswODVsemh0a3drY0JqNkx4MHBueWdmamtjU3N6amJQemh1cUthOGowdzJ2VmxaUU93WjlSZmlRMnQ4NEpZa3MxdWdRZmxOLWU1Z1dCTk5haGpkOWlFNUlxUFdtbGJIeE5VakM0VzFSMUY5S0E?oc=5",
       "bucket": "Energie / Inflation",
       "summary": "Die Meldung betrifft Energiepreise oder Lieferwege. Das ist wichtig, weil Energie direkt auf Inflation, Transportkosten und Risikoappetit wirkt.",
@@ -20634,10 +20634,44 @@
       ]
     },
     {
-      "title": "U.S. stock market rallies to records as oil prices ease",
-      "source": "JC Post",
-      "publishedAt": "2026-08-05T02:37:30+00:00",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFAwRzNjTllFWkRhYjhIQUNzcDl3VERDTVhrR2hUR1hrOGlwT1kxQkhTdlJQWXdNUVN0UzhuT1E0MUxSaENPTmwwdmtHQzlxaWNSaG41ZUdwZlJIY2N4UHZhdVZNanBPcjY0ZFlNbXNn?oc=5",
+      "title": "Google Finance",
+      "source": "Google",
+      "publishedAt": "2026-08-05T07:09:14+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBTVmtXdEZmQ29KbkoyQkVBRFJpcHA3UDhnS0RkT3BuLTdBMkpxMGRfU21fMGRLdFE0QUNJSVlra2VCOVhnREE?oc=5",
+      "bucket": "Marktkontext",
+      "summary": "Die Meldung liefert zusätzlichen Kontext dafür, wie Risikoappetit, Wachstumserwartungen oder Inflation kurzfristig verschoben werden können.",
+      "impact": "Eher mittel. Der Effekt hängt davon ab, ob weitere Daten die Meldung bestätigen.",
+      "probability": "Mittel. Einzelmeldungen bewegen Märkte oft erst dann stärker, wenn Folgeinfos nachkommen.",
+      "horizon": "Kurzfristig bis einige Tage.",
+      "priceEffect": "Am ehesten betroffen sind breite Aktienindizes, Anleihen oder Währungen – je nachdem, worauf die Meldung einzahlt.",
+      "assets": [
+        "Aktien",
+        "Anleihen",
+        "Währungen"
+      ]
+    },
+    {
+      "title": "Stocks get AI-boost; investors on tenterhooks over Mideast peace talks",
+      "source": "Reuters",
+      "publishedAt": "2026-08-05T01:37:00+00:00",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPSjNOaFJhdXRJblJMNldJM09LeFJDOXNqY2Y0R3dhcGt3S1ZyNm1peFdvVlBfN2RrNmtCYVhQa3pzenI5VlBld2c2Y0JPLTAzNWRhTWxUYWxjNEpvWGxIYlR3M2NLdGg5RnpRSmtYVVVwamJfYTZ5S1JaQ3J5QjFEQ3B0WQ?oc=5",
+      "bucket": "Marktkontext",
+      "summary": "Die Meldung liefert zusätzlichen Kontext dafür, wie Risikoappetit, Wachstumserwartungen oder Inflation kurzfristig verschoben werden können.",
+      "impact": "Eher mittel. Der Effekt hängt davon ab, ob weitere Daten die Meldung bestätigen.",
+      "probability": "Mittel. Einzelmeldungen bewegen Märkte oft erst dann stärker, wenn Folgeinfos nachkommen.",
+      "horizon": "Kurzfristig bis einige Tage.",
+      "priceEffect": "Am ehesten betroffen sind breite Aktienindizes, Anleihen oder Währungen – je nachdem, worauf die Meldung einzahlt.",
+      "assets": [
+        "Aktien",
+        "Anleihen",
+        "Währungen"
+      ]
+    },
+    {
+      "title": "US stocks leap toward a record as profits keep piling up and oil prices ease",
+      "source": "KBTX News 3",
+      "publishedAt": "2026-08-04T18:04:00+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPSTJsYXc1VEhrRXB6c0pKSEdzaFpMR05XRU96cG1za0JDRmdiYzNVamc5dkZhaUExV3NNWFVGMkJ3SXhzb3Zrbzg2eXRKcGEtRFdBWEcyWHNra19LeGhiZ0tQNUJrZzBYR2t1V0lySGhaQ3diZWQ2Zm9NS1Uwd2RLMEVMQkVHeXNMVWxVSzBLM1lXUmt3dFdSRWlzMTg0ZElfeFE?oc=5",
       "bucket": "Energie / Inflation",
       "summary": "Die Meldung betrifft Energiepreise oder Lieferwege. Das ist wichtig, weil Energie direkt auf Inflation, Transportkosten und Risikoappetit wirkt.",
       "impact": "Hoch, wenn der Preisanstieg anhält oder Lieferwege gestört bleiben.",
@@ -20666,41 +20700,6 @@
         "Aktien",
         "Anleihen",
         "Währungen"
-      ]
-    },
-    {
-      "title": "Oil prices ease and Asian shares gain on hopes for Mideast deal, as companies report strong profits",
-      "source": "WRAL",
-      "publishedAt": "2026-08-05T05:07:47+00:00",
-      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQMUlKOWE3YWxOcGdXcV9iSUpUdG9YVVRWdTAwMjh3RExKWVdseGdPN1BnWl96NGF1bUY5ZEZUbVlXQm5XdFZNbkgxMVFKdGVub2xCU002Rk5ONnVnTllQLUE3VkRTbDZ1MEZya1c2eE9LOUdlS3QwQ1l6ZGtWazY4dXJiRjd5SkdxT2JXR1dBRldqQ1BpSnktNjZSeGFQUk5lQXltT1VhWnVBVXM5M0ZwV0UwNkE4WnZLZWt4bnZuOHdSVXVINVo2MmtRMXR3Vjg?oc=5",
-      "bucket": "Energie / Inflation",
-      "summary": "Die Meldung betrifft Energiepreise oder Lieferwege. Das ist wichtig, weil Energie direkt auf Inflation, Transportkosten und Risikoappetit wirkt.",
-      "impact": "Hoch, wenn der Preisanstieg anhält oder Lieferwege gestört bleiben.",
-      "probability": "Mittel bis hoch, wenn die Meldung anhaltende Angebotsknappheit beschreibt.",
-      "horizon": "Sofort bis einige Wochen.",
-      "priceEffect": "Vor allem Öl, Energieaktien, Inflationserwartungen, Staatsanleihen und zinssensitive Aktien könnten reagieren.",
-      "assets": [
-        "Öl",
-        "Energieaktien",
-        "Inflation",
-        "Staatsanleihen"
-      ]
-    },
-    {
-      "title": "China’s stock account openings slow in July amid tech sell-off",
-      "source": "South China Morning Post",
-      "publishedAt": "2026-08-05T03:49:19+00:00",
-      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOYnlpS3JJbjU4cjdxM1JiM1FOdFZCSS1sLWI2VVl1NW1xNTgwVTRMaGZnS0ItZHl1ZEwzWTVUV0pqNVpDQ2NpZEFaT195V0ZnX01LZzRrejVKbTZYSlJOU0RENDZ1Vy1qT3kwZUFPQ2hBQ2FaOEhRRklsUXdnamNYTW1IOEU3aEZCaHBydnJUc0lVOWlvQTlURlA2d1I1NmxHOXNUcUlvdDBxN1Nla094SHVLSEozVmgxSTZrVGlxdFYwN0pfTndMdGV6SVfSAcwBQVVfeXFMTjF4bXBxcGl3c3V5RVowaTNLaUFFWDBQdFhxMi1kdFlMR0Ixel9jTnVURkU4enI4RU9pQVVfTWc4eE5RWFZSdGYtWWwxNTEwcHV5cE5GYUt2aFowZEFmbkgwS0U0NUpaYlZGNWNwMjZWYXNBTk1xa2Fpd1B4VDFMUGdRTmtacDQ2M3ZNUm5LVkpVNW56bDROTHlkRGVQS1QzdkVoZ0Q1YVhFM2dJOW53a1FRMm11dEZuZlpBSHAzTHpsV3p1U0lNVjdpM3JM?oc=5",
-      "bucket": "Globales Wachstum",
-      "summary": "Die Meldung betrifft wichtige Wirtschaftsblöcke außerhalb der USA. Das ist relevant für Nachfrage, Währungen, Industrie und Rohstoffe.",
-      "impact": "Mittel, bei großen Wachstums- oder Währungssignalen auch hoch.",
-      "probability": "Mittel, weil globale Themen oft über mehrere Tage in Marktpreise einsickern.",
-      "horizon": "Tage bis Wochen.",
-      "priceEffect": "Weltaktien, Rohstoffe, Exportwerte und regionale Währungen könnten besonders reagieren.",
-      "assets": [
-        "Weltaktien",
-        "Währungen",
-        "Rohstoffe"
       ]
     },
     {
@@ -20825,7 +20824,7 @@
       "actionMatrixKey": "normal"
     },
     "statusLine": {
-      "dataAsOf": "2026-08-05T06:35:25.840164+00:00",
+      "dataAsOf": "2026-08-05T10:43:34.735321+00:00",
       "updateCadence": "Gemischt: täglich bis jährlich",
       "systemNote": "Technische Meta-Informationen werden bewusst dezent gehalten."
     }
