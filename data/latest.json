@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-07T04:16:58.083328+00:00",
+  "fetchedAt": "2026-09-07T14:10:55.517822+00:00",
   "meta": {
     "schemaVersion": "4.0-pro",
     "source": "FRED + Google News RSS",
@@ -127,7 +127,7 @@
       "name": "Europa",
       "score": 22.0,
       "label": "Stabil",
-      "date": "2026-09-04",
+      "date": "2026-09-07",
       "summary": "Europa wird hier über Preisdruck, Zinsniveau und den Euro gegenüber dem US-Dollar gelesen. Ein schwächerer Euro und hoher Preisdruck erhöhen den Stress im Block.",
       "driverText": "Europa wird hier über Preisdruck, Zinsniveau und den Euro gegenüber dem US-Dollar gelesen. Ein schwächerer Euro und hoher Preisdruck erhöhen den Stress im Block.",
       "inflation": {
@@ -140,7 +140,7 @@
       "growthOrRate": {
         "label": "ECB Einlagezins",
         "value": 2.25,
-        "date": "2026-09-04",
+        "date": "2026-09-07",
         "unit": "%",
         "cadence": "daily",
         "series": "ECBDFR"
@@ -20624,10 +20624,10 @@
   },
   "news": [
     {
-      "title": "Stock Market Investors Just Got a Warning From the Federal Reserve. History Says This Will Happen Next.",
-      "source": "finance.yahoo.com",
-      "publishedAt": "2026-09-06T09:04:00+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNSEtvRVM0WUFYTS1RTzN0MHBLeC1DVmc2TUhaZGVqOFhTZ0NFTUZxUWxLQlRvdEE0WXRZVHp2bDZwTVhQQ29teHFoUGp5cERScWl6UXFFMFRMVmlKOU8xbldPUHhaOGVPME5jV3dqeXZMSktHeTJhX3FYemtoLVlPNWRLQk1TZVNDU3BHcDJvTm41UzQwbzBqcVdsa18?oc=5",
+      "title": "Five Market Events to Watch This Week: U.S. Inflation, ECB Rates, Iran and Earnings",
+      "source": "Yahoo Finance",
+      "publishedAt": "2026-09-07T10:38:54+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQLTBqcFZ3NHpqZjEzaVhrSElfaUdLOWJUcFVmVlJlQTh5M2VPYnRaWFJhRTJxdEpaczBGUjFVdXZBN1JnT2ZrMHdkX2J3cTYxMkEwMnpBUGxlWmNJb1JWbF9jQjVBamdZLWZnM1AxdVdjaTlIRzFDU0wzOE8tNzR5VkZxeVJNWDVlUUYyUFdDTDU?oc=5",
       "bucket": "Zinsen / Inflation",
       "summary": "Die Meldung verschiebt Erwartungen an Zentralbanken, Zinsen oder Inflation. Das trifft oft direkt auf Bewertungen und Renditen.",
       "impact": "Mittel bis hoch, weil Zins- und Inflationspfade fast alle Anlageklassen beeinflussen.",
@@ -20642,10 +20642,10 @@
       ]
     },
     {
-      "title": "CAPITAL IDEAS: How does the stock market perform after midterms?",
-      "source": "The Berkshire Edge",
-      "publishedAt": "2026-09-07T04:05:57+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNNjlDQ25aNkNlb2hvaGNueGN6WjhxMUs4VzdfTWRBOUUtMkxlLVZBWlBucDdnRXo1cVFFRzN1U3diUWJvWXJqOWcyaVYtbWR4WjdiN2htY2FnYTV5bUdvVDlyUmsxbVlYWktOcTVCUkFjZmltQ3NRZlVDQkVycjI3RUlfdzZQRGRxV0lNOG1FYTMwaFVwUndB?oc=5",
+      "title": "The Stock Market Is Flashing a Warning Seen Only 6 Times Since 1871, and History Is Crystal Clear That a Disaster Could Be Heading Toward Wall Street",
+      "source": "The Motley Fool",
+      "publishedAt": "2026-09-07T11:00:00+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNZ1BkRkRkc2V0TDcwVTJpZUswRGlpbE1NbWl5TE9JcS01dnpXaDgwQVYyV3BzaExPZmxsTEFOTzRETUNVT1RWSE1sMUNNT2dYUm5paVpsV1ZKNzlmUDlpYjN2akZxSVpDSjdTMWJocFZUeGxjSGJ3M293Ym52RUlEWC1xVWRSTHFkRG5NM1BBcHZiOUt2c3hQYg?oc=5",
       "bucket": "Marktkontext",
       "summary": "Die Meldung liefert zusätzlichen Kontext dafür, wie Risikoappetit, Wachstumserwartungen oder Inflation kurzfristig verschoben werden können.",
       "impact": "Eher mittel. Der Effekt hängt davon ab, ob weitere Daten die Meldung bestätigen.",
@@ -20659,25 +20659,7 @@
       ]
     },
     {
-      "title": "Oil Edges Higher on Renewed Middle East Tensions: Markets Wrap",
-      "source": "Bloomberg.com",
-      "publishedAt": "2026-09-06T22:15:34+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOTG0yNmpRcVhUMEtpTlVEZFoxaE9DVS0yX0hRbTQyamFBQW9JejQyNnhfdEFGRGJhc1Y0dlhsTkt3M2NwN2JSaUN4dTFJUDRCZlNkWTVSdzI4QW1ZRDVhUUVYZzBFZnB0RDFmZFBZR0Vnb3BzcXJzMVYwSU53YUpqS0lDelBpd2JiempVcnNnXzVpVWE2?oc=5",
-      "bucket": "Energie / Inflation",
-      "summary": "Die Meldung betrifft Energiepreise oder Lieferwege. Das ist wichtig, weil Energie direkt auf Inflation, Transportkosten und Risikoappetit wirkt.",
-      "impact": "Hoch, wenn der Preisanstieg anhält oder Lieferwege gestört bleiben.",
-      "probability": "Mittel bis hoch, wenn die Meldung anhaltende Angebotsknappheit beschreibt.",
-      "horizon": "Sofort bis einige Wochen.",
-      "priceEffect": "Vor allem Öl, Energieaktien, Inflationserwartungen, Staatsanleihen und zinssensitive Aktien könnten reagieren.",
-      "assets": [
-        "Öl",
-        "Energieaktien",
-        "Inflation",
-        "Staatsanleihen"
-      ]
-    },
-    {
-      "title": "Asia tech shares rally, others hesitant as oil rises",
+      "title": "Asia shares bounce, others cautious as oil rises",
       "source": "Reuters",
       "publishedAt": "2026-09-07T01:06:00+00:00",
       "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQa0pobHhGSWlxLVNZa2htLURrNldPaHUyOGVyQXVBeGtJOWJDUXpqMXFSTDBCaHNkeFI5Q0Y2NUdFNlJoWUZlVGQwR2pGZk5oc1R5TzFLbUdFMU1aY3NGTXVhOGFTeFZOenRpbUlNc0ZiTjQtMnNaRVUtTVNrWEpLeGprbw?oc=5",
@@ -20695,10 +20677,10 @@
       ]
     },
     {
-      "title": "Asian shares are mixed as chipmaker shares rally in Tokyo and Seoul",
-      "source": "LancasterOnline",
-      "publishedAt": "2026-09-07T03:54:56+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNOWhGbVZyaGtJMlU0TC1CcnJFS0xSbXFkemYtcWdQd2hsNlBKT1o2aDFNTWcwNnRZSnVtdXBWdVA4VXRLYXp5UGlIZTAyX2ZnaVRLWm5VNzk0LURvVS1fTWJGcXRVek9FaVFKVXlhUzE0WVZHZFhDUzdfQlEyVHh6N21GVmJjenZuVHhJdHc0NFk4SkdxZUpORy1UQWptbHRJMXp6TDBzVFVkak1DT2F4TE1JUGN6a3JrTUNnTDlsZlVJRmYzR1F6NkhMMkNpbUFFZmI5bE1faTN3Vmt3eUF2S2V3LWxhR0ZkUGx0VGdXODRoZDRJS2tfb0Y4UQ?oc=5",
+      "title": "Global shares are mixed as chipmaker shares rally in Tokyo and Seoul",
+      "source": "lancasteronline.com",
+      "publishedAt": "2026-09-07T08:48:36+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPbTBmV2ZvbVVtQXYtbDd4THNNOVY1VDFXRDFuM2RGbTVnYktCR0s5MGd2VkRjeXM2Y0NGaEFScmpHb2JrZkNEUWZJajlFUEcyazZuaUEzQWJrc2ZlQi13T3hJMWhCcmsteFJDdFVGeFdrRHVBQk5oNjlZMm5XYkRUd0NYMjg3MnlaekxmLWtvVkpSZjliT3MzRFlZSHBBMVpZRGJRVC1Tb3pETDYtVHJXenk4bk9MTXZIQk9Yejh5R1pkeDNxSU9nY3hjZFpYaS15NHlpaGRNalI3NkxCa0lXSi1PaHB2QldVT0JjYnE0dndvckhXNm1fbjZGcE4?oc=5",
       "bucket": "Marktkontext",
       "summary": "Die Meldung liefert zusätzlichen Kontext dafür, wie Risikoappetit, Wachstumserwartungen oder Inflation kurzfristig verschoben werden können.",
       "impact": "Eher mittel. Der Effekt hängt davon ab, ob weitere Daten die Meldung bestätigen.",
@@ -20712,10 +20694,27 @@
       ]
     },
     {
-      "title": "China prepares £40bn stimulus for financial sector amid fears over sluggish growth",
-      "source": "theguardian.com",
-      "publishedAt": "2026-09-06T15:48:00+00:00",
-      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQTHVFSUVRc3dfRFlBN3gxVFdkRnNSYW8xOG4yOWVjcFJYb3djU3R2MjdBYW84Z0dockd4dFI2cS1zVGhVMGRmajRwWEFMRW81T18tUkstRFRaNzM3VWFxcy1IMWU4ZTRDU0NXeWVQeGtYUFhFWnNublBzTFNGZTYyMVlqMmhFNDY0ZUVQWURVeFhGbGx3dmh5TnBvRGkzbzFoSWZYTzNwbFNIcUdYdFRsNnVOeUdnWWNTeE84ZHprRWFnMmp3TXc?oc=5",
+      "title": "China Stock Market May Open In The Red On Monday",
+      "source": "RTTNews",
+      "publishedAt": "2026-09-07T01:03:00+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQQXlGcnFEZ0ZVN29DWUtkSkFxcDN0S1pnbVZ6ZjdSSzkyTlBxN2dRTTk4Tm5yTXZyRE52bmhIbTZjYUctXzRsME1td1lrcGszWXZzMzYzZDZQMUhUMzRXWWh2dllFRGk3UW9mV0trbTFtRWpncElTZTJqbElVVk9TcDJKcHJBNG5JY0RXaWFn?oc=5",
+      "bucket": "Globales Wachstum",
+      "summary": "Die Meldung betrifft wichtige Wirtschaftsblöcke außerhalb der USA. Das ist relevant für Nachfrage, Währungen, Industrie und Rohstoffe.",
+      "impact": "Mittel, bei großen Wachstums- oder Währungssignalen auch hoch.",
+      "probability": "Mittel, weil globale Themen oft über mehrere Tage in Marktpreise einsickern.",
+      "horizon": "Tage bis Wochen.",
+      "priceEffect": "Weltaktien, Rohstoffe, Exportwerte und regionale Währungen könnten besonders reagieren.",
+      "assets": [
+        "Weltaktien",
+        "Währungen",
+        "Rohstoffe"
+      ]
+    },
+    {
+      "title": "China’s brokers expected to continue robust performance with mega IPO offering",
+      "source": "SCMP",
+      "publishedAt": "2026-09-07T08:00:11+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPWVl4dTVjQXI5TExSUXl1RUR6cV9JMktCR2xfRVRFZ0NBdjRFNlNUX2F1WVFGbncxNktGSUx2THZMM2lrNEliLWpjSHdFeEg0Yi1kLUlaUTRuQVpjVFY0eVMtM1pacm1wWUZzWmx1UVc3OVJHTU9rZXpPbDVFN0RsNUxGSUlMUGwxbzkyckF6c1NET1hLcExOSVN5aUNPLVFST3lDTi14dDIwQlhneWZueUZ0TUl6UWNNdzR6dWxfUk1aUGJ6VHZhZC1qemdzTm55V1NVSC130gHWAUFVX3lxTE9ZWXh1NWNBcjlMTFJReXVFRHpxX0kyS0JHbF9FVEVnQ0F2NEU2U1RfYXVZUUZudzE2S0ZJTHZMdkwzaWs0SWItamNId0V4SDRiLWQtSVpRNG5BWmNUVjR5Uy0zWlpybXBZRnNabHVRVzc5UkdNT2tlek9sNUU3RGw1TEZJSUxQbDFvOTJyQXpzU0RPWEtwTE5JU3lpQ08tUVJPeUNOLXh0MjBCWGd5Zm55RnRNSXpRY013NHp1bF9STVpQYnpUdmFkLWp6Z3NObnlXU1VILXc?oc=5",
       "bucket": "Globales Wachstum",
       "summary": "Die Meldung betrifft wichtige Wirtschaftsblöcke außerhalb der USA. Das ist relevant für Nachfrage, Währungen, Industrie und Rohstoffe.",
       "impact": "Mittel, bei großen Wachstums- oder Währungssignalen auch hoch.",
@@ -20832,7 +20831,7 @@
       "actionMatrixKey": "normal"
     },
     "statusLine": {
-      "dataAsOf": "2026-09-07T04:16:58.083328+00:00",
+      "dataAsOf": "2026-09-07T14:10:55.517822+00:00",
       "updateCadence": "Gemischt: täglich bis jährlich",
       "systemNote": "Technische Meta-Informationen werden bewusst dezent gehalten."
     }
