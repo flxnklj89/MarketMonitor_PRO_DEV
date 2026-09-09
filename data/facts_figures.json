@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T22:32:12.234129+00:00",
+  "generatedAt": "2026-09-09T04:23:22.521230+00:00",
   "meta": {
     "schemaVersion": "1.0",
     "sourceSummary": [
@@ -46,7 +46,7 @@
       "value": 6.6,
       "unit": "%",
       "tone": "l",
-      "status": "50T liegt bei +6.6 % gegenüber dem 200T. Schlusskurs 26507, 50T 26012, 200T 24398. NASDAQ Composite (Fallback) über 50T (26012) und 200T (24398). Trendstruktur intakt.",
+      "status": "50T liegt bei +6.6 % gegenüber dem 200T. Schlusskurs 26421, 50T 26035, 200T 24418. NASDAQ Composite (Fallback) über 50T (26035) und 200T (24418). Trendstruktur intakt.",
       "history": [],
       "fallback": {
         "label": "Fallback: NASDAQ Composite",
@@ -56,10 +56,10 @@
     },
     {
       "label": "RSI (14)",
-      "value": 55.2,
+      "value": 53.5,
       "unit": "",
       "tone": "m",
-      "status": "RSI (14) bei 55.2. Kein Extremniveau in beide Richtungen.",
+      "status": "RSI (14) bei 53.5. Kein Extremniveau in beide Richtungen.",
       "history": [],
       "fallback": {
         "label": "Fallback: NASDAQ Composite",
@@ -69,10 +69,10 @@
     },
     {
       "label": "Drawdown vom Hoch",
-      "value": -2.2,
+      "value": -2.5,
       "unit": "%",
       "tone": "l",
-      "status": "-2.2 % vom Hoch. Kaum struktureller Druck.",
+      "status": "-2.5 % vom Hoch. Kaum struktureller Druck.",
       "history": []
     }
   ],
@@ -702,12 +702,6 @@
   "charts": {
     "chartLabel": "NASDAQ Composite",
     "qqq": [
-      {
-        "date": "2025-06-27",
-        "close": 20273.46,
-        "ma50": 18657.64,
-        "ma200": 18669.53
-      },
       {
         "date": "2025-06-30",
         "close": 20369.73,
@@ -2501,13 +2495,15 @@
         "close": 26506.99,
         "ma50": 26012.47,
         "ma200": 24397.83
+      },
+      {
+        "date": "2026-09-08",
+        "close": 26421.41,
+        "ma50": 26034.95,
+        "ma200": 24417.77
       }
     ],
     "rsi": [
-      {
-        "date": "2025-06-27",
-        "value": 70.7
-      },
       {
         "date": "2025-06-30",
         "value": 72.0
@@ -3703,6 +3699,10 @@
       {
         "date": "2026-09-04",
         "value": 55.2
+      },
+      {
+        "date": "2026-09-08",
+        "value": 53.5
       }
     ],
     "vix": [
@@ -6113,7 +6113,7 @@
   "news": [
     {
       "title": "Weekly market commentary",
-      "source": "blackrock.com",
+      "source": "BlackRock",
       "publishedAt": "2026-09-08T20:10:57+00:00",
       "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQLWJDTjBBalYwVHVpc0VxV1BwRE1xeUt1RWlLQ1VJdnJQRXNnb3p6MnFNbjRBV0s0TnlldW4wSVIycFRQeVNISWJ3VV9wMWdjX1ZndE1Tc24tNzc0anNYWjl0SVBsRDhSa0dVTWlyVVYxX0w5b2JhTFB0Tm9Vb2FwYVZubTU1SVJlcy0zMEpXOEM4ZlhiSU1QazdVQVlldw?oc=5",
       "bucket": "Marktkontext",
@@ -6147,27 +6147,26 @@
       ]
     },
     {
-      "title": "Wall Street slides, oil surges amid worries over inflation, Middle East",
+      "title": "S&P 500 falls as AI worries hit software makers",
       "source": "Reuters",
-      "publishedAt": "2026-09-08T20:17:40+00:00",
-      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE82VU5LOUdHSU5uLWxoeWs1bi16RTM3dUozczYtZXhPUF9RRFEtUVNTQmphRjloY2k5dkxodEZ1eTZnRjF4NU90clpNZGZJTnk1SEJXME44NDIxT1JNNW5rWW80VGlNbDJXNDdjMHN4YXd4eTRLb3RJLW5Ybw?oc=5",
-      "bucket": "Energie / Inflation",
-      "summary": "Die Meldung betrifft Energiepreise oder Lieferwege. Das ist wichtig, weil Energie direkt auf Inflation, Transportkosten und Risikoappetit wirkt.",
-      "impact": "Hoch, wenn der Preisanstieg anhält oder Lieferwege gestört bleiben.",
-      "probability": "Mittel bis hoch, wenn die Meldung anhaltende Angebotsknappheit beschreibt.",
-      "horizon": "Sofort bis einige Wochen.",
-      "priceEffect": "Vor allem Öl, Energieaktien, Inflationserwartungen, Staatsanleihen und zinssensitive Aktien könnten reagieren.",
+      "publishedAt": "2026-09-08T22:35:11+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNjZqc0tNY1VPMHZtRldqOUxwQzJYN0JtWEpoUVNoNGw4U3I5UnVCYXVjd0ZEUUw1SnZhc1JkWnFoTmFoYlVrZ0R3ZlFaQVQ3cmR6ZDVURG1vU1VoR09EcXI4Sl8wemY1RlU2WFJOQ1h6TXpSbUIzdS1WTDhXZnRONzFjRlI0UGIwQTVkeUxWN3YyMkhHeHd6ag?oc=5",
+      "bucket": "Marktkontext",
+      "summary": "Die Meldung liefert zusätzlichen Kontext dafür, wie Risikoappetit, Wachstumserwartungen oder Inflation kurzfristig verschoben werden können.",
+      "impact": "Eher mittel. Der Effekt hängt davon ab, ob weitere Daten die Meldung bestätigen.",
+      "probability": "Mittel. Einzelmeldungen bewegen Märkte oft erst dann stärker, wenn Folgeinfos nachkommen.",
+      "horizon": "Kurzfristig bis einige Tage.",
+      "priceEffect": "Am ehesten betroffen sind breite Aktienindizes, Anleihen oder Währungen – je nachdem, worauf die Meldung einzahlt.",
       "assets": [
-        "Öl",
-        "Energieaktien",
-        "Inflation",
-        "Staatsanleihen"
+        "Aktien",
+        "Anleihen",
+        "Währungen"
       ]
     },
     {
       "title": "Stock Market Today, Sept. 8: Stocks Slide Amid Surging Oil Prices, Persistent Geopolotical Tenisons",
       "source": "The Motley Fool",
-      "publishedAt": "2026-09-08T21:49:32+00:00",
+      "publishedAt": "2026-09-08T22:16:00+00:00",
       "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNVk1vVkdUWE9UdExfZU9sNDgwUlJjNzlJSGEzMk5hTUV4T3duaUd4Ty1hOURiQkY4T0VlNlBsdUVnWjhSX2Qyd0tqMS1pQ2xaTDF1TkdRUlJUd1RWMGNTV192VnhGTVRrcVgtWkNUS2NrWHM1NDRtajZ3c0NMNUMwVWtUcDk5WjJwUFpQNU1uZWl5enJiS3dXY3lUNjVmQnJfZTI2MmNVRzRoQnktaDRYU014b0UtM3pZd1hEOGVJLUtZY1dlaThQSE92NkthYnZyYktPdHVzUEtQVkdMZU1QSzV3b0dBN09Ldk0yQw?oc=5",
       "bucket": "Energie / Inflation",
       "summary": "Die Meldung betrifft Energiepreise oder Lieferwege. Das ist wichtig, weil Energie direkt auf Inflation, Transportkosten und Risikoappetit wirkt.",
@@ -6183,20 +6182,21 @@
       ]
     },
     {
-      "title": "S&P 500 falls as AI worries hit software makers",
-      "source": "Reuters",
-      "publishedAt": "2026-09-08T20:18:27+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNjZqc0tNY1VPMHZtRldqOUxwQzJYN0JtWEpoUVNoNGw4U3I5UnVCYXVjd0ZEUUw1SnZhc1JkWnFoTmFoYlVrZ0R3ZlFaQVQ3cmR6ZDVURG1vU1VoR09EcXI4Sl8wemY1RlU2WFJOQ1h6TXpSbUIzdS1WTDhXZnRONzFjRlI0UGIwQTVkeUxWN3YyMkhHeHd6ag?oc=5",
-      "bucket": "Marktkontext",
-      "summary": "Die Meldung liefert zusätzlichen Kontext dafür, wie Risikoappetit, Wachstumserwartungen oder Inflation kurzfristig verschoben werden können.",
-      "impact": "Eher mittel. Der Effekt hängt davon ab, ob weitere Daten die Meldung bestätigen.",
-      "probability": "Mittel. Einzelmeldungen bewegen Märkte oft erst dann stärker, wenn Folgeinfos nachkommen.",
-      "horizon": "Kurzfristig bis einige Tage.",
-      "priceEffect": "Am ehesten betroffen sind breite Aktienindizes, Anleihen oder Währungen – je nachdem, worauf die Meldung einzahlt.",
+      "title": "Asian stocks mixed as chip rally offsets oil-fueled inflation concerns",
+      "source": "Investing.com",
+      "publishedAt": "2026-09-09T04:04:23+00:00",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPd2lHTGRKVHBFanBnZkUwMGhhLWxpZURIaklJV21rdkJTdGZJSFlrS2JBY2hEbWdtWEtmLWFrWF9URzM0LVpoX1dFb09ROUl5MkM3Wnp6N2laNXZ5OEJyc1poV2lYZDFIbWRjcDJoOTRyVkdkOXRQaWlNci0xNWtkSzdtZ0dwZ2xfdUNRaE1vRjJWckRZbDh0UkNzalVIRVpGOURmZVlCRkgtUHpTeGkxWkZVd3N1OFp1STFpS1NDa0tvTjJ0?oc=5",
+      "bucket": "Energie / Inflation",
+      "summary": "Die Meldung betrifft Energiepreise oder Lieferwege. Das ist wichtig, weil Energie direkt auf Inflation, Transportkosten und Risikoappetit wirkt.",
+      "impact": "Hoch, wenn der Preisanstieg anhält oder Lieferwege gestört bleiben.",
+      "probability": "Mittel bis hoch, wenn die Meldung anhaltende Angebotsknappheit beschreibt.",
+      "horizon": "Sofort bis einige Wochen.",
+      "priceEffect": "Vor allem Öl, Energieaktien, Inflationserwartungen, Staatsanleihen und zinssensitive Aktien könnten reagieren.",
       "assets": [
-        "Aktien",
-        "Anleihen",
-        "Währungen"
+        "Öl",
+        "Energieaktien",
+        "Inflation",
+        "Staatsanleihen"
       ]
     },
     {

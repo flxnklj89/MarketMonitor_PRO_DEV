@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-08T22:31:24.531946+00:00",
+  "fetchedAt": "2026-09-09T04:23:15.304357+00:00",
   "meta": {
     "schemaVersion": "4.0-pro",
     "source": "FRED + Google News RSS",
@@ -66,10 +66,10 @@
       }
     },
     "sp500": {
-      "ytd": 12.54,
+      "ytd": 11.88,
       "first": 6858.47,
-      "latest": 7718.6,
-      "date": "2026-09-04",
+      "latest": 7673.52,
+      "date": "2026-09-08",
       "cadence": "daily",
       "series": "SP500",
       "uiLabel": "S&P 500 seit Jahresbeginn",
@@ -98,7 +98,7 @@
     "tradeStress": {
       "value": 22,
       "label": "Entspannt",
-      "date": "2026-09-07",
+      "date": "2026-09-08",
       "cadence": "daily",
       "method": "proxy",
       "components": {
@@ -120,7 +120,7 @@
   "globalComposite": {
     "value": 35.7,
     "label": "Stabil",
-    "date": "2026-09-08"
+    "date": "2026-09-09"
   },
   "regions": {
     "europe": {
@@ -221,9 +221,9 @@
     {
       "label": "SPX",
       "icon": "📊",
-      "val": 7718.6,
-      "chg": -29.11,
-      "chgPct": -0.38,
+      "val": 7673.52,
+      "chg": -45.08,
+      "chgPct": -0.58,
       "unit": "",
       "dec": 2
     },
@@ -932,10 +932,6 @@
       }
     ],
     "fedRate": [
-      {
-        "date": "2020-09-09",
-        "value": 0.09
-      },
       {
         "date": "2020-09-10",
         "value": 0.09
@@ -7665,10 +7661,6 @@
     ],
     "sp500": [
       {
-        "date": "2020-09-09",
-        "value": 3398.96
-      },
-      {
         "date": "2020-09-10",
         "value": 3339.19
       },
@@ -13683,6 +13675,10 @@
       {
         "date": "2026-09-04",
         "value": 7718.6
+      },
+      {
+        "date": "2026-09-08",
+        "value": 7673.52
       }
     ],
     "sentiment": [
@@ -14404,10 +14400,6 @@
       }
     ],
     "tradeStress": [
-      {
-        "date": "2020-09-09",
-        "value": 22
-      },
       {
         "date": "2020-09-10",
         "value": 22
@@ -20615,13 +20607,17 @@
       {
         "date": "2026-09-07",
         "value": 22
+      },
+      {
+        "date": "2026-09-08",
+        "value": 22
       }
     ]
   },
   "news": [
     {
       "title": "Weekly market commentary",
-      "source": "blackrock.com",
+      "source": "BlackRock",
       "publishedAt": "2026-09-08T20:10:57+00:00",
       "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQLWJDTjBBalYwVHVpc0VxV1BwRE1xeUt1RWlLQ1VJdnJQRXNnb3p6MnFNbjRBV0s0TnlldW4wSVIycFRQeVNISWJ3VV9wMWdjX1ZndE1Tc24tNzc0anNYWjl0SVBsRDhSa0dVTWlyVVYxX0w5b2JhTFB0Tm9Vb2FwYVZubTU1SVJlcy0zMEpXOEM4ZlhiSU1QazdVQVlldw?oc=5",
       "bucket": "Marktkontext",
@@ -20655,27 +20651,26 @@
       ]
     },
     {
-      "title": "Wall Street slides, oil surges amid worries over inflation, Middle East",
+      "title": "S&P 500 falls as AI worries hit software makers",
       "source": "Reuters",
-      "publishedAt": "2026-09-08T20:17:40+00:00",
-      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE82VU5LOUdHSU5uLWxoeWs1bi16RTM3dUozczYtZXhPUF9RRFEtUVNTQmphRjloY2k5dkxodEZ1eTZnRjF4NU90clpNZGZJTnk1SEJXME44NDIxT1JNNW5rWW80VGlNbDJXNDdjMHN4YXd4eTRLb3RJLW5Ybw?oc=5",
-      "bucket": "Energie / Inflation",
-      "summary": "Die Meldung betrifft Energiepreise oder Lieferwege. Das ist wichtig, weil Energie direkt auf Inflation, Transportkosten und Risikoappetit wirkt.",
-      "impact": "Hoch, wenn der Preisanstieg anhält oder Lieferwege gestört bleiben.",
-      "probability": "Mittel bis hoch, wenn die Meldung anhaltende Angebotsknappheit beschreibt.",
-      "horizon": "Sofort bis einige Wochen.",
-      "priceEffect": "Vor allem Öl, Energieaktien, Inflationserwartungen, Staatsanleihen und zinssensitive Aktien könnten reagieren.",
+      "publishedAt": "2026-09-08T22:35:11+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNjZqc0tNY1VPMHZtRldqOUxwQzJYN0JtWEpoUVNoNGw4U3I5UnVCYXVjd0ZEUUw1SnZhc1JkWnFoTmFoYlVrZ0R3ZlFaQVQ3cmR6ZDVURG1vU1VoR09EcXI4Sl8wemY1RlU2WFJOQ1h6TXpSbUIzdS1WTDhXZnRONzFjRlI0UGIwQTVkeUxWN3YyMkhHeHd6ag?oc=5",
+      "bucket": "Marktkontext",
+      "summary": "Die Meldung liefert zusätzlichen Kontext dafür, wie Risikoappetit, Wachstumserwartungen oder Inflation kurzfristig verschoben werden können.",
+      "impact": "Eher mittel. Der Effekt hängt davon ab, ob weitere Daten die Meldung bestätigen.",
+      "probability": "Mittel. Einzelmeldungen bewegen Märkte oft erst dann stärker, wenn Folgeinfos nachkommen.",
+      "horizon": "Kurzfristig bis einige Tage.",
+      "priceEffect": "Am ehesten betroffen sind breite Aktienindizes, Anleihen oder Währungen – je nachdem, worauf die Meldung einzahlt.",
       "assets": [
-        "Öl",
-        "Energieaktien",
-        "Inflation",
-        "Staatsanleihen"
+        "Aktien",
+        "Anleihen",
+        "Währungen"
       ]
     },
     {
       "title": "Stock Market Today, Sept. 8: Stocks Slide Amid Surging Oil Prices, Persistent Geopolotical Tenisons",
       "source": "The Motley Fool",
-      "publishedAt": "2026-09-08T21:49:32+00:00",
+      "publishedAt": "2026-09-08T22:16:00+00:00",
       "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNVk1vVkdUWE9UdExfZU9sNDgwUlJjNzlJSGEzMk5hTUV4T3duaUd4Ty1hOURiQkY4T0VlNlBsdUVnWjhSX2Qyd0tqMS1pQ2xaTDF1TkdRUlJUd1RWMGNTV192VnhGTVRrcVgtWkNUS2NrWHM1NDRtajZ3c0NMNUMwVWtUcDk5WjJwUFpQNU1uZWl5enJiS3dXY3lUNjVmQnJfZTI2MmNVRzRoQnktaDRYU014b0UtM3pZd1hEOGVJLUtZY1dlaThQSE92NkthYnZyYktPdHVzUEtQVkdMZU1QSzV3b0dBN09Ldk0yQw?oc=5",
       "bucket": "Energie / Inflation",
       "summary": "Die Meldung betrifft Energiepreise oder Lieferwege. Das ist wichtig, weil Energie direkt auf Inflation, Transportkosten und Risikoappetit wirkt.",
@@ -20691,20 +20686,21 @@
       ]
     },
     {
-      "title": "S&P 500 falls as AI worries hit software makers",
-      "source": "Reuters",
-      "publishedAt": "2026-09-08T20:18:27+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNjZqc0tNY1VPMHZtRldqOUxwQzJYN0JtWEpoUVNoNGw4U3I5UnVCYXVjd0ZEUUw1SnZhc1JkWnFoTmFoYlVrZ0R3ZlFaQVQ3cmR6ZDVURG1vU1VoR09EcXI4Sl8wemY1RlU2WFJOQ1h6TXpSbUIzdS1WTDhXZnRONzFjRlI0UGIwQTVkeUxWN3YyMkhHeHd6ag?oc=5",
-      "bucket": "Marktkontext",
-      "summary": "Die Meldung liefert zusätzlichen Kontext dafür, wie Risikoappetit, Wachstumserwartungen oder Inflation kurzfristig verschoben werden können.",
-      "impact": "Eher mittel. Der Effekt hängt davon ab, ob weitere Daten die Meldung bestätigen.",
-      "probability": "Mittel. Einzelmeldungen bewegen Märkte oft erst dann stärker, wenn Folgeinfos nachkommen.",
-      "horizon": "Kurzfristig bis einige Tage.",
-      "priceEffect": "Am ehesten betroffen sind breite Aktienindizes, Anleihen oder Währungen – je nachdem, worauf die Meldung einzahlt.",
+      "title": "Asian stocks mixed as chip rally offsets oil-fueled inflation concerns",
+      "source": "Investing.com",
+      "publishedAt": "2026-09-09T04:04:23+00:00",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPd2lHTGRKVHBFanBnZkUwMGhhLWxpZURIaklJV21rdkJTdGZJSFlrS2JBY2hEbWdtWEtmLWFrWF9URzM0LVpoX1dFb09ROUl5MkM3Wnp6N2laNXZ5OEJyc1poV2lYZDFIbWRjcDJoOTRyVkdkOXRQaWlNci0xNWtkSzdtZ0dwZ2xfdUNRaE1vRjJWckRZbDh0UkNzalVIRVpGOURmZVlCRkgtUHpTeGkxWkZVd3N1OFp1STFpS1NDa0tvTjJ0?oc=5",
+      "bucket": "Energie / Inflation",
+      "summary": "Die Meldung betrifft Energiepreise oder Lieferwege. Das ist wichtig, weil Energie direkt auf Inflation, Transportkosten und Risikoappetit wirkt.",
+      "impact": "Hoch, wenn der Preisanstieg anhält oder Lieferwege gestört bleiben.",
+      "probability": "Mittel bis hoch, wenn die Meldung anhaltende Angebotsknappheit beschreibt.",
+      "horizon": "Sofort bis einige Wochen.",
+      "priceEffect": "Vor allem Öl, Energieaktien, Inflationserwartungen, Staatsanleihen und zinssensitive Aktien könnten reagieren.",
       "assets": [
-        "Aktien",
-        "Anleihen",
-        "Währungen"
+        "Öl",
+        "Energieaktien",
+        "Inflation",
+        "Staatsanleihen"
       ]
     },
     {
@@ -20829,7 +20825,7 @@
       "actionMatrixKey": "normal"
     },
     "statusLine": {
-      "dataAsOf": "2026-09-08T22:31:24.531946+00:00",
+      "dataAsOf": "2026-09-09T04:23:15.304357+00:00",
       "updateCadence": "Gemischt: täglich bis jährlich",
       "systemNote": "Technische Meta-Informationen werden bewusst dezent gehalten."
     }
