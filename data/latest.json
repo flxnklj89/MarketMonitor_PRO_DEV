@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-12T01:51:48.113353+00:00",
+  "fetchedAt": "2026-11-12T12:28:53.589547+00:00",
   "meta": {
     "schemaVersion": "4.0-pro",
     "source": "FRED + Google News RSS",
@@ -20612,10 +20612,80 @@
   },
   "news": [
     {
-      "title": "Stock Market Today: Dow Jones, Nasdaq, S&P 500 Rally on November 11, 2026; Oil Rises, Gold Slips",
-      "source": "Eurasia Business News",
-      "publishedAt": "2026-11-11T20:15:07+00:00",
-      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNeFBDd1BMekwxVkZzbWVvMGpCRE5oZUFmTnRVZU1hOTRVdDVyT3p4VnZuc1BEUHhnVHpOMUNBWEN3RUEwN2xPRjUtZ1J4SzBzYkIzdUI4MEpJTlRUMmczS2x6bzNZOUhYZnlDU0RtMXJCU3c1RnBrU1V1eEU3VnhEM3Q2Mk9uZzhNUk05RFpZT1pyNXMyb3hxbVFfYWpGaUhuY2g3Q2FxbU10Sm9jdFY4dEtTbzlvajczb05aVm40N0hwZ3ZoYkM3a2xSS21FZw?oc=5",
+      "title": "U.S. and China Should Cooperate on Finance",
+      "source": "China-US Focus",
+      "publishedAt": "2026-11-12T10:19:13+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNQlNNTFpxTUFBdkFtd09ZRDAtZVkxR0REWXpOM3Bndlg3R2VmRlMydFhZTjZhbGNQY3dweC02WGhpQ3FsYzlVOGlGQm1seGMxekRkNVlkZzNJRy1DSEFlMlQyVXFDSWpBVTNFcklPaWR1dUhUbndiNDBDT3hfTG5WYjlUckxmR3BpOWFUamln?oc=5",
+      "bucket": "Zinsen / Inflation",
+      "summary": "Die Meldung verschiebt Erwartungen an Zentralbanken, Zinsen oder Inflation. Das trifft oft direkt auf Bewertungen und Renditen.",
+      "impact": "Mittel bis hoch, weil Zins- und Inflationspfade fast alle Anlageklassen beeinflussen.",
+      "probability": "Hoch, wenn die Nachricht harte Daten oder klare Aussagen von Zentralbanken enthält.",
+      "horizon": "Von sofort bis mehrere Wochen.",
+      "priceEffect": "Besonders betroffen sind Staatsanleihen, Wachstumstitel, US-Dollar, Gold und breite Aktienindizes.",
+      "assets": [
+        "Staatsanleihen",
+        "Aktien",
+        "US-Dollar",
+        "Gold"
+      ]
+    },
+    {
+      "title": "European stocks hit record high after Nvidia storm rattles Asia",
+      "source": "Reuters",
+      "publishedAt": "2026-11-12T01:53:00+00:00",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFA1ODl5LXpyQ0RZanVjSnZGS1NjS1ljMjZvdW9xY3ZSSUxvNkY2Z3dCMThiSjdKNHI1TFRCZnBIRHdYY0UxTGh0QjRZX3Y2S25sY0k4M0dKN3VZdGNMSGk5N0tPUmVJa3ozWXRCcmluOWxVVjVfblRLdmttMA?oc=5",
+      "bucket": "Globales Wachstum",
+      "summary": "Die Meldung betrifft wichtige Wirtschaftsblöcke außerhalb der USA. Das ist relevant für Nachfrage, Währungen, Industrie und Rohstoffe.",
+      "impact": "Mittel, bei großen Wachstums- oder Währungssignalen auch hoch.",
+      "probability": "Mittel, weil globale Themen oft über mehrere Tage in Marktpreise einsickern.",
+      "horizon": "Tage bis Wochen.",
+      "priceEffect": "Weltaktien, Rohstoffe, Exportwerte und regionale Währungen könnten besonders reagieren.",
+      "assets": [
+        "Weltaktien",
+        "Währungen",
+        "Rohstoffe"
+      ]
+    },
+    {
+      "title": "China steps up legal action against stock market fraud and misconduct",
+      "source": "South China Morning Post",
+      "publishedAt": "2026-11-12T07:00:08+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxORXpUWldrcFVIeGZSa2dRWGZmNEdoSFY5aDhSQ0M4cDU5YjVZazlWZHN2alVrQ2lLeWJQYnN6aVFyUlZoRldXWGFSWjgyM1VNY011YnBIeW1VNkR2UWNjbUs0VEQ2d2Q2ODlFQnpGYWZSYkg2NzJsOXJadk5QMmp3MWhHTGt0cjF2QnBtOVB4bDlsNldYUGZVZlJQZG5ZeWFwWUJ3aXRkX0tnaU5nNXVVUWFQTHItUlFZbjFNVG94QkpCazdyN1Fud3Q5R0gzczc3d3Zj?oc=5",
+      "bucket": "Globales Wachstum",
+      "summary": "Die Meldung betrifft wichtige Wirtschaftsblöcke außerhalb der USA. Das ist relevant für Nachfrage, Währungen, Industrie und Rohstoffe.",
+      "impact": "Mittel, bei großen Wachstums- oder Währungssignalen auch hoch.",
+      "probability": "Mittel, weil globale Themen oft über mehrere Tage in Marktpreise einsickern.",
+      "horizon": "Tage bis Wochen.",
+      "priceEffect": "Weltaktien, Rohstoffe, Exportwerte und regionale Währungen könnten besonders reagieren.",
+      "assets": [
+        "Weltaktien",
+        "Währungen",
+        "Rohstoffe"
+      ]
+    },
+    {
+      "title": "Hot US Inflation Drags the Yen Close to 160. Will Japan Step In Again?",
+      "source": "Yahoo Finance",
+      "publishedAt": "2026-11-12T08:35:54+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQenBwNkc0NWdtMjNObUJhTGhHRzVIcHV0aldTX2xNYmdFMTFiQlRFdDgxTktTbFZWZk00VFdTZXQxSi1lTE9ERWRFLUd0elVBb1lpb1UweURZd2RTS0RMUmRHTkE3MEg5d05nQmVtSmJvTHJmUlNaSE9TUHNpa0ItZmpWS3N0X004YU1ybU01UmtoYWhjQWVPT21VYw?oc=5",
+      "bucket": "Zinsen / Inflation",
+      "summary": "Die Meldung verschiebt Erwartungen an Zentralbanken, Zinsen oder Inflation. Das trifft oft direkt auf Bewertungen und Renditen.",
+      "impact": "Mittel bis hoch, weil Zins- und Inflationspfade fast alle Anlageklassen beeinflussen.",
+      "probability": "Hoch, wenn die Nachricht harte Daten oder klare Aussagen von Zentralbanken enthält.",
+      "horizon": "Von sofort bis mehrere Wochen.",
+      "priceEffect": "Besonders betroffen sind Staatsanleihen, Wachstumstitel, US-Dollar, Gold und breite Aktienindizes.",
+      "assets": [
+        "Staatsanleihen",
+        "Aktien",
+        "US-Dollar",
+        "Gold"
+      ]
+    },
+    {
+      "title": "Stocks Slide on Nvidia Troubles, Oil Edges Lower: Markets Wrap",
+      "source": "Bloomberg.com",
+      "publishedAt": "2026-11-12T10:19:56+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPYmF2Z05ObnRwSVdvWGJrWC1XZlIzVXlYMTV3eVRwQWlScGY3TGpuamVOTEpremJZQnhJU3hkOWl2ck4xNFdzQWM1VTh2OEVBQ3FCTzNiYThfOTlzSHpqX0hHeWQ3dzZTcnRsVzYtMzFWeElmZVdVWUdQcnhIbEp1SS1lejVoM2Y1OGdScGpLbzJPVWhk?oc=5",
       "bucket": "Energie / Inflation",
       "summary": "Die Meldung betrifft Energiepreise oder Lieferwege. Das ist wichtig, weil Energie direkt auf Inflation, Transportkosten und Risikoappetit wirkt.",
       "impact": "Hoch, wenn der Preisanstieg anhält oder Lieferwege gestört bleiben.",
@@ -20632,7 +20702,7 @@
     {
       "title": "What is CoreWeave and why is the stock market rising and falling on its earnings?",
       "source": "Marketplace.org",
-      "publishedAt": "2026-11-11T23:25:09+00:00",
+      "publishedAt": "2026-11-11T22:00:00+00:00",
       "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOb1VMcjdmVzM4WTZOWFZfaXN3QW0yR0I4OU9kQlppWFFjTG1mclBlSEQ4dUs0Y1l6WDhuRUxaUGMtYldyNzgxcWJVaUVjaFczeGNERXRKdWJzOVJMbkVPYWJPa3hlcjM2YUtjbVk1OS1oeDJBOHZ5NnViVnJpMXVNUVFUNVhTZllRUVhWeg?oc=5",
       "bucket": "Unternehmensgewinne",
       "summary": "Die Meldung zeigt, ob Unternehmen mit Kosten, Nachfrage und Margendruck besser oder schlechter klarkommen als gedacht.",
@@ -20644,76 +20714,6 @@
         "Aktien",
         "Sektoren",
         "Gewinnschätzungen"
-      ]
-    },
-    {
-      "title": "Nasdaq Adds 400 Points as CoreWeave Earnings Revive the AI Trade: Stock Market Today",
-      "source": "Kiplinger",
-      "publishedAt": "2026-11-11T21:06:06+00:00",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPeG85WHNtOHEtTER3NGdVeXJfSkRwa2lMNDJ6YU8ySTJuZ096NVpoOGZCTHhJQTZSUVE0VWQxRGJuWjZzdW5jbWJ6WU10d1NneldNMllaZkFWZGxvTTk1WWotd3ZxYUZ5cFFSQnh3NWZiaF96aWxlc3VQekZtREdGQnhsai11RkJWWGQ1czJ5M1R6NUZJM3F6eEZzd1c5VVhPTDJlR0lTdzdXTDFIbVE?oc=5",
-      "bucket": "Unternehmensgewinne",
-      "summary": "Die Meldung zeigt, ob Unternehmen mit Kosten, Nachfrage und Margendruck besser oder schlechter klarkommen als gedacht.",
-      "impact": "Mittel, manchmal hoch – je nachdem, wie groß und richtungsweisend die betroffenen Unternehmen sind.",
-      "probability": "Hoch, wenn mehrere große Unternehmen in dieselbe Richtung überraschen.",
-      "horizon": "Kurzfristig bis zur nächsten Berichtswelle.",
-      "priceEffect": "Direkt betroffen sind Einzelaktien, Sektoren und oft auch der Gesamtmarkt über die Gewinnschätzungen.",
-      "assets": [
-        "Aktien",
-        "Sektoren",
-        "Gewinnschätzungen"
-      ]
-    },
-    {
-      "title": "Economic Outlook",
-      "source": "Philadelphia Federal Reserve Bank",
-      "publishedAt": "2026-11-11T08:28:52+00:00",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPMExOVnU1ejV0NGlOVlNWdUQ2cnppaE03N3ZBWHVmaE4wWDhvWHZwUDRsY1R1d2pmRHQ0cFdYNHlDMDN3Y1F6UTdxYkdvLVpvX3Z5cDlyclFQYmkxa0ZrN0hsNG5zaTFqYTVYTHRWOGRsdzRYdTZzd0thcm9YdGpzQ2l4aEg5UERJOWRmdEVBOVo4R3VXcFlkb3FJa243Nk1pMHpRbDYxVW1jX2dC?oc=5",
-      "bucket": "Marktkontext",
-      "summary": "Die Meldung liefert zusätzlichen Kontext dafür, wie Risikoappetit, Wachstumserwartungen oder Inflation kurzfristig verschoben werden können.",
-      "impact": "Eher mittel. Der Effekt hängt davon ab, ob weitere Daten die Meldung bestätigen.",
-      "probability": "Mittel. Einzelmeldungen bewegen Märkte oft erst dann stärker, wenn Folgeinfos nachkommen.",
-      "horizon": "Kurzfristig bis einige Tage.",
-      "priceEffect": "Am ehesten betroffen sind breite Aktienindizes, Anleihen oder Währungen – je nachdem, worauf die Meldung einzahlt.",
-      "assets": [
-        "Aktien",
-        "Anleihen",
-        "Währungen"
-      ]
-    },
-    {
-      "title": "Tourmaline Oil Corp. stock rises Wednesday, outperforms market",
-      "source": "MarketWatch",
-      "publishedAt": "2026-11-11T21:36:00+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQR3dSRGxtdnBic25vTV8tOFBtUWtjUlhkelJVSW5TVDlCaUpNc2V1aG45OXIyVWxfSGh1MU5KODhPRGFkd3B4bWlia09MMlVhVzNlSVJITG1Tb2lkNEM4MkVuWTZzYW5BR0diQ0FLay1weklXM3AxYm5BaVVvVWVGbFVhZ0RCWnhnTWlCVGRiX1FwZ2FNY242aVhoM19DX2tsU3M3TFh2dV9uRFFnUE5ybFBWZ3lWdjZJOFJ2UWN6Zld6SGtQVkp4UUp6SkNQd21ldGxwbQ?oc=5",
-      "bucket": "Energie / Inflation",
-      "summary": "Die Meldung betrifft Energiepreise oder Lieferwege. Das ist wichtig, weil Energie direkt auf Inflation, Transportkosten und Risikoappetit wirkt.",
-      "impact": "Hoch, wenn der Preisanstieg anhält oder Lieferwege gestört bleiben.",
-      "probability": "Mittel bis hoch, wenn die Meldung anhaltende Angebotsknappheit beschreibt.",
-      "horizon": "Sofort bis einige Wochen.",
-      "priceEffect": "Vor allem Öl, Energieaktien, Inflationserwartungen, Staatsanleihen und zinssensitive Aktien könnten reagieren.",
-      "assets": [
-        "Öl",
-        "Energieaktien",
-        "Inflation",
-        "Staatsanleihen"
-      ]
-    },
-    {
-      "title": "Big 2026 Inflation Winner EZCorp Jumps Late On Earnings Beat",
-      "source": "Investor's Business Daily",
-      "publishedAt": "2026-11-11T22:19:00+00:00",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1ad1VHLUJ3dzlYdnBUVk9MUURkUWpVc1VRaUxjRWFycHdhSDE5azJKRFZLNGI3N21yQm1jbUlqRDhKSVF2VFlST19ueFhBUy1fd1ZRLS1RaHF4UU5mNGpmTFFFZTdQSXZ0eXdNOVM5aVN1MGZWRXc?oc=5",
-      "bucket": "Zinsen / Inflation",
-      "summary": "Die Meldung verschiebt Erwartungen an Zentralbanken, Zinsen oder Inflation. Das trifft oft direkt auf Bewertungen und Renditen.",
-      "impact": "Mittel bis hoch, weil Zins- und Inflationspfade fast alle Anlageklassen beeinflussen.",
-      "probability": "Hoch, wenn die Nachricht harte Daten oder klare Aussagen von Zentralbanken enthält.",
-      "horizon": "Von sofort bis mehrere Wochen.",
-      "priceEffect": "Besonders betroffen sind Staatsanleihen, Wachstumstitel, US-Dollar, Gold und breite Aktienindizes.",
-      "assets": [
-        "Staatsanleihen",
-        "Aktien",
-        "US-Dollar",
-        "Gold"
       ]
     }
   ],
@@ -20819,7 +20819,7 @@
       "actionMatrixKey": "caution"
     },
     "statusLine": {
-      "dataAsOf": "2026-11-12T01:51:48.113353+00:00",
+      "dataAsOf": "2026-11-12T12:28:53.589547+00:00",
       "updateCadence": "Gemischt: täglich bis jährlich",
       "systemNote": "Technische Meta-Informationen werden bewusst dezent gehalten."
     }
